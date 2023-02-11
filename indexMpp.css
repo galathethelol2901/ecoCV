@@ -3,7 +3,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
   }
   
   .section-1 {
@@ -22,4 +21,7 @@ body {
     background-color: green;
     height: 33.33%;
     width: 100%;
+  }
+  .section-1, .section-2, .section-3 {
+    border: 1px solid black;
   }
