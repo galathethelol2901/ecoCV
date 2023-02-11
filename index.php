@@ -8,16 +8,11 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="section-1"></div>
-    <h1>hello world</h1>
 
-    <div class="section-2"></div>
-    <h2>hello mes couille</h2>
-
-    <div class="section-3"></div>
-    <h3>salut la miff</h3>
-  </div>
+  <div class="section-1"></div>
+  <div class="section-2"></div>
+  <div class="section-3"></div>
+  
 </body>
 
 </html>

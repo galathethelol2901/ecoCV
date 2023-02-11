@@ -1,29 +1,24 @@
 body {
-    
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
   }
   
   .section-1 {
     background-color: blue;
-    flex: 1;
+    height: 33.33%;
+    width: 100%;
   }
   
   .section-2 {
     background-color: red;
-    flex: 1;
+    height: 33.33%;
+    width: 100%;
   }
   
   .section-3 {
     background-color: green;
-    flex: 1;
+    height: 33.33%;
+    width: 100%;
   }
