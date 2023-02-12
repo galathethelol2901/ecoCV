@@ -54,7 +54,7 @@
 
     </div>
 
-    <img src="pngegg(1).png" class="title" />
+    <img src="pngegg (1).png" class="title" />
     <img src="champH.png" class="character" />
 
   </div>
