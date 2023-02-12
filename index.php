@@ -9,6 +9,8 @@
 
 <body>
 
+<canvas id="canvas1"></canvas>
+
 <a href="" alt="Mythrill" target="_blank">
 
   <div class="card">
