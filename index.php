@@ -9,19 +9,19 @@
 
 <body>
 
-<a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+<a href="" alt="Mythrill" target="_blank">
 
   <div class="card">
 
     <div class="wrapper">
 
-      <img src="champD.png" 
+      <img src="champDland.jpg" 
       class="cover-image" />
 
     </div>
 
-    <img src="champDland.jpg" class="title" />
-    <img src="waterOrb.jpg" class="character" />
+    <img src="champD.png" class="title" />
+    <img src="champD.png" class="character" />
 
   </div>
 </a>
