@@ -13,6 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   background: #191c29;
+  overflow:hidden;
+  background-color:#212121;
 }
 .card {
   width: var(--card-width);

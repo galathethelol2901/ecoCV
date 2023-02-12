@@ -1,3 +1,6 @@
+var heightwindow = window.innerHeight;
+var widthwindow = window.innerWidth;
+
 var nbrparticule = 20;
 var start = 200;
 var vy = [];
