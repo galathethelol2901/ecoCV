@@ -15,13 +15,13 @@
 
     <div class="wrapper">
 
-      <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" 
+      <img src="champD.png" 
       class="cover-image" />
 
     </div>
 
-    <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
-    <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
+    <img src="champDland.jpg" class="title" />
+    <img src="waterOrb.jpg" class="character" />
 
   </div>
 </a>
@@ -32,13 +32,13 @@
 
     <div class="wrapper">
 
-      <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" 
+      <img src="champFland" 
       class="cover-image" />
 
     </div>
 
-    <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
-    <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+    <img src="Mirrorcolo.jpg" class="title" />
+    <img src="champF.png" class="character" />
 
   </div>
 </a>
