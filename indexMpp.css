@@ -106,12 +106,20 @@ body {
   transform: translate3d(0%, -30%, 100px);
 }
 
-canvas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 522px; 
-  height: 353px;
-  transform: translate(-50%, -50%);
-  border: 1px solid black;
+.main {
+  display:flex;
+  justify-content:center;
+}
+
+.particule {
+  position:absolute;
+  width:3px;
+  min-height:3px;
+  background-color:rgba(255,128,0,1);
+  border-radius:90px;
+  box-shadow: 0 0px 10px #EC637B, 
+		0 0 10px rgba(230, 161, 173, 0.41), 
+		0 0 50px #E6A1AD, 
+		0 0 50px #F36780, 
+		5px 9px 5px rgba(0, 0, 0, 0);
 }

@@ -1,109 +1,71 @@
-const canvas = document.getElementById('canvas1');
-    const ctx = canvas.getContext('2d');
-    canvas.width = 522;
-    canvas.height = 353;
+var heightwindow = window.innerHeight;
+var widthwindow = window.innerWidth;
 
-    let particlesArray = [];
-    const numberOfParticles = 5000;
-    const detail = 1;
+var nbrparticule = 20;
+var start = 200;
+var vy = [];
+var vx = [];
+var rebond = 0;
+var particule = [];
+var posy = [];
+var posx = [];
+var rebond = [];
+var leftorright = 0;
 
-    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-    const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+var main = document.getElementById('main');
 
-    let grid = [];
-    for (let y = 0; y < canvas.height; y += detail){
-        let row = [];
-        for (let x = 0; x < canvas.width; x += detail){
-            const red = pixels.data[(y * 4 * pixels.width) + (x * 4)]
-            const green = pixels.data[(y * 4 * pixels.width) + (x * 4 + 1)]
-            const blue = pixels.data[(y * 4 * pixels.width) + (x * 4 + 2)]
-            const color = 'rgb(' + red +',' + green + ',' + blue + ')';
-            const brightness = calculateBrightness(red, green, blue)/100;
-            const cell = [
-                cellColor = color,
-                cellBrightness = brightness,
-            ];
-            row.push(cell);
-        }  
-        grid.push(row); 
+for (var i=1; i<nbrparticule; i++){
+  main.innerHTML += '<div class="particule" id="particule'+i+'"></div>';
+}
+
+
+for (var i=1; i<nbrparticule; i++){
+  //start = Math.random() * (heightwindow - 1) + 1;
+  particule[i] = document.getElementById("particule"+i);
+  posy[i] = start;
+  posx[i] = widthwindow/2;
+  vy[i] = Math.random()*(3-1)+1;
+  vy[i] = 0-vy[i];
+  vx[i] = Math.random()*(2-0)+0;
+  rebond[i] = 0;
+  leftorright = Math.round(Math.random()*(1-0));
+  if (leftorright==0){vx[i] = 0-vx[i];}
+}
+
+setInterval(function(){
+  for (var i=1; i<nbrparticule; i++){
+    particule[i].style.top = posy[i]+'px';
+    particule[i].style.left = posx[i]+'px';
+    if(rebond[i]==0){
+      particule[i].style.height = vy[i]*4+'px';
     }
-    console.log(grid);
-    class Particle {
-        constructor(){
-            this.x = Math.random() * canvas.width;
-            this.y = canvas.height;
-            //this.prevX = this.x;
-            this.speed = 0;
-            this.velocity = Math.random() * 0.4;
-            this.size = Math.random() * 2 + 0.5;
-            this.position1 = Math.floor(this.y / detail);
-            this.position2 = Math.floor(this.x / detail);
-            this.angle = 0;
-        }
-        update () {
-            this.position1 = Math.floor(this.y / detail);
-            this.position2 = Math.floor(this.x / detail);
-            if (grid[this.position1]){
-                if (grid[this.position1][this.position2]){
-                    this.speed = grid[this.position1][this.position2][1];
-                }
-            }
-            this.angle += this.speed/20;
-            let movement = (2.5 - this.speed) + this.velocity;
-            this.y -= movement + Math.cos(this.angle) * 2;
-            this.x += Math.cos(this.angle) * 2;
-            if (this.y <= 0) {
-                this.y = canvas.height;
-                this.x = Math.random() * canvas.width;
-            }
-            //console.log(this.x += movement)
-        }
-        draw(){
-            ctx.beginPath();
-            ctx.fillStyle = 'black';
-            if (this.y > canvas.height - this.size * 6) ctx.globalAlpha = 0;
-            if (grid[this.position1]){
-                if (grid[this.position1][this.position2]){
-                    ctx.fillStyle = grid[this.position1][this.position2][0];
-                }
-
-            } else {
-                ctx.fillStyle = 'white';
-            }
-            ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-            ctx.fill();
-
-        }
+    else {
+      particule[i].style.height = 5+'px';
     }
-
-    function init(){
-        for (let i = 0; i < numberOfParticles; i++){
-            particlesArray.push(new Particle());
-        }
+    posy[i] = posy[i]+vy[i];
+    posx[i] = posx[i]+vx[i];
+    vy[i] = vy[i]+0.1;
+    if (vx[i]>0){
+      vx[i] = vx[i]-0.01;
     }
-    init();
-
-    function animate () {
-        ctx.globalAlpha = 0.05;
-        ctx.fillStyle = 'rgb(0, 0, 0)';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.globalAlpha = 0.2;
-        for (let i = 0; i < particlesArray.length; i++) {
-            particlesArray[i].update();
-            ctx.globalAlpha = particlesArray[i].speed * 0.3;
-            particlesArray[i].draw();
-        }
-        requestAnimationFrame( animate );
+    if (posy[i]>heightwindow){
+      if (rebond[i]<2){
+        vy[i]=vy[i]/Math.round(Math.random()*(4-2)+2);
+        vy[i]=0-vy[i];
+        rebond[i]++;
+        posy[i] = heightwindow-5;
+      }
+      else {
+        //start = Math.random() * (heightwindow - 1) + 1;
+        posy[i] = start;
+        posx[i] = widthwindow/2;
+        vy[i] = Math.random()*(3-1)+1;
+        vy[i] = 0-vy[i]
+        rebond[i] = 0;
+        vx[i] = Math.random()*(2-0)+0;
+        leftorright = Math.round(Math.random()*(1-0));
+        if (leftorright==0){vx[i] = 0-vx[i];}
+      }
     }
-    animate();
-
-    function calculateBrightness(red, green, blue){
-        return Math.sqrt(
-            (red * red) * 0.299 +
-            (green * green) * 0.587 +
-            (blue * blue) * 0.114
-        );
-    }
-
-;
+  }
+},10)

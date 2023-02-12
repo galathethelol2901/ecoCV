@@ -9,7 +9,8 @@
 
 <body>
 
-<canvas id="canvas1"></canvas>
+<div class="main" id="main">
+</div>
 
 <a href="" alt="Mythrill" target="_blank">
 
@@ -62,7 +63,7 @@
   </div>
 </a>
 
-<script src= "anime.js"></script>
+<script src="anime.js"></script>
   
 </body>
 
