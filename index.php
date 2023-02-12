@@ -32,12 +32,12 @@
 
     <div class="wrapper">
 
-      <img src="champFland" 
+      <img src="champFland.jpg" 
       class="cover-image" />
 
     </div>
 
-    <img src="Mirrorcolo.jpg" class="title" />
+    <img src="pngegg.png" class="title" />
     <img src="champF.png" class="character" />
 
   </div>
@@ -49,13 +49,13 @@
 
     <div class="wrapper">
 
-      <img src="fireOrb.jpg" 
+      <img src="champHland.jpg" 
       class="cover-image" />
 
     </div>
 
-    <img src="champH.png" class="title" />
-    <img src="champHland.jpg" class="character" />
+    <img src="pngegg(1).png" class="title" />
+    <img src="champH.png" class="character" />
 
   </div>
 </a>
