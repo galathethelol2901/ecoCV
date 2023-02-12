@@ -20,7 +20,7 @@
 
     </div>
 
-    <img src="champD.png" class="title" />
+    <img src="pngegg(2).png" class="title" />
     <img src="champD.png" class="character" />
 
   </div>
