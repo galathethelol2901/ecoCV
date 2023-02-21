@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Mon petit jeu</title>
-  <link rel="stylesheet" type="text/css" href="gameON1.css">
+  <link rel="stylesheet" href="gameON1.css">
 </head>
 
 <body>
-    
+
   <div class="game-container">
     <div class="center"></div>
     <div class="path1"></div>

@@ -1,3 +1,11 @@
+body {
+    background-color: darkolivegreen; /* Changez la couleur de fond selon vos préférences */
+    font-family: Arial, sans-serif; /* Changez la police selon vos préférences */
+    font-size: 16px; /* Changez la taille de police selon vos préférences */
+    margin: 0;
+    padding: 0;
+  }
+
 .game-container {
     position: relative;
     width: 500px;
