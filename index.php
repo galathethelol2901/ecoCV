@@ -65,6 +65,23 @@
   </div>
 </a>
 
+<a href="gameON.php" alt="death" target="_blank">
+
+  <div class="card">
+
+    <div class="wrapper">
+
+      <img src="champDland.jpg" 
+      class="cover-image" />
+
+    </div>
+
+    <img src="pngegg(2).png" class="title" />
+    <img src="champD.png" class="character" />
+
+  </div>
+</a>
+
 <script src="anime.js"></script>
   
 </body>
