@@ -81,37 +81,43 @@
   .path__segment {
     position: absolute;
     width: 100px;
-    height: 100px;
+    height: 20px;
     background-color: #333;
-    border-radius: 50%;
     transform: translate(-50%, -50%);
   }
   
   .path__segment-1 {
     top: 50%;
     left: 25%;
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
   
   .path__segment-2 {
     top: 25%;
     left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .path__segment-3 {
     top: 50%;
     left: 75%;
+    transform: translate(-50%, -50%) rotate(45deg);
   }
   
   .path__segment-4 {
     top: 75%;
     left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
   }
   
-  .path__segment-5 {
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
+  .path__segment:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
     border-radius: 50%;
-    background-color: #FFD700;
+    top: 50%;
+    left: -5px;
+    transform: translate(-50%, -50%);
   }
