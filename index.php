@@ -29,6 +29,9 @@
   </div>
 </a>
 
+<div class="main" id="main">
+</div>
+
 <a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
 
   <div class="card">
@@ -45,6 +48,9 @@
 
   </div>
 </a>
+
+<div class="main" id="main">
+</div>
 
 <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
 
