@@ -12,7 +12,7 @@
 <div class="main" id="main">
 </div>
 
-<a href="" alt="Mythrill" target="_blank">
+<a href="gameON.php" alt="death" target="_blank">
 
   <div class="card">
 
@@ -29,10 +29,8 @@
   </div>
 </a>
 
-<div class="main" id="main">
-</div>
 
-<a href="https://www.mythrillfiction.com/force-mage" alt="Mythrill" target="_blank">
+<a href="gameON" alt="green" target="_blank">
 
   <div class="card">
 
@@ -49,10 +47,8 @@
   </div>
 </a>
 
-<div class="main" id="main">
-</div>
 
-<a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank">
+<a href="gameON.php" alt="red" target="_blank">
 
   <div class="card">
 
