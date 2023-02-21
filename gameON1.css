@@ -1,54 +1,94 @@
 body {
-    background-color: darkolivegreen; /* Changez la couleur de fond selon vos préférences */
-    font-family: Arial, sans-serif; /* Changez la police selon vos préférences */
-    font-size: 16px; /* Changez la taille de police selon vos préférences */
-    margin: 0;
-    padding: 0;
+    background: black;
   }
-
-.game-container {
+  #ludo {
+    width: 400px;
+    margin: auto;
     position: relative;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
+    height: 400px;
+    background: lightgreen;
   }
   
-  .center {
+  #box1 {
+    border-color: red;
+  }
+  #box2 {
+    border-color: green;
+  }
+  #box3 {
+    border-color: yellow;
+  }
+  #box4 {
+    border-color: blue;
+  }
+  .box {
+    width: 120px;
+    height: 120px;
     position: absolute;
+    background-color: white;
+    border: solid 20px;
+  }
+  
+  #middle-box {
+    top: 160px;
+    left: 160px;
     width: 50px;
     height: 50px;
-    background-color: blue;
-    border-radius: 50%;
-    top: 225px;
-    left: 225px;
+    border: solid 15px;
+    border-top-color: green;
+    border-left-color: red;
+    border-right-color: blue;
+    border-bottom-color: yellow;
   }
   
-  .path1, .path2, .path3, .path4 {
+  .left-box {
+    left: 0;
+  }
+  
+  .right-box {
+    right: 0;
+  }
+  
+  .box-top {
+    top: 0;
+  }
+  
+  .box-bottom {
+    bottom: 0;
+  }
+  
+  .l-shape {
+    width: 50px;
+    height: 130px;
     position: absolute;
-    width: 200px;
-    height: 50px;
-    background-color: gray;
+    border: solid 20px;
+    border-right: 0;
+    border-bottom: 0;
   }
   
-  .path1 {
-    top: 200px;
-    left: 150px;
+  #l-shape-up {
+    top: 20px;
+    right: 140px;
+    border-color: green;
   }
   
-  .path2 {
-    top: 250px;
-    left: 150px;
-    transform: rotate(90deg);
-  }
-  
-  .path3 {
-    top: 250px;
-    left: 250px;
-    transform: rotate(180deg);
-  }
-  
-  .path4 {
-    top: 200px;
-    left: 250px;
+  #l-shape-left {
+    border-color: red;
+    top: 100px;
+    left: 60px;
     transform: rotate(-90deg);
+  }
+  
+  #l-shape-right {
+    border-color: blue;
+    top: 150px;
+    right: 60px;
+    transform: rotate(-270deg);
+  }
+  
+  #l-shape-down {
+    border-color: yellow;
+    bottom: 20px;
+    left: 140px;
+    transform: rotate(-180deg);
   }
