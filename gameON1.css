@@ -62,3 +62,56 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .game-grid {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  .path {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .path__segment {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .path__segment-1 {
+    top: 50%;
+    left: 25%;
+  }
+  
+  .path__segment-2 {
+    top: 25%;
+    left: 50%;
+  }
+  
+  .path__segment-3 {
+    top: 50%;
+    left: 75%;
+  }
+  
+  .path__segment-4 {
+    top: 75%;
+    left: 50%;
+  }
+  
+  .path__segment-5 {
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #FFD700;
+  }

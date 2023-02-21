@@ -31,5 +31,14 @@
   </div>
 </div>
 
+<div class="path">
+    <div class="path__segment path__segment-1"></div>
+    <div class="path__segment path__segment-2"></div>
+    <div class="path__segment path__segment-3"></div>
+    <div class="path__segment path__segment-4"></div>
+    <div class="path__segment path__segment-5"></div>
+  </div>
+</div>
+
 
 </body>

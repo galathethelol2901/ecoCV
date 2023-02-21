@@ -30,7 +30,7 @@
 </a>
 
 
-<a href="gameON" alt="green" target="_blank">
+<a href="gameON.php" alt="green" target="_blank">
 
   <div class="card">
 
