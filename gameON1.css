@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: linear-gradient(to bottom, lightblue, darkblue);
+  background-color:black
 }
 .container {
   width: 800px;
