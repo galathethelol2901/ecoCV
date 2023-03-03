@@ -4,86 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <title>BIENVENUE SUR MONOPROG6 LE JEUX !</title>
-  <link rel="stylesheet" href="indexMpp.css">
+  <link rel="stylesheet" href="gameON1.css">
 </head>
 
 <body>
 
-<div class="main" id="main">
-</div>
+<container>
 
-<a href="gameON.php" alt="death" target="_blank">
+  <canvas id="canvas1"></canvas>
 
-  <div class="card">
+  <article>
 
-    <div class="wrapper">
+    <span>Created by <a href="https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ" target='blank'>Frank's Laboratory</a>@2020
+  </span>
 
-      <img src="champDland.jpg" 
-      class="cover-image" />
+  </article>
 
-    </div>
-
-    <img src="pngegg(2).png" class="title" />
-    <img src="champD.png" class="character" />
-
-  </div>
-</a>
-
-
-<a href="gameON.php" alt="green" target="_blank">
-
-  <div class="card">
-
-    <div class="wrapper">
-
-      <img src="champFland.jpg" 
-      class="cover-image" />
-
-    </div>
-
-    <img src="pngegg.png" class="title" />
-    <img src="champF.png" class="character" />
-
-  </div>
-</a>
-
-
-<a href="gameON.php" alt="red" target="_blank">
-
-  <div class="card">
-
-    <div class="wrapper">
-
-      <img src="champHland.jpg" 
-      class="cover-image" />
-
-    </div>
-
-    <img src="pngegg (1).png" class="title" />
-    <img src="champH.png" class="character" />
-
-  </div>
-</a>
-
-<a href="gameON.php" alt="death" target="_blank">
-
-  <div class="card">
-
-    <div class="wrapper">
-
-      <img src="champDland.jpg" 
-      class="cover-image" />
-
-    </div>
-
-    <img src="pngegg(2).png" class="title" />
-    <img src="champD.png" class="character" />
-
-  </div>
-</a>
+</container>
 
 <script src="anime.js"></script>
-  
+
 </body>
+
+<footer>Full step by step tutorial available 
+  <a href="https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ" target='blank'>here 
+  </a>
+
+</footer>
 
 </html>
