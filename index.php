@@ -8,6 +8,8 @@
 </head>
 
 <body>
+  
+<h1>bienvenue sur ECOPROG6 le mini jeux !
 
 <container>
 
@@ -26,8 +28,8 @@
 
 </body>
 
-<footer>bienvenue sur ecoprog6 !  
-  <a href="" target='blank'>here 
+<footer>pour me contatcer suivez le lien !  
+  <a href="" target='blank'>ici
   </a>
 
 </footer>
