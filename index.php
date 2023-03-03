@@ -15,7 +15,7 @@
 
   <article>
 
-    <span>Created by <a href="https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ" target='blank'>Frank's Laboratory</a>@2020
+    <span>Created by <a href="" target='blank'>yoan mettoudi</a>
   </span>
 
   </article>
@@ -26,8 +26,8 @@
 
 </body>
 
-<footer>Full step by step tutorial available 
-  <a href="https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ" target='blank'>here 
+<footer>bienvenue sur ecoprog6 !  
+  <a href="" target='blank'>here 
   </a>
 
 </footer>
