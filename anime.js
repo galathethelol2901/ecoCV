@@ -172,7 +172,7 @@ let adjustX = -3;
 let adjustY = -3;
 ctx.fillStyle = 'white';
 ctx.font = '17px Verdana';
-ctx.fillText('je ne sais pas coder les ecumes', 20, 42);
+ctx.fillText('océan trop dur a coder on imagine svp ! ', 10, 21);
 //ctx.font = '19px Verdana';
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
