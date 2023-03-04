@@ -320,15 +320,3 @@ window.addEventListener("resize", function () {
   mouse.y = canvas.height / 2;
 });
 
-const audio = document.querySelector('audio');
-const muteButton = document.querySelector('#muteButton');
-
-muteButton.addEventListener('click', () => {
-  if (audio.muted) {
-    audio.muted = false;
-    muteButton.textContent = 'Mute';
-  } else {
-    audio.muted = true;
-    muteButton.textContent = 'Unmute';
-  }
-});

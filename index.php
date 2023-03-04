@@ -6,8 +6,26 @@
     <link rel="stylesheet" href="gameON1.css">
   </head>
   <body>
-  <button id="muteButton">Mute</button>
-   <audio src="musicGme.mp3" autoplay loop></audio>
+
+<script>
+
+function toggleSound() {
+  const audio = document.querySelector("#myAudio");
+  const muteButton = document.querySelector("#muteButton");
+  
+  if (audio.muted) {
+    audio.muted = false;
+    muteButton.textContent = "Mute";
+  } else {
+    audio.muted = true;
+    muteButton.textContent = "Unmute";
+  }
+} 
+</script>
+
+  <audio id="myAudio" src="musicGme.mp3" autoplay loop></audio>
+  <button onclick="toggleSound()" id="muteButton">Mute</button>
+
     <container>
       <canvas id="canvas1"></canvas>
       <article>
