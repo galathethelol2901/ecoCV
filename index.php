@@ -8,8 +8,6 @@
 </head>
 
 <body>
-  
-<h1>bienvenue sur ECOPROG6 le mini jeux !
 
 <container>
 
