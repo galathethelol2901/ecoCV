@@ -102,7 +102,7 @@ const player = new Player();
 // Bubbles
 const bubblesArray = [];
 const bubble = new Image();
-bubble.src = 'https://i.ibb.co/ZX3thkw/pop2.png';
+bubble.src = '7915222.jpg';
 class Bubble {
     constructor(){
         this.x = Math.random() * canvas.width;
