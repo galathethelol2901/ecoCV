@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="gameON1.css">
   </head>
   <body>
+  <button id="muteButton">Mute</button>
+   <audio src="musicGme.mp3" autoplay loop></audio>
     <container>
       <canvas id="canvas1"></canvas>
       <article>
@@ -15,8 +17,6 @@
     </container>
   </body>
   <footer>pour me contatcer suivez le lien ! <a href="" target='blank'>ici </a>
-   <button id="muteButton">Mute</button>
-   <audio src="musicGme.mp3" autoplay loop></audio>
   </footer> 
   <script src="anime.js"></script>
 </html>
