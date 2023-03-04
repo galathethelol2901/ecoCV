@@ -102,7 +102,7 @@ const player = new Player();
 // Bubbles
 const bubblesArray = [];
 const bubble = new Image();
-bubble.src = '7915222.jpg';
+bubble.src = 'https://i.ibb.co/ZX3thkw/pop2.png';
 class Bubble {
     constructor(){
         this.x = Math.random() * canvas.width;
@@ -170,9 +170,9 @@ function popAndRemove(i){
 let bubbleTextArray = [];
 let adjustX = -3;
 let adjustY = -3;
-ctx.fillStyle = 'white';
+ctx.fillStyle = 'red';
 ctx.font = '18px Verdana';
-ctx.fillText('not water', 10, 21);
+ctx.fillText('not water', 20, 42);
 //ctx.font = '19px Verdana';
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
