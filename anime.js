@@ -172,7 +172,7 @@ let adjustX = -3;
 let adjustY = -3;
 ctx.fillStyle = 'white';
 ctx.font = '18px Verdana';
-ctx.fillText('FAKE WATER', 10, 21);
+ctx.fillText('not water', 10, 21);
 //ctx.font = '19px Verdana';
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
