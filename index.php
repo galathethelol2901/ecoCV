@@ -11,14 +11,12 @@
       <article>
         <span>Created by <a href="" target='blank'>yoan mettoudi</a>
         </span>
-
-        <button id="muteButton">Mute</button>
-        <audio src="musicGme.mp3" autoplay loop></audio>
-
       </article>
     </container>
-    <script src="anime.js"></script>
   </body>
   <footer>pour me contatcer suivez le lien ! <a href="" target='blank'>ici </a>
-  </footer>
+   <button id="muteButton">Mute</button>
+   <audio src="musicGme.mp3" autoplay loop></audio>
+  </footer> 
+  <script src="anime.js"></script>
 </html>
