@@ -309,6 +309,11 @@ function animate() {
   ctx.fillText("score: " + score, 141, 336);
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.fillText("score: " + score, 140, 335);
+
+  if (score >= 100) {
+    canvas.style.backgroundColor = "red"; // change la couleur d'arrière-plan en rouge
+  }
+  
   gameFrame += 1;
   requestAnimationFrame(animate);
 }
