@@ -294,6 +294,8 @@ console.log(bubbleTextArray);
 /** bubble text end **/
 
 // animation loop
+let backgroundColor = "#fff"; // Couleur de fond initiale du canvas
+
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   for (let i = 0; i < bubbleTextArray.length; i++) {
@@ -309,14 +311,18 @@ function animate() {
   ctx.fillText("score: " + score, 141, 336);
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.fillText("score: " + score, 140, 335);
-
+  
   if (score >= 100) {
-    canvas.style.backgroundColor = "red"; // change la couleur d'arrière-plan en rouge
+    backgroundColor = "#ff0000"; // Changer la couleur de fond à rouge
   }
+  
+  ctx.fillStyle = backgroundColor;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
   
   gameFrame += 1;
   requestAnimationFrame(animate);
 }
+
 animate();
 
 window.addEventListener("resize", function () {
