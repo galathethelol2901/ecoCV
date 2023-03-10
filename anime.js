@@ -312,7 +312,7 @@ function animate() {
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.fillText("score: " + score, 140, 335);
   
-  if (score >= 100) {
+  if (score >= 20) {
     backgroundColor = "#ff0000"; // Changer la couleur de fond à rouge
   }
   
