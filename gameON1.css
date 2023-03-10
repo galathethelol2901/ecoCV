@@ -9,10 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:black;
-  background-image: url("waterOrb.jpg");
-  background-size: cover; /* pour ajuster la taille de l'image de fond */
-  background-position: center center; /* pour centrer l'image de fond */
+  background-color:rgb(145, 125, 205);
 }
 .container {
   width: 800px;
