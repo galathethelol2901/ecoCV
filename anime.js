@@ -302,6 +302,7 @@ function getRandomColor() {
   return color;
 }
 /** colorchangement **/
+
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   for (let i = 0; i < bubbleTextArray.length; i++) {
@@ -319,6 +320,7 @@ function animate() {
     ctx.fillStyle = randomColor; // change la couleur du texte
   }
   
+  ctx.fillText("score: " + score, 140, 335);
   
   gameFrame += 1;
   requestAnimationFrame(animate);
