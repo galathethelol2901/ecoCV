@@ -304,11 +304,6 @@ function animate() {
   player.draw();
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.font = "20px Georgia";
-  if (score % 20 === 0) {  // vérifie si le score est un multiple de 20
-    ctx.fillStyle = "rgba(255,0,0,0.8)"; // change la couleur du texte
-  } else {
-    ctx.fillStyle = "rgba(255,255,255,0.8)";
-  }
   ctx.fillText("score: " + score, 141, 336);
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.fillText("score: " + score, 140, 335);
