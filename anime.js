@@ -198,13 +198,26 @@ function popAndRemove(i) {
 let bubbleTextArray = [];
 let adjustX = -3;
 let adjustY = -3;
-let colorArray = ["#FF4136", "#0074D9", "#2ECC40", "#FFDC00", "#B10DC9", "#FF851B", "#F012BE", "#01FF70"];
-let currentColor = "#000";
-ctx.fillStyle = currentColor;
-ctx.font = "18px Verdana";
-ctx.fillText("WATER", 20, 42);
-
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
+
+function handleBubbles() {
+  for (let i = 0; i < bubbleTextArray.length; i++) {
+    if (bubbleTextArray[i].lifeSpan < 0) {
+      bubbleTextArray.splice(i, 1);
+    }
+  }
+  for (let i = 0; i < bubbleTextArray.length; i++) {
+    bubbleTextArray[i].update();
+    bubbleTextArray[i].draw();
+  }
+  if (gameFrame % 150 === 0) {
+    bubbleTextArray.push(new BubbleText());
+  }
+}
+
+ctx.font = "18px Verdana";
+ctx.fillStyle = "red";
+ctx.fillText("WATER", 20, 42);
 
 
 class Particle2 {
@@ -314,15 +327,20 @@ function animate() {
   handleBubbles();
   player.update();
   player.draw();
+  ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.font = "20px Georgia";
 
-  if (score % 20 === 0 && score !== 0) {
-    currentColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+  if (score % 20 === 0 && score !== 0) {  // vérifie si le score est un multiple de 20
+    let color = getRandomColor();
+    ctx.fillStyle = color;
+    ctx.fillText("score: " + score, 141, 336);
+  } else {
+    ctx.fillStyle = "rgba(255,255,255,0.8)";
+    ctx.fillText("score: " + score, 141, 336);
   }
 
-  ctx.fillStyle = currentColor;
+  ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.fillText("score: " + score, 140, 335);
-
   gameFrame += 1;
   requestAnimationFrame(animate);
 }
@@ -347,3 +365,12 @@ playButton.addEventListener('click', () => {
     playButton.textContent = 'Play';
   }
 });
+
+function getRandomColor() {
+  let letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
