@@ -198,12 +198,14 @@ function popAndRemove(i) {
 let bubbleTextArray = [];
 let adjustX = -3;
 let adjustY = -3;
-ctx.fillStyle = "red";
+let colorArray = ["#FF4136", "#0074D9", "#2ECC40", "#FFDC00", "#B10DC9", "#FF851B", "#F012BE", "#01FF70"];
+let currentColor = "#000";
+ctx.fillStyle = currentColor;
 ctx.font = "18px Verdana";
 ctx.fillText("WATER", 20, 42);
-//ctx.font = '19px Verdana';
-//ctx.fillText('TEXT', 36, 49);
+
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
+
 
 class Particle2 {
   constructor(x, y) {
@@ -312,16 +314,15 @@ function animate() {
   handleBubbles();
   player.update();
   player.draw();
-  ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.font = "20px Georgia";
 
-  if (score % 20 === 0 && score !== 0) {  // vérifie si le score est un multiple de 20
-    randomColor = getRandomColor(); // stocke une couleur aléatoire
-    ctx.fillStyle = randomColor; // change la couleur du texte
+  if (score % 20 === 0 && score !== 0) {
+    currentColor = colorArray[Math.floor(Math.random() * colorArray.length)];
   }
-  
+
+  ctx.fillStyle = currentColor;
   ctx.fillText("score: " + score, 140, 335);
-  
+
   gameFrame += 1;
   requestAnimationFrame(animate);
 }
