@@ -293,6 +293,15 @@ init2();
 console.log(bubbleTextArray);
 /** bubble text end **/
 
+function getRandomColor() {
+  let letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+/** colorchangement **/
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   for (let i = 0; i < bubbleTextArray.length; i++) {
@@ -305,12 +314,11 @@ function animate() {
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.font = "20px Georgia";
 
-  if (score % 20 === 0 && score !== 0) {
-    ctx.fillStyle = "rgba(255,0,0,0.8)";
-  } else {
-    ctx.fillStyle = "rgba(34,147,214,1)";
+  if (score % 20 === 0 && score !== 0) {  // vérifie si le score est un multiple de 20
+    randomColor = getRandomColor(); // stocke une couleur aléatoire
+    ctx.fillStyle = randomColor; // change la couleur du texte
   }
-  ctx.fillText("score: " + score, 140, 335);
+  
   
   gameFrame += 1;
   requestAnimationFrame(animate);
