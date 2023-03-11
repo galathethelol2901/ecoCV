@@ -304,12 +304,24 @@ function animate() {
   player.draw();
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.font = "20px Georgia";
+  ctx.fillStyle = "rgba(255,255,255,0.8)";
   ctx.fillText("score: " + score, 141, 336);
   ctx.fillStyle = "rgba(34,147,214,1)";
   ctx.fillText("score: " + score, 140, 335);
   gameFrame += 1;
   requestAnimationFrame(animate);
 }
+
+animate();
+
+window.addEventListener("resize", function () {
+  canvasPosition = canvas.getBoundingClientRect();
+  mouse.x = canvas.width / 2;
+  mouse.y = canvas.height / 2;
+});
+
+const audio = document.getElementById("myAudio");
+const playButton = document.getElementById("playButton");
 
 playButton.addEventListener('click', () => {
   if (audio.paused) {
