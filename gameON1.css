@@ -8,16 +8,39 @@ body {
   width: 100%;
 }
 
-.section-blue {
-  background-color: blue;
+.container {
+  overflow: hidden; /* permet de contenir les éléments flottants dans la zone parent */
 }
 
-.section-red {
+.section {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.section1 {
   background-color: red;
 }
 
-.section-green {
+.section2 {
   background-color: green;
+}
+
+.section3 {
+  background-color: blue;
+}
+
+/* Passage en affichage inline-block pour les sections */
+.container .section {
+  display: inline-block;
+  float: none; /* Supprime la propriété float pour que les éléments soient empilés */
+}
+
+/* Affichage en colonnes verticales */
+@media screen and (min-width: 768px) {
+  .container .section {
+    float: left;
+  }
 }
 
 
