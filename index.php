@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="gameON1.css">
   </head>
   <body>
+  <div class="container">
     <div id="vague" class="section">
       <h1>Section vague</h1>
       <div class="circle"></div>
