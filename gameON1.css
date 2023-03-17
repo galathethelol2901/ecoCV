@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
-.section {
+.container {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+}
+
+.section {
+  width: 100%;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,15 +20,15 @@
 }
 
 #vague {
-  background-color: #009688;
+  background-color: #0bc4b1;
 }
 
 #bulle {
-  background-color: #033a68;
+  background-color: #2196f3;
 }
 
 #galaxie {
-  background-color: #2e0401;
+  background-color: #1905f5;
 }
 
 .circle {
