@@ -1,49 +1,61 @@
-body {
+/* Réinitialisation des marges et des paddings */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.section {
-  height: 100vh;
-  width: 100%;
+/* Définition des couleurs */
+:root {
+  --color1: #ffafbd;
+  --color2: #ffd3b6;
+  --color3: #ffffc2;
 }
 
+/* Style de la page */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Style du conteneur */
 .container {
-  overflow: hidden; /* permet de contenir les éléments flottants dans la zone parent */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* Style des sections */
 .section {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  flex: 1;
 }
 
 .section1 {
-  background-color: red;
+  background-color: var(--color1);
 }
 
 .section2 {
-  background-color: green;
+  background-color: var(--color2);
 }
 
 .section3 {
-  background-color: blue;
+  background-color: var(--color3);
 }
 
-/* Passage en affichage inline-block pour les sections */
-.container .section {
-  display: inline-block;
-  float: none; /* Supprime la propriété float pour que les éléments soient empilés */
-}
-
-/* Affichage en colonnes verticales */
+/* Médias requêtes pour une mise en page responsive */
 @media screen and (min-width: 768px) {
-  .container .section {
-    float: left;
+  .container {
+    flex-direction: row;
+  }
+
+  .section {
+    flex: 1;
   }
 }
-
-
-
 
 
