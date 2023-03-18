@@ -4,25 +4,22 @@
   padding: 0;
 }
 
-/* Ajouter une bordure de 1px entre les sections */
+/* Définir la hauteur des sections en fonction de la taille de l'écran */
 section {
-  border: 1px solid #000;
+  height: calc(100vh / 3);
 }
 
 /* Définir les couleurs des sections */
 .light-blue {
   background-color: #87CEFA;
-  height: 33.33vh;
 }
 
 .blue {
   background-color: #4169E1;
-  height: 33.33vh;
 }
 
 .dark-blue {
   background-color: #000080;
-  height: 33.33vh;
 }
 
 /* Définir la disposition des sections sur les écrans larges */
@@ -31,5 +28,6 @@ section {
     display: inline-block;
     width: 30%;
     vertical-align: top;
+    height: 100vh;
   }
 }
