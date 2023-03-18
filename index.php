@@ -6,19 +6,8 @@
     <link rel="stylesheet" type="text/css" href="gameON1.css">
   </head>
   <body>
-  <div class="container">
-    <div id="vague" class="section">
-      <h1>Section vague</h1>
-      <div class="circle"></div>
-    </div>
-    <div id="bulle" class="section">
-      <h1>Section bulle</h1>
-      <div class="circle"></div>
-    </div>
-    <div id="galaxie" class="section">
-      <h1>Section galaxie</h1>
-      <div class="circle"></div>
-    </div>
-    <script src="anime.js"></script>
-  </body>
+  <section class="light-blue"></section>
+  <section class="blue"></section>
+  <section class="dark-blue"></section>
+</body>
 </html>

@@ -1,47 +1,35 @@
+/* Réinitialiser les marges et les rembourrages */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+/* Ajouter une bordure de 1px entre les sections */
+section {
+  border: 1px solid #000;
 }
 
-.section {
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+/* Définir les couleurs des sections */
+.light-blue {
+  background-color: #87CEFA;
+  height: 33.33vh;
 }
 
-#vague {
-  background-color: #0bc4b1;
+.blue {
+  background-color: #4169E1;
+  height: 33.33vh;
 }
 
-#bulle {
-  background-color: #2196f3;
+.dark-blue {
+  background-color: #000080;
+  height: 33.33vh;
 }
 
-#galaxie {
-  background-color: #1905f5;
-}
-
-.circle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  transform: translate(-50%, -50%);
-}
-
-h1 {
-  color: white;
-  text-align: center;
-  font-size: 3rem;
+/* Définir la disposition des sections sur les écrans larges */
+@media screen and (min-width: 768px) {
+  section {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
 }
