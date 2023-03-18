@@ -27,14 +27,3 @@ section {
   height: 100%;
   width: 100%;
 }
-
-@media screen and (min-width: 700px) {
-  .wrapper {
-    flex-direction: row;
-  }
-  
-  section {
-    width: calc(100% / 3);
-    height: 300px;
-  }
-}
