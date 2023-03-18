@@ -1,12 +1,8 @@
-/* Réinitialiser les marges et les rembourrages */
+/* Réinitialiser les marges et les rembourrages et prendre en compte les bordures */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* Définir la hauteur des sections en fonction de la taille de l'écran */
-section {
-  height: calc(100vh / 3);
 }
 
 /* Définir les couleurs des sections */
@@ -22,12 +18,25 @@ section {
   background-color: #000080;
 }
 
-/* Définir la disposition des sections sur les écrans larges */
-@media screen and (min-width: 768px) {
+/* Définir la disposition des sections */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  border: 1px solid black;
+  height: 100px;
+}
+
+/* Modifier la disposition des sections sur les écrans larges */
+@media screen and (min-width: 700px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  
   section {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    height: 100vh;
+    width: calc(100% / 3);
+    height: 300px;
   }
 }
