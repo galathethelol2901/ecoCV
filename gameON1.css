@@ -1,19 +1,15 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+html, body {
+  height: 100%;
 }
 
-.light-blue {
-  background-color: #87CEFA;
+html {
+  background: #eee;
 }
 
-.blue {
-  background-color: #4169E1;
-}
-
-.dark-blue {
-  background-color: #000080;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -26,35 +22,70 @@ section {
   border: 1px solid black;
   height: 100%;
   width: 33.33%;
-}
-
-.wave-section {
   position: relative;
-  height: 100px;
-  background: #4169E1;
 }
 
-.wave {
+.light-blue {
+  background-color: #87CEFA;
+  overflow: hidden;
+}
+
+.light-blue .wave {
+  opacity: .4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #0af;
+  width: 1000px;
+  height: 1000px;
+  margin-left: -500px;
+  margin-top: -500px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.light-blue .wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.light-blue .wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.title {
   position: absolute;
   left: 0;
-  bottom: 0;
-  height: 20%;
+  top: 0;
   width: 100%;
-  background:
-    linear-gradient(to right, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0) 80%),
-    linear-gradient(to right, #87CEFA, #4169E1);
-  background-size: 50px 50px;
-  animation: wave 2s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
 }
 
-@keyframes wave {
-  0% {
-    transform: translateX(0) translateY(-10px);
-  }
-  50% {
-    transform: translateX(25%) translateY(10px);
-  }
-  100% {
-    transform: translateX(50%) translateY(-10px);
-  }
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
