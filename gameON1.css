@@ -1,11 +1,9 @@
-/* Réinitialiser les marges et les rembourrages et prendre en compte les bordures */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Définir les couleurs des sections */
 .light-blue {
   background-color: #87CEFA;
 }
@@ -18,10 +16,10 @@
   background-color: #000080;
 }
 
-/* Définir la disposition des sections */
 .wrapper {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 section {
@@ -30,7 +28,6 @@ section {
   width: 100%;
 }
 
-/* Modifier la disposition des sections sur les écrans larges */
 @media screen and (min-width: 700px) {
   .wrapper {
     flex-direction: row;
