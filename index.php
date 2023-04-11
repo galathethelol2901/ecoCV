@@ -54,6 +54,6 @@
 </div>
 
 <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="anime.js"></script>
 </body>
 </html>
