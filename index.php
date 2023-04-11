@@ -15,6 +15,8 @@
 <body>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
+<div class="animation"></div>
+
 <section class="hero-section">
   <div class="card-grid">
     <a class="card" href="#">
@@ -47,12 +49,6 @@
     </a>
   <div>
 </section>
-
-  </div>
-
-  <div class="main" id="main">
-</div>
-
 <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 <script src="anime.js"></script>
 </body>
