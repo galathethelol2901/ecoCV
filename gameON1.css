@@ -40,7 +40,7 @@ html{
   max-width: var(--width-container);
   width: 100%;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 
 }
 
