@@ -39,8 +39,8 @@ html{
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
-  margin: 0 auto;
-  align-items: flex-end;
+  justify-content: center;
+
 }
 
 @media(min-width: 540px){
