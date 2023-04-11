@@ -116,6 +116,7 @@ html{
 body {
   overflow:hidden;
   width: 100%;
+  background-color: #000000;
 }
 
 .main {
