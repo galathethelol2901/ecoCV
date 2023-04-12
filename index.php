@@ -19,7 +19,13 @@
 <section class="hero-section">
   <div class="card-grid">
     <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+
+    <div class="card__background">
+  <video autoplay loop muted>
+    <source src="ECO6BRO.mp4" type="video/mp4">
+  </video>
+
+</div>
       <div class="card__content">
         <p class="card__category">pour me connaitre</p>
         <h3 class="card__heading">le CV</h3>
