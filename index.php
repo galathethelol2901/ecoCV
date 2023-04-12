@@ -22,7 +22,7 @@
 
     <div class="card__background">
     <video autoplay loop muted style="object-fit: cover; width: 100%; height: 100%;">
-    <source src="ECO6BRO.mp4" type="video/mp4">
+    <source src="ECOPROG6MOVE.mp4" type="video/mp4">
   </video>
 
 </div>
