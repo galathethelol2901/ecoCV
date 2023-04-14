@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/hk-cv-galathe",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "galathe",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
