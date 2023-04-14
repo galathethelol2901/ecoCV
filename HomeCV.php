@@ -15,7 +15,7 @@
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
             crossorigin="anonymous">
     <link rel="stylesheet" href="indexColor.css">
-    
+
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
 </head>
 
@@ -47,7 +47,7 @@
 
            <div class="dropdown">
             <a class="btn btn-secondary dropdown-toggle"
-               href="index.php"
+               href="HomeCV2.php"
                role="button"
                id="dropdownMenuLink"
                data-toggle="dropdown"
@@ -225,7 +225,11 @@
     });
 
 </script>
-<script src="jquery-3.4.1.min.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
 <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
