@@ -1,5 +1,6 @@
 :root{
-  --background-dark: #000000;
+  --background: rgb(5,17,1);
+  --background: linear-gradient(22deg, rgba(5,17,1,1) 49%, rgba(245,245,245,1) 50%, rgba(63,63,65,1) 51%);
   --text-light: rgba(255,255,255,0.6);
   --text-lighter: rgba(255,255,255,0.9);
   --spacing-s: 8px;
@@ -24,8 +25,6 @@ html{
 }
 body{
   height: 100%;
-  background: rgb(5,17,1);
-  background: linear-gradient(22deg, rgba(5,17,1,1) 49%, rgba(245,245,245,1) 50%, rgba(63,63,65,1) 51%);
 }
 
 
