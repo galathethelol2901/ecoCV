@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOPROG6</title>
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="indexColor.css">
 </head>
 
 <body>
