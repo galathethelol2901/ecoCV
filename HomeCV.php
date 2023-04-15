@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOPROG6</title>
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous">
-        </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+     integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" 
+     crossorigin="anonymous">
+    </script>
 
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
@@ -20,7 +21,6 @@
 <body>
 
 <div class="mouse cursor"></div>
-<!-- 2. Followers -->
 <div class="mouse follow-cursor first"></div>
 <div class="mouse follow-cursor second"></div>
 <div class="mouse follow-cursor third"></div>
@@ -222,6 +222,12 @@
         $(".mouse").toggleClass("hover");
     });
 
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.js" 
+integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" 
+crossorigin="anonymous">
 </script>
 
 </body>
