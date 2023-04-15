@@ -3,21 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOPROG6</title>
-
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous">
-        </script>
-
-<link rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" 
-      integrity="sha512-9zT26eX9+SkYpS+CJNw3KjJy0/uCt0+2GSD4jx/4hZD9EZ5jjnQ5J5wKWIGB/MnR8z5jP/SJZ7xegADLWpjX7w==" 
-      crossorigin="anonymous" 
-      referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="indexColor.css">
-
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -56,7 +43,7 @@
                aria-expanded="false">  select lang
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="HomeCV2">ENG</a>
+                <a class="dropdown-item" href="HomeCV2.php">ENG</a>
             </div>
 
         </div>
@@ -226,12 +213,6 @@
     });
 
 </script>
-
-<script
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-  crossorigin="anonymous"></script>
-<script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
