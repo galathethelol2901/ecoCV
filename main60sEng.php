@@ -14,7 +14,7 @@
     <script>
         if (sessionStorage.getItem('main60sEng') ==='1')
         {
-            window.location="index.php";
+            window.location="HomeCV2.php";
         }
         sessionStorage.setItem('main60sEng', '1');
 
