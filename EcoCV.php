@@ -5,14 +5,6 @@
     <title>BIENVENUE SUR ECOOPROG6 CV</title>
     <link rel="stylesheet" href="EcoCVstyle.css">
     
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"></script>
-    <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="indexColor.css">
-    <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
 <div class="mouse cursor"></div>
@@ -63,33 +55,6 @@
     <p>
         Lisez entre les vagues avant de plonger, car UNE seule visite vous sera accordée !
     </p>
-
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
     <div class="iconFirst"
           data-toggle="modal" data-target="#myModal1" data-placement="top" title="RULES">
@@ -195,7 +160,35 @@
             </div>
         </div>
     </div>
-   
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Ouvrir le modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Titre du modal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenu du modal
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-hdPakfPi+2xk3BzH2tIF9dJAgOJjlma06aCXIlJIDlEweKs8p1ZjiOJZ0cXnX7dJ" crossorigin="anonymous"></script>
+
+
     <script type="text/javascript">
     $("body").mousemove(function(e){
         let mouse = $(".mouse");
@@ -209,9 +202,6 @@
         $(".mouse").toggleClass("hover");
     });
 </script>
-
-<script src="jquery-3.4.1.min.js"></script>
-<script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
