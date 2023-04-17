@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+    <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
