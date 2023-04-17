@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOOPROG6 CV</title>
     <link rel="stylesheet" href="EcoCVstyle.css">
+    
     <script
-  src="https://code.jquery.com/jquery-3.6.4.js"
-  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-  crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="indexColor.css">
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <div class="mouse cursor"></div>
@@ -194,9 +195,7 @@
             </div>
         </div>
     </div>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+   
     <script type="text/javascript">
     $("body").mousemove(function(e){
         let mouse = $(".mouse");
@@ -210,5 +209,10 @@
         $(".mouse").toggleClass("hover");
     });
 </script>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
