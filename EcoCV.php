@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOOPROG6 CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-pa7ozjoaL6yLH6u1+WXBz4n4nR8o/Qv9XuTweE2T/SxWw/XkcL1qVFDJjKdxOBOz" crossorigin="anonymous">
+
+<!-- Inclure jQuery et Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-hdPakfPi+2xk3BzH2tIF9dJAgOJjlma06aCXIlJIDlEweKs8p1ZjiOJZ0cXnX7dJ" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="EcoCVstyle.css">
     
 </head>
