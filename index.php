@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ma page d'accueil</title>
-    <link rel="stylesheet" href="gameON1.css">
+    <link rel="stylesheet" href="indexHome.css">
 </head>
 <body>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <section class="hero-section">
   <div class="card-grid">
-    <a class="card" href="">
+    <a class="card" href="EcoCV.php">
     <div class="card__background" style="background-image: url(DeepDev.gif?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
       <div class="card__content">
         <p class="card__category">pour me connaitre</p>
