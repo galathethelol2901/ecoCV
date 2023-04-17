@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="EcoCVstyle.css">
 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -192,6 +194,12 @@
             </div>
         </div>
     </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
 <script type="text/javascript">
 
     $("body").mousemove(function(e){
@@ -203,7 +211,6 @@
             opacity: 1,
         });
     });
-
 
     $("a").hover(function(){
 
