@@ -3,40 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOOPROG6 CV</title>
-
     <link rel="stylesheet" href="EcoCVstyle.css">
-
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
-    
 </head>
-
 <body>
-
 <div class="mouse cursor"></div>
 <div class="mouse follow-cursor first"></div>
 <div class="mouse follow-cursor second"></div>
 <div class="mouse follow-cursor third"></div>
 <div class="mouse follow-cursor fourth"></div>
 <div class="mouse follow-cursor fifth"></div>
-
 <div class="header">
-
     <div class="inner-header flex">
-
         <h1>
-
             BIENVENUE SUR ECOPROG6  <br>
             <small> Pour le moment c'est un CV. <small>
-
-
         </h1>
-
             <div class="container">
             <div class="btn"><a href="main60s.php">ENTREZ pour 45s</a></div>
         </div>
-
            <div class="dropdown">
             <a class="btn btn-secondary dropdown-toggle"
                href="EcoCVeng.php"
@@ -49,12 +35,8 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="EcoCVeng.php">ENG</a>
             </div>
-
         </div>
-
-
     </div>
-
     <div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -70,40 +52,22 @@
         </svg>
     </div>
 </div>
-
 <div class="content flex">
-
     <p>
         Lisez entre les vagues avant de plonger, car UNE seule visite vous sera accordée !
     </p>
-
-
     <div class="iconFirst"
-
           data-toggle="modal" data-target="#myModal1" data-placement="top" title="RULES">
-
             <i class="fa-solid fa-info fa-fw" title="RuleSite"></i>
-
-
             </div>
     <div class="iconSec"
-
          data-toggle="modal" data-target="#myModal2">
-
         <i class="fa-solid fa-id-card" title="CallMe"></i>
-
-
     </div>
     <div class="iconThree"
-
           data-toggle="modal" data-target="#myModal3">
-
              <i class="fa-solid fa-sitemap" title="InfoSite" ></i>
-
             </div>
-
-
-
     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -196,31 +160,47 @@
             </div>
         </div>
     </div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-
-
-<script type="text/javascript">
-
+    <script type="text/javascript">
     $("body").mousemove(function(e){
         let mouse = $(".mouse");
-
         mouse.css({
             left: e.pageX,
             top: e.pageY,
             opacity: 1,
         });
     });
-
     $("a").hover(function(){
-
         $(".mouse").toggleClass("hover");
     });
-
 </script>
-
 </body>
-
 </html>
