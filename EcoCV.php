@@ -29,7 +29,6 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
 <body>
 
 <div class="mouse cursor"></div>
-<!-- 2. Followers -->
 <div class="mouse follow-cursor first"></div>
 <div class="mouse follow-cursor second"></div>
 <div class="mouse follow-cursor third"></div>
