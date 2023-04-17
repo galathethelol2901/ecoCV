@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOOPROG6 CV</title>
     <link rel="stylesheet" href="EcoCVstyle.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
 </head>
 <body>
