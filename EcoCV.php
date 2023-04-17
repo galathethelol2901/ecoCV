@@ -5,6 +5,7 @@
     <title>BIENVENUE SUR ECOOPROG6 CV</title>
 
     <link rel="stylesheet" href="EcoCVstyle.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
@@ -13,6 +14,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
     crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -224,16 +227,12 @@
 
 </script>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" 
-    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
-    crossorigin="anonymous">
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
 crossorigin="anonymous">
 </script>
 
+<script src="jquery-3.6.4.min.js"></script> 
 
 </body>
 
