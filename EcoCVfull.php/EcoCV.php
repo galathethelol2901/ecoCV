@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>BIENVENUE SUR ECOOPROG6 CV</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="EcoCVstyle.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="EcoCVstyle.css">
+
 </head>
 
 <body>
@@ -178,7 +179,9 @@
     });
 </script>
 
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Liens vers les fichiers JS de jQuery et Bootstrap -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
