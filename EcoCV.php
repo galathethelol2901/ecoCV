@@ -161,42 +161,10 @@
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Ouvrir le modal
-</button>
+    
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Ouvrir la modale
-</button>
 
-<!-- Modale -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Titre de la modale</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-        Contenu de la modale
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-primary">Enregistrer</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Scripts pour activer la modale -->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $('#myModal').modal('hide'); // Masquer la modale au chargement de la page
-  });
-</script>
-    <script type="text/javascript">
+<script type="text/javascript">
     $("body").mousemove(function(e){
         let mouse = $(".mouse");
         mouse.css({
@@ -209,5 +177,8 @@
         $(".mouse").toggleClass("hover");
     });
 </script>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
