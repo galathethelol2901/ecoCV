@@ -10,9 +10,9 @@
     <container>
       <canvas id="canvas1"></canvas>
       <article>
-        <span>
+        <span>a partir de 100pts la music peut aider !
           <audio id="myAudio" src="musicGme.mp3"></audio>
-          <button onclick="togglePlay()">Play/Pause</button>
+          <button onclick="togglePlay()">Play</button>
         </span>
       </article>
     </container>
