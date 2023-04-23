@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>le petit jeu</title>
-    <link rel="stylesheet" href="gameStyle.css">
+    <link rel="stylesheet" href="GameStyle.css">
     <script src="scriptGame.js"></script>
 </head>
 <body>
