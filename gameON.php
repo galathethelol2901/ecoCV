@@ -11,8 +11,8 @@
       <canvas id="canvas1"></canvas>
       <article>
         <span>
-          <audio id="myAudio" src="musicGme.mp3" autoplay></audio>
-          <button onclick="toggleMute()">Mute/Unmute</button>
+          <audio id="myAudio" src="musicGme.mp3"></audio>
+          <button onclick="togglePlay()">Play/Pause</button>
         </span>
       </article>
     </container>
@@ -20,11 +20,11 @@
     <script>
       var myAudio = document.getElementById("myAudio");
 
-      function toggleMute() {
-        if (myAudio.muted == true) {
-          myAudio.muted = false;
+      function togglePlay() {
+        if (myAudio.paused) {
+          myAudio.play();
         } else {
-          myAudio.muted = true;
+          myAudio.pause();
         }
       }
     </script>
