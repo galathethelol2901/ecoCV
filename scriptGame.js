@@ -24,9 +24,9 @@ window.addEventListener('mouseup', function(e){
 
 // Player
 const playerLeft = new Image();
-playerLeft.src = 'https://i.ibb.co/TBybGk5/fish-swim-left.png';
+playerLeft.src = 'spritesheetLEFT.png';
 const playerRight = new Image();
-playerRight.src = 'https://i.ibb.co/SQpfB1v/fish-swim-right.png';
+playerRight.src = 'spritesheetRIGHT.png';
 
 class Player {
     constructor(){
@@ -172,7 +172,7 @@ let adjustX = -3;
 let adjustY = -3;
 ctx.fillStyle = 'white';
 ctx.font = '15px Verdana';
-ctx.fillText('no waves', 20, 42);
+ctx.fillText('ecoprog6', 20, 42);
 //ctx.font = '19px Verdana';
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
