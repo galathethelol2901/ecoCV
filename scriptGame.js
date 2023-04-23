@@ -24,9 +24,9 @@ window.addEventListener('mouseup', function(e){
 
 // Player
 const playerLeft = new Image();
-playerLeft.src = 'spritesheetLEFT.png';
+playerLeft.src = 'spritesheet(1).png';
 const playerRight = new Image();
-playerRight.src = 'spritesheetRIGHT.png';
+playerRight.src = 'spritesheet(2).png';
 
 class Player {
     constructor(){
