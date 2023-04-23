@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="GameStyle.css">
 </head>
 <body>
-<container>
-  <canvas id="canvas1"></canvas>
-</container>
-<footer>Full step by step tutorial available <a href="https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ" target='blank'>here</a>!
-</footer>
-<script src="scriptGame.js"></script>
-</body>
+    <container>
+      <canvas id="canvas1"></canvas>
+      <article>
+        <span>
+          <audio id="myAudio" src="musicGme.mp3" autoplay></audio>
+          <button onclick="toggleMute()">Mute/Unmute</button>
+        </span>
+      </article>
+    </container>
+    <script src="scriptGame.js"></script>
+    <script>
+      var myAudio = document.getElementById("myAudio");
+
+      function toggleMute() {
+        if (myAudio.muted == true) {
+          myAudio.muted = false;
+        } else {
+          myAudio.muted = true;
+        }
+      }
+    </script>
+  </body>
+</html>
