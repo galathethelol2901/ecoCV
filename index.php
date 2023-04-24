@@ -45,13 +45,11 @@
 </section>
 
 
-<footer>
-		<div id="cookie-banner">
-			<p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
-			<button id="accept-cookie">Accepter</button>
-			<button id="refuse-cookie">Refuser</button>
-		</div>
-	</footer>
+<div class="cookie-banner" id="cookie-banner">
+		<p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
+		<button id="accept-cookie">Accepter</button>
+		<button id="refuse-cookie">Refuser</button>
+	</div>
 
 	<script>
 		// Fonction pour créer un cookie avec une durée de vie d'une heure
@@ -85,5 +83,6 @@
 			hideBanner();
 		}
 	</script>
+
 </body>
 </html>
