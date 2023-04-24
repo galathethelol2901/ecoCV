@@ -24,9 +24,9 @@ window.addEventListener('mouseup', function(e){
 
 // Player
 const playerLeft = new Image();
-playerLeft.src = 'tarzanLEFT.png';
+playerLeft.src = 'https://i.ibb.co/TBybGk5/fish-swim-left.png';
 const playerRight = new Image();
-playerRight.src = 'tarzanRIGHT.png';
+playerRight.src = 'https://i.ibb.co/SQpfB1v/fish-swim-right.png';
 
 class Player {
     constructor(){
