@@ -45,6 +45,45 @@
 </section>
 
 
+<footer>
+		<div id="cookie-banner">
+			<p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer sur ce site, vous acceptez notre utilisation des cookies.</p>
+			<button id="accept-cookie">Accepter</button>
+			<button id="refuse-cookie">Refuser</button>
+		</div>
+	</footer>
 
+	<script>
+		// Fonction pour créer un cookie avec une durée de vie d'une heure
+		function createCookie(name, value) {
+			var date = new Date();
+			date.setTime(date.getTime() + (1 * 60 * 60 * 1000)); // Durée de vie d'une heure
+			var expires = "; expires=" + date.toUTCString();
+			document.cookie = name + "=" + value + expires + "; path=/";
+		}
+
+		// Fonction pour cacher la bannière de cookie
+		function hideBanner() {
+			document.getElementById("cookie-banner").style.display = "none";
+		}
+
+		// Événement click sur le bouton "Accepter"
+		document.getElementById("accept-cookie").addEventListener("click", function() {
+			createCookie("cookie_accepte", "oui");
+			hideBanner();
+		});
+
+		// Événement click sur le bouton "Refuser"
+		document.getElementById("refuse-cookie").addEventListener("click", function() {
+			createCookie("cookie_accepte", "non");
+			hideBanner();
+			// Vous pouvez ajouter du code ici pour gérer le cas où l'utilisateur refuse les cookies
+		});
+
+		// Vérifier si l'utilisateur a déjà accepté les cookies
+		if (document.cookie.indexOf("cookie_accepte=oui") !== -1) {
+			hideBanner();
+		}
+	</script>
 </body>
 </html>
