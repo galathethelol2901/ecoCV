@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
    
-    background-color:darkcyan ;
+    background-color:black ;
 
 }
 body.correct{
@@ -30,7 +30,7 @@ body.wrong{
     padding:20px;  
 }
 .container-text{
-    background-color:pink;
+    background-color:aquamarine;
     text-align: center;
     margin:10px ;
     padding:10px 0;

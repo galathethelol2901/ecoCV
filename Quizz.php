@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz app game</title>
+    <title>Quizz app ecoprog6</title>
     <link rel="stylesheet" href="Quizz.css">
     <script defer src="Quizz.js"></script>
 </head>
@@ -12,8 +12,8 @@
         </header> 
 <div class="container">
     <div id="container-text" class="container-text">
-    <h2>Welcome to my quiz game</h2>
-    <p>How well do you know these facts? Let's see</p>
+    <h2>Ecoprog6 le QUIZZ ! </h2>
+    <p>5 question pas de mauvaise reponse !</p>
 </div>
     <div id="question-container" class="hide">
     <div id="question">question</div>
