@@ -13,14 +13,14 @@
 
 <section class="hero-section">
   <div class="card-grid">
-    <a class="card" href="https://monoprog6.herokuapp.com/index.php">
+    <a class="card" href="https://ecoprog6cv.herokuapp.com/">
     <div class="card__background" style="background-image: url(DeepDev.gif?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
       <div class="card__content">
         <p class="card__category">pour me connaitre</p>
         <h3 class="card__heading">le CV</h3>
       </div>
     </a>
-    <a class="card" href="#">
+    <a class="card" href="Quizz.php">
     <div class="card__background" style="background-image: url(match.gif?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
       <div class="card__content">
         <p class="card__category">pour vous decouvrire</p>
