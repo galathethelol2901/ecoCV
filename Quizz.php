@@ -15,22 +15,17 @@
     <h2>Ecoprog6 le QUIZZ ! </h2>
     <p>5 question pas de mauvaise reponse !</p>
 </div>
-    <div id="question-container" class="hide">
-    <div id="question">question</div>
-    <div id="answer-buttons" class="btn-grid">
-    <button class="btn "> ans a</button>
-    <button class="btn "> ans b</button>
-    <button class="btn "> ans c</button>
-    <button class="btn "> ans d</button>
-    </div>
-</div>
-    <div id="score" class= "grade hide"> SCORE: 20%</div> 
 
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide" >Next</button>
-        <button id="gameover-btn" class="gameover-btn btn hide">Game-over</button>
-    </div> 
+<div class="question">
+  <h2>Question 1: Quelle est votre couleur préférée ?</h2>
+  <input type="radio" id="option1" name="color" value="rouge">
+  <label for="option1">Rouge</label><br>
+  <input type="radio" id="option2" name="color" value="bleu">
+  <label for="option2">Bleu</label><br>
+  <input type="radio" id="option3" name="color" value="vert">
+  <label for="option3">Vert</label><br>
+  <p id="result"></p>
+  <button onclick="nextQuestion()">Suivant</button>
 </div>
 </body>
 </html>
