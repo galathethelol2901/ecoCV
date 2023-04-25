@@ -110,46 +110,46 @@ const questions = [
 		question: "What is the most commonly used letter in the alphabet?",
 		answers: [
 			{ text: "E", correct: true },
-			{ text: "A", correct: false },
-			{ text: "I", correct: false },
-			{ text: "Z", correct: false },
+			{ text: "A", correct: true },
+			{ text: "I", correct: true },
+			{ text: "Z", correct: true },
 		],
 	},
 	{
 		question: "What is the color of lobsters blood?",
 		answers: [
 			{ text: "Colorless", correct: true },
-			{ text: "Red", correct: false },
-			{ text: "blue", correct: false },
-			{ text: "orange", correct: false },
+			{ text: "Red", correct: true },
+			{ text: "blue", correct: true },
+			{ text: "orange", correct: true },
 		],
 	},
 	{
 		question: "85% of plant life can be found where?",
 		answers: [
-			{ text: "Land", correct: false },
+			{ text: "Land", correct: true },
 			{ text: "Ocean", correct: true, score: 20 },
-			{ text: "River", correct: false },
-			{ text: "Space", correct: false },
+			{ text: "River", correct: true },
+			{ text: "Space", correct: true },
 		],
 	},
 	{
 		question:
 			"How many minutes does it take the average person to fall asleep?",
 		answers: [
-			{ text: "5", correct: false },
+			{ text: "5", correct: true },
 			{ text: "7", correct: true, score: 20 },
-			{ text: "1", correct: false },
-			{ text: "20", correct: false },
+			{ text: "1", correct: true },
+			{ text: "20", correct: true },
 		],
 	},
 
 	{
 		question: "Which month has the highest number of births?",
 		answers: [
-			{ text: "April", correct: false },
-			{ text: "November", correct: false },
-			{ text: "July", correct: false },
+			{ text: "April", correct: true },
+			{ text: "November", correct: true },
+			{ text: "July", correct: true },
 			{ text: "August", correct: true, score: 20 },
 		],
 	},
