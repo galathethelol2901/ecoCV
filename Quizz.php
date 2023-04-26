@@ -27,5 +27,31 @@
   <p id="result"></p>
   <button onclick="nextQuestion()">Suivant</button>
 </div>
+
+<div class="question">
+  <h2>Question 1: Quel est votre animal préféré ?</h2>
+  <input type="radio" id="option1" name="animal" value="chien">
+  <label for="option1">Chien</label><br>
+  <input type="radio" id="option2" name="animal" value="chat">
+  <label for="option2">Chat</label><br>
+  <input type="radio" id="option3" name="animal" value="oiseau">
+  <label for="option3">Oiseau</label><br>
+  <p id="result1"></p>
+  <button onclick="checkAnswer(1)">Suivant</button>
+</div>
+
+
+<div class="question">
+  <h2>Question 2: Quel est votre plat préféré ?</h2>
+  <input type="radio" id="option1" name="food" value="pizza">
+  <label for="option1">Pizza</label><br>
+  <input type="radio" id="option2" name="food" value="spaghetti">
+  <label for="option2">Spaghetti</label><br>
+  <input type="radio" id="option3" name="food" value="burger">
+  <label for="option3">Burger</label><br>
+  <p id="result2"></p>
+  <button onclick="checkAnswer(2)">Suivant</button>
+</div>
+
 </body>
 </html>
