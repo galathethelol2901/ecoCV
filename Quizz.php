@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="Quizz.css">
+    <script src="Quizz.js"></script>
 </head>
 <body>
 
@@ -19,6 +20,5 @@
   <p id="result" style="display:none"></p>
 </div>
 
-	<script src="Quizz.js"></script>
 </body>
 </html>
