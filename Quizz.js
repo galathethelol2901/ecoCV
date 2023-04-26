@@ -1,26 +1,26 @@
 const questions = [
     {
-      question: "Quelle est votre couleur préférée ?",
+      question: "laquel de ces qualiter prefere vous a votre developper ?",
       answers: [
-        { text: "Bleu", team: 1 },
-        { text: "Jaune", team: 2 },
-        { text: "Rouge", team: 3 },
+        { text: "les etudes ya que ça de vrais !", team: 1 },
+        { text: "la motivation ,ca deplace des montagne !", team: 2 },
+        { text: "le salaire ,plus c est cher plus c est fort ;)", team: 3 },
       ],
     },
     {
-      question: "Quel est votre animal préféré ?",
+      question: "la meilleur entreprise possible selon vous ?",
       answers: [
-        { text: "Chat", team: 2 },
-        { text: "Chien", team: 1 },
-        { text: "Oiseau", team: 3 },
+        { text: "celle ou y fait bon vivre !", team: 2 },
+        { text: "seul les effort compte pas de repos !", team: 1 },
+        { text: "on est tous des copain hehe", team: 3 },
       ],
     },
     {
-      question: "Quel est votre plat préféré ?",
+      question: "l informatique selon toi c est ?",
       answers: [
-        { text: "Pizza", team: 1 },
-        { text: "Sushi", team: 2 },
-        { text: "Burger", team: 3 },
+        { text: "du bluff , vive l adsl !", team: 1 },
+        { text: "le futur , welcome to 2222", team: 2 },
+        { text: "obscure , genre pillule bleu et pillule rouge", team: 3 },
       ],
     },
   ];
