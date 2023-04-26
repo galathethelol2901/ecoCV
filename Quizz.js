@@ -23,7 +23,23 @@ const questions = [
         { text: "obscure , genre pillule bleu et pillule rouge", team: 3 },
       ],
     },
-  ];
+  {
+    question: "quelle est la meilleur replique de harry potter ?",
+    answers: [
+      { text: "tu est un sorcier harry ", team: 1 },
+      { text: "tu est une espionne triple conne ", team: 2 },
+      { text: "avduukuduvru", team: 3 },
+    ],
+  },
+{
+    question: "plouf plouf?",
+    answers: [
+      { text: "une boule en or", team: 1 },
+      { text: "le dauphin", team: 2 },
+      { text: "les crotte a ma femme !", team: 3 },
+    ],
+  },
+];
   
   const teams = {
     1: "équipe 1",
