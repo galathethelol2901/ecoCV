@@ -16,42 +16,47 @@
     <p>5 question pas de mauvaise reponse !</p>
 </div>
 
-<div class="question">
-  <h2>Question 1: Quelle est votre couleur préférée ?</h2>
-  <input type="radio" id="option1" name="color" value="rouge">
-  <label for="option1">Rouge</label><br>
-  <input type="radio" id="option2" name="color" value="bleu">
-  <label for="option2">Bleu</label><br>
-  <input type="radio" id="option3" name="color" value="vert">
-  <label for="option3">Vert</label><br>
-  <p id="result"></p>
-  <button onclick="nextQuestion()">Suivant</button>
-</div>
-
-<div class="question">
-  <h2>Question 1: Quel est votre animal préféré ?</h2>
-  <input type="radio" id="option1" name="animal" value="chien">
-  <label for="option1">Chien</label><br>
-  <input type="radio" id="option2" name="animal" value="chat">
-  <label for="option2">Chat</label><br>
-  <input type="radio" id="option3" name="animal" value="oiseau">
-  <label for="option3">Oiseau</label><br>
-  <p id="result1"></p>
-  <button onclick="checkAnswer(1)">Suivant</button>
-</div>
-
-
-<div class="question">
-  <h2>Question 2: Quel est votre plat préféré ?</h2>
-  <input type="radio" id="option1" name="food" value="pizza">
-  <label for="option1">Pizza</label><br>
-  <input type="radio" id="option2" name="food" value="spaghetti">
-  <label for="option2">Spaghetti</label><br>
-  <input type="radio" id="option3" name="food" value="burger">
-  <label for="option3">Burger</label><br>
-  <p id="result2"></p>
-  <button onclick="checkAnswer(2)">Suivant</button>
-</div>
+<div id="quiz-container">
+  <div class="question active">
+    <h2>Question 1: Quel est votre animal préféré ?</h2>
+    <input type="radio" id="option1" name="animal" value="chien">
+    <label for="option1">Chien</label><br>
+    <input type="radio" id="option2" name="animal" value="chat">
+    <label for="option2">Chat</label><br>
+    <input type="radio" id="option3" name="animal" value="oiseau">
+    <label for="option3">Oiseau</label><br>
+    <button class="next-button" onclick="showNextQuestion()">Suivant</button>
+  </div>
+  <div class="question">
+    <h2>Question 2: Quel est votre plat préféré ?</h2>
+    <input type="radio" id="option4" name="food" value="pizza">
+    <label for="option4">Pizza</label><br>
+    <input type="radio" id="option5" name="food" value="spaghetti">
+    <label for="option5">Spaghetti</label><br>
+    <input type="radio" id="option6" name="food" value="burger">
+    <label for="option6">Burger</label><br>
+    <button class="next-button" onclick="showNextQuestion()">Suivant</button>
+  </div>
+  <div class="question">
+    <h2>Question 3: Quel est votre saison préférée ?</h2>
+    <input type="radio" id="option7" name="season" value="printemps">
+    <label for="option7">Printemps</label><br>
+    <input type="radio" id="option8" name="season" value="été">
+    <label for="option8">Été</label><br>
+    <input type="radio" id="option9" name="season" value="automne">
+    <label for="option9">Automne</label><br>
+    <button class="next-button" onclick="showNextQuestion()">Suivant</button>
+  </div>
+  <div class="question">
+    <h2>Question 4: Quelle est votre couleur préférée ?</h2>
+    <input type="radio" id="option10" name="color" value="rouge">
+    <label for="option10">Rouge</label><br>
+    <input type="radio" id="option11" name="color" value="bleu">
+    <label for="option11">Bleu</label><br>
+    <input type="radio" id="option12" name="color" value="vert">
+    <label for="option12">Vert</label><br>
+    <button class="next-button" onclick="showNextQuestion()">Suivant</button>
+  </div>
 
 </body>
 </html>
