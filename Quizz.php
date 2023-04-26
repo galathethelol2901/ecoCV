@@ -26,10 +26,19 @@
 <script src="Quizz.js"></script>
 
 <script>
+  // Définir la fonction nextQuestion()
+  function nextQuestion() {
+    // ...
+  }
+
+  // Ajouter l'événement click sur le bouton Suivant
   $("#next-button").on("click", function() {
     nextQuestion();
   });
+
+  // Afficher la première question
   displayQuestion();
 </script>
+
 </body>
 </html>
