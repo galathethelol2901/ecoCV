@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz app ecoprog6</title>
-    <link rel="stylesheet" href="Quizz.css">
-    <script defer src="Quizz.js"></script>
+	<title>Mon quiz</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Quizz.css">
 </head>
 <body>
-    
-<div id="questionnaire">
-  <h2>Questionnaire</h2>
-  <div id="question1">
-    <p>Question 1 : Quelle est votre couleur préférée ?</p>
-    <label><input type="radio" name="q1" value="rouge">Rouge</label><br>
-    <label><input type="radio" name="q1" value="bleu">Bleu</label><br>
-    <label><input type="radio" name="q1" value="vert">Vert</label><br>
-    <button onclick="suivant()">Suivant</button>
-  </div>
-  <div id="question2" style="display:none;">
-    <p>Question 2 : Quel est votre animal préféré ?</p>
-    <label><input type="radio" name="q2" value="chien">Chien</label><br>
-    <label><input type="radio" name="q2" value="chat">Chat</label><br>
-    <label><input type="radio" name="q2" value="oiseau">Oiseau</label><br>
-    <button onclick="suivant()">Suivant</button>
-  </div>
-  <div id="question3" style="display:none;">
-    <p>Question 3 : Quel est votre plat préféré ?</p>
-    <label><input type="radio" name="q3" value="pizza">Pizza</label><br>
-    <label><input type="radio" name="q3" value="pâtes">Pâtes</label><br>
-    <label><input type="radio" name="q3" value="sushi">Sushi</label><br>
-    <button onclick="soumettre()">Soumettre</button>
-  </div>
-</div>
-
-  
-
+	<div class="container">
+		<h1>Mon quiz</h1>
+		<form id="quiz-form">
+			<!-- Question 1 -->
+			<div class="question">
+				<h2>Quelle est votre couleur préférée?</h2>
+				<label><input type="radio" name="q1" value="Bleu">Bleu</label>
+				<label><input type="radio" name="q1" value="Jaune">Jaune</label>
+				<label><input type="radio" name="q1" value="Rouge">Rouge</label>
+				<label><input type="radio" name="q1" value="Vert">Vert</label>
+			</div>
+			
+			<!-- Question 2 -->
+			<div class="question">
+				<h2>Quel est votre animal préféré?</h2>
+				<label><input type="radio" name="q2" value="Chien">Chien</label>
+				<label><input type="radio" name="q2" value="Chat">Chat</label>
+				<label><input type="radio" name="q2" value="Oiseau">Oiseau</label>
+				<label><input type="radio" name="q2" value="Poisson">Poisson</label>
+			</div>
+			
+			<!-- Question 3 -->
+			<div class="question">
+				<h2>Quel est votre plat préféré?</h2>
+				<label><input type="radio" name="q3" value="Sushi">Sushi</label>
+				<label><input type="radio" name="q3" value="Pizza">Pizza</label>
+				<label><input type="radio" name="q3" value="Burger">Burger</label>
+				<label><input type="radio" name="q3" value="Salade">Salade</label>
+			</div>
+			
+			<!-- Submit button -->
+			<button type="submit">Soumettre</button>
+		</form>
+		
+		<!-- Score display -->
+		<div id="score"></div>
+	</div>
+	
+	<!-- JavaScript -->
+	<script src="Quizz.js"></script>
 </body>
 </html>
