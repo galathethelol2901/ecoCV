@@ -47,3 +47,25 @@ body{
     background-color: #444;
     color: #fff;
   }
+  body {
+    overflow:hidden;
+    background-color:#212121;
+  }
+  
+  .main {
+    display:flex;
+    justify-content:center;
+  }
+  
+  .particule {
+    position:absolute;
+    width:3px;
+    min-height:3px;
+    background-color:rgba(255,128,0,1);
+    border-radius:90px;
+    box-shadow: 0 0px 10px #EC637B, 
+          0 0 10px rgba(230, 161, 173, 0.41), 
+          0 0 50px #E6A1AD, 
+          0 0 50px #F36780, 
+          5px 9px 5px rgba(0, 0, 0, 0);
+  }

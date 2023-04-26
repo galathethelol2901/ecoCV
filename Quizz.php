@@ -13,6 +13,9 @@
 </head>
 <body>
 
+<div class="main" id="main">
+</div>
+
 <div id="quiz-container">
   <h2 id="question"></h2>
   <ul id="answers">
@@ -23,6 +26,7 @@
   <button id="next-button" style="display:none">Suivant</button>
   <p id="result" style="display:none"></p>
 </div>
+<script src="fifi.js"></script>
 <script src="Quizz.js"></script>
 
 <script>
