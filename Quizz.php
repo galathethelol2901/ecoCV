@@ -9,11 +9,8 @@
 </head>
 <body>
     <header>
-        </header> 
-<div class="container">
-    <div id="container-text" class="container-text">
-    <h2>Ecoprog6 le QUIZZ ! </h2>
-    <p>5 question pas de mauvaise reponse !</p>
+
+    </header> 
 
     <div class="quiz-container">
   <div class="question active">
@@ -63,9 +60,6 @@
     <p class="selected-answer"></p>
     <button class="next-button" onclick="showNextQuestion()">Suivant</button>
   </div>
-  
-</div>
-
 
 </body>
 </html>
