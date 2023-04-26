@@ -88,3 +88,10 @@ function nextQuestion() {
       displayQuestion();
     }
   }
+  // Ajouter un écouteur d'événements pour le bouton Suivant
+$("#next-button").on("click", function() {
+    nextQuestion();
+  });
+  
+  // Afficher la première question
+  displayQuestion();

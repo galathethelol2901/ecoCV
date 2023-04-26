@@ -24,5 +24,12 @@
   <p id="result" style="display:none"></p>
 </div>
 <script src="Quizz.js"></script>
+
+<script>
+  $("#next-button").on("click", function() {
+    nextQuestion();
+  });
+  displayQuestion();
+</script>
 </body>
 </html>
