@@ -1,28 +1,42 @@
-// Définir les questions et les réponses
 const questions = [
     {
       question: "Quelle est votre couleur préférée ?",
-      answers: ["Bleu", "Jaune", "Rouge", "Vert"],
-      correctAnswer: "Vert",
-      points: 5
+      answers: [
+        { text: "Bleu", team: 1 },
+        { text: "Jaune", team: 2 },
+        { text: "Rouge", team: 3 },
+      ],
     },
     {
       question: "Quel est votre animal préféré ?",
-      answers: ["Chat", "Chien", "Oiseau", "Lion"],
-      correctAnswer: "Chien",
-      points: 5
+      answers: [
+        { text: "Chat", team: 2 },
+        { text: "Chien", team: 1 },
+        { text: "Oiseau", team: 3 },
+      ],
     },
     {
       question: "Quel est votre plat préféré ?",
-      answers: ["Pizza", "Sushi", "Burger", "Poulet rôti"],
-      correctAnswer: "Sushi",
-      points: 5
-    }
+      answers: [
+        { text: "Pizza", team: 1 },
+        { text: "Sushi", team: 2 },
+        { text: "Burger", team: 3 },
+      ],
+    },
   ];
   
-  // Définir les variables
+  const teams = {
+    1: "équipe 1",
+    2: "équipe 2",
+    3: "équipe 3",
+  };
+  
   let currentQuestion = 0;
-  let userScore = 0;
+  const teamScores = {
+    1: 0,
+    2: 0,
+    3: 0,
+  };
   
   // Fonction pour afficher la question et les réponses
   function displayQuestion() {
@@ -34,7 +48,10 @@ const questions = [
     $("#question").text(question);
     $("#answers").empty();
     for (let i = 0; i < answers.length; i++) {
-      $("#answers").append("<li><button class='answer-button'>" + answers[i] + "</button></li>");
+      const answer = answers[i];
+      $("#answers").append(
+        `<li><button class="answer-button" data-team="${answer.team}">${answer.text}</button></li>`
+      );
     }
   
     // Cacher le bouton Suivant et le résultat
@@ -42,56 +59,54 @@ const questions = [
     $("#result").hide();
   
     // Ajouter un écouteur d'événements pour les boutons de réponse
-    $(".answer-button").on("click", function() {
+    $(".answer-button").on("click", function () {
       // Désactiver tous les boutons de réponse
       $(".answer-button").prop("disabled", true);
   
-      // Récupérer la réponse de l'utilisateur
-      const userAnswer = $(this).text();
+      // Récupérer l'équipe de la réponse de l'utilisateur
+      const userTeam = $(this).data("team");
   
-      // Vérifier la réponse et ajouter des points si c'est correct
-      const correctAnswer = questions[currentQuestion].correctAnswer;
-      const points = questions[currentQuestion].points;
-      if (userAnswer === correctAnswer) {
-        userScore += points;
-      }
+      // Ajouter 1 point à l'équipe de la réponse de l'utilisateur
+      teamScores[userTeam]++;
   
-      // Afficher le bouton Suivant et le résultat
+      // Afficher le bouton Suivant
       $("#next-button").show();
-      $("#result").show();
-      $("#result").text("Vous avez choisi " + userAnswer + ".");
     });
   }
+  
   // Fonction pour passer à la question suivante
-function nextQuestion() {
+  function nextQuestion() {
     // Augmenter le compteur de question
     currentQuestion++;
   
     // Vérifier si toutes les questions ont été posées
     if (currentQuestion >= questions.length) {
-      // Afficher le résultat final
-      let resultText = "";
-      if (userScore === 15) {
-        resultText = "Woaawh! Vous avez obtenu " + userScore + " points. Bravo !";
-      } else if (userScore === 10) {
-        resultText = "Génial! Vous avez obtenu " + userScore + " points. Bravo !";
-      } else if (userScore === 5) {
-        resultText = "Bravo! Vous avez obtenu " + userScore + " points. Bravo !";
-      } else {
-        resultText = "Vous avez obtenu " + userScore + " points. Merci d'avoir joué !";
+      // Trouver l'équipe ayant le score le plus élevé
+      let highestTeam = 1;
+      for (const team in teamScores) {
+        if (teamScores[team] > teamScores[highestTeam]) {
+          highestTeam = team;
+        }
       }
-      $("#result").text(resultText);
-      $("#next-button").hide();
-      $(".answer-button").off("click");
-    } else {
-      // Afficher la question suivante
-      displayQuestion();
-    }
-  }
-  // Ajouter un écouteur d'événements pour le bouton Suivant
-$("#next-button").on("click", function() {
-    nextQuestion();
-  });
   
-  // Afficher la première question
-  displayQuestion();
+      // Afficher le message avec l'équipe ayant le score le plus élevé
+      const message = `Vous êtes l'équipe ${highestTeam} !`;
+      $("#result").text(message);
+      $("#result").show();
+  
+      // Cacher le bouton Suivant
+      $("#next-button").hide();
+  
+      // Désactiver les boutons de réponse
+      $(".answer-button").prop("disabled", true);
+    } else {
+    // Afficher la prochaine question
+    displayQuestion();
+    }
+    }
+    
+    // Ajouter un écouteur d'événements pour le bouton Suivant
+    $("#next-button").on("click", nextQuestion);
+    
+    // Afficher la première question
+    displayQuestion();
