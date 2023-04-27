@@ -4,7 +4,7 @@
 	<title>Mon quiz</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="Quizz.css">
+	<link rel="stylesheet" href="quizz.scss">
     <script
   src="https://code.jquery.com/jquery-3.6.4.min.js"
   integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
@@ -12,37 +12,48 @@
 
 </head>
 <body>
-
-<div class="main" id="main">
+<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        
+        <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    
+    <div class="blog-slider__item swiper-slide">
+      <div class="blog-slider__img">
+        <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">26 December 2019</span>
+        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="blog-slider__pagination"></div>
 </div>
 
-<div id="quiz-container">
-  <h2 id="question"></h2>
-  <ul id="answers">
-    <li><button class="answer-button"></button></li>
-    <li><button class="answer-button"></button></li>
-    <li><button class="answer-button"></button></li>
-  </ul>
-  <button id="next-button" style="display:none">Suivant</button>
-  <p id="result" style="display:none"></p>
-</div>
-<script src="fifi.js"></script>
-<script src="Quizz.js"></script>
-
-<script>
-  // Définir la fonction nextQuestion()
-  function nextQuestion() {
-    // ...
-  }
-
-  // Ajouter l'événement click sur le bouton Suivant
-  $("#next-button").on("click", function() {
-    nextQuestion();
-  });
-
-  // Afficher la première question
-  displayQuestion();
-</script>
 
 </body>
 </html>
