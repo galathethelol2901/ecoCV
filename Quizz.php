@@ -8,67 +8,25 @@
   
 </head>
 <body>
-<div id="quiz-container">
-  <h2>Question 1 : Quelle est la capitale de la France ?</h2>
-  <button id="answer-a">Londres</button>
-  <button id="answer-b">Berlin</button>
-  <button id="answer-c">Paris</button>
-  <button id="answer-d">Madrid</button>
-  <button id="next-btn" style="display: none;">Suivant</button>
+<div class="container">
+  <h2>Quiz de recrutement pour un développeur</h2>
+  <form>
+    <h3>Question 1 : Décrivez votre entreprise idéale.</h3>
+    <input type="radio" name="q1" value="r1">Une entreprise comme Apple, cotée en bourse et où seul l'argent compte.<br>
+    <input type="radio" name="q1" value="r2">Une entreprise en open source, où la collaboration et le partage sont valorisés.<br>
+    <input type="radio" name="q1" value="r3">Une entreprise axée sur le bien-être des employés, offrant des avantages tels que des horaires flexibles, des espaces de détente, etc.<br>
+    <input type="radio" name="q1" value="r4">Je suis visiteur.<br>
+    <h3>Question 2 : Quel niveau d'études attendez-vous d'un développeur ?</h3>
+    <input type="radio" name="q2" value="r1">Bac+5 minimum.<br>
+    <input type="radio" name="q2" value="r2">Autodidacte et passionné.<br>
+    <input type="radio" name="q2" value="r3">Niveau d'études indifférent, l'expérience professionnelle prime.<br>
+    <input type="radio" name="q2" value="r4">Je suis visiteur.<br>
+    <h3>Question 3 : Quel salaire proposeriez-vous à un développeur ?</h3>
+    <input type="radio" name="q3" value="r1">Selon son niveau d'expérience et ses compétences.<br>
+    <input type="radio" name="q3" value="r2">100 bitcoins.<br>
+    <input type="radio" name="q3" value="r3">Un salaire minimum ou juste au-dessus.<br>
+    <input type="radio" name="q3" value="r4">Je suis visiteur.<br>
+  </form>
 </div>
-
-<script>
-  const quizContainer = document.getElementById("quiz-container");
-  const answerButtons = quizContainer.querySelectorAll("button");
-  const nextButton = quizContainer.querySelector("#next-btn");
-
-  answerButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      // Vérifie si la réponse est correcte
-      if (button.id === "answer-c") {
-        quizContainer.innerHTML = `
-          <h2>Bonne réponse !</h2>
-          <button id="next-btn">Suivant</button>
-        `;
-      } else {
-        quizContainer.innerHTML = `
-          <h2>Mauvaise réponse...</h2>
-          <button id="next-btn">Suivant</button>
-        `;
-      }
-
-      nextButton.style.display = "block";
-    });
-  });
-
-  nextButton.addEventListener("click", () => {
-    quizContainer.innerHTML = `
-      <h2>Question 2 : Combien de planètes dans notre système solaire ?</h2>
-      <button id="answer-a">4</button>
-      <button id="answer-b">7</button>
-      <button id="answer-c">8</button>
-      <button id="answer-d">12</button>
-      <button id="next-btn" style="display: none;">Suivant</button>
-    `;
-
-    answerButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        if (button.id === "answer-c") {
-          quizContainer.innerHTML = `
-            <h2>Bonne réponse !</h2>
-            <button id="next-btn">Suivant</button>
-          `;
-        } else {
-          quizContainer.innerHTML = `
-            <h2>Mauvaise réponse...</h2>
-            <button id="next-btn">Suivant</button>
-          `;
-        }
-
-        nextButton.style.display = "block";
-      });
-    });
-  });
-</script>
 </body>
 </html>
