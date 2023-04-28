@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QUIZZ</title>
     <link rel="stylesheet" href="Quizz.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 </head>
   <body>
 
@@ -51,6 +55,6 @@
 </div>
 
 <script src="quizz.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>
