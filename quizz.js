@@ -1,8 +1,10 @@
 // Récupération des éléments HTML
 const questionsContainer = document.getElementById("questions-container");
 const resultContainer = document.getElementById("result-container");
+const startButton = document.getElementById("start-button");
 const submitButton = document.getElementById("submit-button");
 const restartButton = document.getElementById("restart-button");
+const gameOverButton = document.getElementById("game-over-button");
 
 // Définition des questions et des réponses possibles avec leur score respectif
 const questions = [
@@ -56,6 +58,17 @@ answers: [
 
 let currentQuestionIndex = 0;
 let score = 0;
+
+// Cache les boutons "submit" et "restart" jusqu'à la fin du quiz
+submitButton.style.display = "none";
+restartButton.style.display = "none";
+gameOverButton.style.display = "none";
+
+// Attache un événement de clic au bouton "Start" pour lancer le quiz
+startButton.addEventListener("click", () => {
+  startButton.style.display = "none";
+  showNextQuestion();
+});
 
 // Affiche la question suivante
 function showNextQuestion() {
