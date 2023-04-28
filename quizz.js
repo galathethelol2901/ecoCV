@@ -1,163 +1,120 @@
-const startButton = document.getElementById("start-btn");
-const containerTextElement = document.getElementById("container-text");
-const nextButton = document.getElementById("next-btn");
-const questionContainerElement = document.getElementById("question-container");
-const questionElement = document.getElementById("question");
-const answerButtonsElement = document.getElementById("answer-buttons");
-const scoreElement = document.getElementById("score");
-const gameoverButton = document.getElementById("gameover-btn");
-const score = document.querySelector(".current-score");
-const counter = document.querySelector('.counter'); 
+// Récupération des éléments HTML
+const questionsContainer = document.getElementById("questions-container");
+const resultContainer = document.getElementById("result-container");
+const submitButton = document.getElementById("submit-button");
+const restartButton = document.getElementById("restart-button");
 
-let shuffledQuestions,
-	currentQuestionIndex,
-	points = 0,
-	currentCounter = 0;  
-
-startButton.addEventListener("click", startGame);
-nextButton.addEventListener("click", () => {
-	currentQuestionIndex++;
-	setNextQuestion();
-});
-gameoverButton.addEventListener("click", gradeScore);
-
-function startGame() {
-	startButton.classList.add("hide");
-	containerTextElement.classList.add("hide");
-	shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-	currentQuestionIndex = 0;
-	questionContainerElement.classList.remove("hide");
-	setNextQuestion();
-}
-
-function setNextQuestion() {
-	resetState();
-	showQuestion(shuffledQuestions[currentQuestionIndex]);
-}
-
-function showQuestion(question) {
-	questionElement.innerText = question.question;
-	question.answers.forEach((answer) => {
-		const button = document.createElement("button");
-		button.innerText = answer.text;
-		button.classList.add("btn");
-		if (answer.correct) {
-			button.dataset.correct = answer.correct;
-		}
-
-		questionContainerElement.classList.remove('pointer-events');
-		button.addEventListener("click", selectAnswer);
-		answerButtonsElement.appendChild(button);
-	});
-}
-
-function resetState() {
-	clearStatusClass(document.body);
-	nextButton.classList.add("hide");
-	while (answerButtonsElement.firstChild) {
-		answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-	}
-}
-
-function selectAnswer(e) {
-	const selectedButton = e.target;
-	const correct = selectedButton.dataset.correct;
-
-	if (correct) {
-		points += 10;
-		currentCounter++; 
-
-		 
-		questionContainerElement.classList.add('pointer-events');
-		
-		// for score 
-		score.textContent = `Score: ${points}`; 
-
-		// for score counter 
-		counter.textContent = `Correct answers: ${currentCounter} of ${shuffledQuestions.length}`; 
-	} else {
-		questionContainerElement.classList.add('pointer-events');  
-	}
-
-	setStatusClass(document.body, correct);
-	Array.from(answerButtonsElement.children).forEach((button) => {
-		setStatusClass(button, button.dataset.correct);
-	});
-	if (shuffledQuestions.length > currentQuestionIndex + 1) {
-		nextButton.classList.remove("hide");
-	} else {
-		gameoverButton.innerText = "Game-over";
-		gameoverButton.classList.remove("hide");
-	}
-}
-
-function setStatusClass(element, correct) {
-	clearStatusClass(element);
-	if (correct) {
-		element.classList.add("correct");
-	} else {
-		element.classList.add("wrong");
-	}
-}
-
-function clearStatusClass(element) {
-	element.classList.remove("correct");
-	element.classList.remove("wrong");
-}
-
+// Définition des questions et des réponses possibles avec leur score respectif
 const questions = [
-	{
-		question: "What is the most commonly used letter in the alphabet?",
-		answers: [
-			{ text: "E", correct: true },
-			{ text: "A", correct: false },
-			{ text: "I", correct: false },
-			{ text: "Z", correct: false },
-		],
-	},
-	{
-		question: "What is the color of lobsters blood?",
-		answers: [
-			{ text: "Colorless", correct: true },
-			{ text: "Red", correct: false },
-			{ text: "blue", correct: false },
-			{ text: "orange", correct: false },
-		],
-	},
-	{
-		question: "85% of plant life can be found where?",
-		answers: [
-			{ text: "Land", correct: false },
-			{ text: "Ocean", correct: true, score: 20 },
-			{ text: "River", correct: false },
-			{ text: "Space", correct: false },
-		],
-	},
-	{
-		question:
-			"How many minutes does it take the average person to fall asleep?",
-		answers: [
-			{ text: "5", correct: false },
-			{ text: "7", correct: true, score: 20 },
-			{ text: "1", correct: false },
-			{ text: "20", correct: false },
-		],
-	},
-
-	{
-		question: "Which month has the highest number of births?",
-		answers: [
-			{ text: "April", correct: false },
-			{ text: "November", correct: false },
-			{ text: "July", correct: false },
-			{ text: "August", correct: true, score: 20 },
-		],
-	},
+  {
+    question: "Question 1 ?",
+    answers: [
+      { text: "Réponse A", score: 5 },
+      { text: "Réponse B", score: 10 },
+      { text: "Réponse C", score: 15 },
+      { text: "Réponse D", score: 20 },
+    ],
+  },
+  {
+    question: "Question 2 ?",
+    answers: [
+      { text: "Réponse A", score: 5 },
+      { text: "Réponse B", score: 10 },
+      { text: "Réponse C", score: 15 },
+      { text: "Réponse D", score: 20 },
+    ],
+  },
+  // Ajouter d'autres questions ici
+ { 
+    question: "Question 3 ?",
+  answers: [
+    { text: "Réponse A", score: 5 },
+    { text: "Réponse B", score: 10 },
+    { text: "Réponse C", score: 15 },
+    { text: "Réponse D", score: 20 },
+  ],
+},
+{
+    question: "Question 4 ?",
+answers: [
+  { text: "Réponse A", score: 5 },
+  { text: "Réponse B", score: 10 },
+  { text: "Réponse C", score: 15 },
+  { text: "Réponse D", score: 20 },
+],
+},
+{
+    question: "Question 5 ?",
+answers: [
+  { text: "Réponse A", score: 5 },
+  { text: "Réponse B", score: 10 },
+  { text: "Réponse C", score: 15 },
+  { text: "Réponse D", score: 20 },
+],
+},
 ];
 
-function gradeScore() {
-	clearStatusClass(document.body);
-	nextButton.classList.add("hide");
-	questionContainerElement.classList.add("hide");
-	scoreElement.classList.remove("hide");
+let currentQuestionIndex = 0;
+let score = 0;
+
+// Affiche la question suivante
+function showNextQuestion() {
+  const currentQuestion = questions[currentQuestionIndex];
+  const answersHtml = currentQuestion.answers
+    .map(
+      (answer, index) =>
+        `<li><button class="answer-button" data-index="${index}">${answer.text}</button></li>`
+    )
+    .join("");
+
+  questionsContainer.innerHTML = `
+    <h2>${currentQuestion.question}</h2>
+    <ul>${answersHtml}</ul>
+  `;
+
+  // Attache un événement de clic à chaque bouton de réponse
+  const answerButtons = document.querySelectorAll(".answer-button");
+  answerButtons.forEach((button) =>
+    button.addEventListener("click", handleAnswerButtonClick)
+  );
 }
+
+// Traite la réponse à une question
+function handleAnswerButtonClick(event) {
+  const answerIndex = parseInt(event.target.getAttribute("data-index"));
+  const currentQuestion = questions[currentQuestionIndex];
+  const selectedAnswer = currentQuestion.answers[answerIndex];
+
+  score += selectedAnswer.score;
+  currentQuestionIndex++;
+
+  // Si toutes les questions ont été posées, affiche le résultat
+  if (currentQuestionIndex === questions.length) {
+    showResult();
+  } else {
+    showNextQuestion();
+  }
+}
+
+// Affiche le résultat final
+function showResult() {
+  questionsContainer.style.display = "none";
+  submitButton.style.display = "none";
+  restartButton.style.display = "block";
+
+  const percentage = Math.round((score / 50) * 100);
+  resultContainer.innerHTML = `<h2>Votre score est de ${percentage}%</h2>`;
+}
+
+// Attache un événement de clic au bouton de redémarrage
+restartButton.addEventListener("click", () => {
+  currentQuestionIndex = 0;
+  score = 0;
+  questionsContainer.style.display = "block";
+  submitButton.style.display = "block";
+  restartButton.style.display = "none";
+  showNextQuestion();
+});
+
+// Affiche la première question
+showNextQuestion();
