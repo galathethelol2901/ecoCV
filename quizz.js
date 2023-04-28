@@ -1,133 +1,74 @@
-// Récupération des éléments HTML
-const questionsContainer = document.getElementById("questions-container");
-const resultContainer = document.getElementById("result-container");
-const startButton = document.getElementById("start-button");
-const submitButton = document.getElementById("submit-button");
-const restartButton = document.getElementById("restart-button");
-const gameOverButton = document.getElementById("game-over-button");
-
-// Définition des questions et des réponses possibles avec leur score respectif
 const questions = [
   {
-    question: "Question 1 ?",
-    answers: [
-      { text: "Réponse A", score: 5 },
-      { text: "Réponse B", score: 10 },
-      { text: "Réponse C", score: 15 },
-      { text: "Réponse D", score: 20 },
+    question: "Question 1",
+    options: [
+      { text: "Réponse A", points: 1 },
+      { text: "Réponse B", points: 2 },
+      { text: "Réponse C", points: 3 },
+      { text: "Réponse D", points: 4 },
     ],
   },
   {
-    question: "Question 2 ?",
-    answers: [
-      { text: "Réponse A", score: 5 },
-      { text: "Réponse B", score: 10 },
-      { text: "Réponse C", score: 15 },
-      { text: "Réponse D", score: 20 },
+    question: "Question 2",
+    options: [
+      { text: "Réponse A", points: 1 },
+      { text: "Réponse B", points: 2 },
+      { text: "Réponse C", points: 3 },
+      { text: "Réponse D", points: 4 },
     ],
   },
-  // Ajouter d'autres questions ici
- { 
-    question: "Question 3 ?",
-  answers: [
-    { text: "Réponse A", score: 5 },
-    { text: "Réponse B", score: 10 },
-    { text: "Réponse C", score: 15 },
-    { text: "Réponse D", score: 20 },
-  ],
-},
-{
-    question: "Question 4 ?",
-answers: [
-  { text: "Réponse A", score: 5 },
-  { text: "Réponse B", score: 10 },
-  { text: "Réponse C", score: 15 },
-  { text: "Réponse D", score: 20 },
-],
-},
-{
-    question: "Question 5 ?",
-answers: [
-  { text: "Réponse A", score: 5 },
-  { text: "Réponse B", score: 10 },
-  { text: "Réponse C", score: 15 },
-  { text: "Réponse D", score: 20 },
-],
-},
 ];
+
+const startButton = document.getElementById("start-btn");
+const questionContainer = document.getElementById("question-container");
+const questionElement = document.getElementById("question");
+const optionsContainer = document.getElementById("options-container");
+const scoreContainer = document.getElementById("score-container");
+const scoreElement = document.getElementById("score");
+const restartButton = document.getElementById("restart-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Cache les boutons "submit" et "restart" jusqu'à la fin du quiz
-submitButton.style.display = "none";
-restartButton.style.display = "none";
-gameOverButton.style.display = "none";
+startButton.addEventListener("click", startQuiz);
+restartButton.addEventListener("click", restartQuiz);
 
-// Attache un événement de clic au bouton "Start" pour lancer le quiz
-startButton.addEventListener("click", () => {
+function startQuiz() {
   startButton.style.display = "none";
-  showNextQuestion();
-});
+  questionContainer.style.display = "block";
+  showQuestion();
+}
 
-// Affiche la question suivante
-function showNextQuestion() {
+function showQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
-  const answersHtml = currentQuestion.answers
-    .map(
-      (answer, index) =>
-        `<li><button class="answer-button" data-index="${index}">${answer.text}</button></li>`
-    )
-    .join("");
-
-  questionsContainer.innerHTML = `
-    <h2>${currentQuestion.question}</h2>
-    <ul>${answersHtml}</ul>
-  `;
-
-  // Attache un événement de clic à chaque bouton de réponse
-  const answerButtons = document.querySelectorAll(".answer-button");
-  answerButtons.forEach((button) =>
-    button.addEventListener("click", handleAnswerButtonClick)
-  );
+  questionElement.innerText = currentQuestion.question;
+  optionsContainer.innerHTML = "";
+  currentQuestion.options.forEach((option) => {
+    const button = document.createElement("button");
+    button.innerText = option.text;
+    button.classList.add("btn");
+    button.addEventListener("click", () => {
+      score += option.points;
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length) {
+        showQuestion();
+      } else {
+        showScore();
+      }
+    });
+    optionsContainer.appendChild(button);
+  });
 }
 
-// Traite la réponse à une question
-function handleAnswerButtonClick(event) {
-  const answerIndex = parseInt(event.target.getAttribute("data-index"));
-  const currentQuestion = questions[currentQuestionIndex];
-  const selectedAnswer = currentQuestion.answers[answerIndex];
-
-  score += selectedAnswer.score;
-  currentQuestionIndex++;
-
-  // Si toutes les questions ont été posées, affiche le résultat
-  if (currentQuestionIndex === questions.length) {
-    showResult();
-  } else {
-    showNextQuestion();
-  }
+function showScore() {
+  questionContainer.style.display = "none";
+  scoreContainer.style.display = "block";
+  scoreElement.innerText = score;
 }
 
-// Affiche le résultat final
-function showResult() {
-  questionsContainer.style.display = "none";
-  submitButton.style.display = "none";
-  restartButton.style.display = "block";
-
-  const percentage = Math.round((score / 50) * 100);
-  resultContainer.innerHTML = `<h2>Votre score est de ${percentage}%</h2>`;
+function restartQuiz() {
+currentQuestionIndex = 0;
+score = 0;
+scoreContainer.style.display = "none";
+startButton.style.display = "block";
 }
-
-// Attache un événement de clic au bouton de redémarrage
-restartButton.addEventListener("click", () => {
-  currentQuestionIndex = 0;
-  score = 0;
-  questionsContainer.style.display = "block";
-  submitButton.style.display = "block";
-  restartButton.style.display = "none";
-  showNextQuestion();
-});
-
-// Affiche la première question
-showNextQuestion();
