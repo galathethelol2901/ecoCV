@@ -9,17 +9,19 @@
 </head>
 <body>
 
-<div>
-  <button id="start-btn">Démarrer</button>
-  <div id="question-container" style="display: none;">
+<div id="quiz-container">
+  <div id="question-container">
     <h2 id="question"></h2>
-    <div id="options-container"></div>
+    <button class="btn" id="choice-0"></button>
+    <button class="btn" id="choice-1"></button>
+    <button class="btn" id="choice-2"></button>
+    <button class="btn" id="choice-3"></button>
   </div>
-  <div id="score-container" style="display: none;">
-    <h2>Votre score est :</h2>
-    <p id="score"></p>
-    <button id="restart-btn">Recommencer</button>
+  <div id="score-container">
+    <h2>Votre score est de <span id="score"></span> sur <span id="total"></span>.</h2>
+    <button class="btn" id="restart">Recommencer</button>
   </div>
+  <button class="btn" id="start">Démarrer le quiz</button>
 </div>
 
 </body>
