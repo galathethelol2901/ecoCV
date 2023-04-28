@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZZ</title>
+    <link rel="stylesheet" href="Quizz.css">
+</head>
+  <body>
+
 <div class="blog-slider">
   <div class="blog-slider__wrp swiper-wrapper">
     <div class="blog-slider__item swiper-slide">
@@ -39,3 +49,8 @@
   </div>
   <div class="blog-slider__pagination"></div>
 </div>
+
+<script src="quizz.js"></script>
+
+</body>
+</html>
