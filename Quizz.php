@@ -12,8 +12,8 @@
         </header> 
 <div class="container">
     <div id="container-text" class="container-text">
-    <h2>Welcome to my quiz game</h2>
-    <p>How well do you know these facts? Let's see</p>
+    <h2>bienvenue sur le quizz </h2>
+    <p>aucune mauvaise reponse alors pas d inquettude</p>
 </div>
     <div id="question-container" class="hide">
     <div id="question">question</div>

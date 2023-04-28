@@ -12,25 +12,25 @@ body{
     justify-content: center;
     align-items: center;
    
-    background-color:darkcyan ;
+    background-color: gray ;
 
 }
 body.correct{
-    background-color:green;
+    background-color:gray;
 }
 body.wrong{
-    background-color:red;
+    background-color:grey;
 }
 
 .container{
     width: 800px;
     max-width:80%;
-    background-color: oldlace ;
+    background-color: black ;
     border-radius: 5px;
     padding:20px;  
 }
 .container-text{
-    background-color:pink;
+    background-color:red;
     text-align: center;
     margin:10px ;
     padding:10px 0;
@@ -45,11 +45,11 @@ body.wrong{
 }
 
 .btn{
-    background-color: palevioletred;
+    background-color: rebeccapurple;
     border:2px solid rgb(204, 72, 116);
     border-radius:50px;
     padding:10px 20px;
-    color:white;
+    color:orange;
     outline:none;
     cursor:pointer;
 }
