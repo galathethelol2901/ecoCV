@@ -1,91 +1,26 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-    font-family:Avenir;
-}
-body{
-    padding:0;
-    margin:0;
-    display:flex;
-    width:100vw;
-    height:100vh;
-    font-size:25px ;
-    justify-content: center;
-    align-items: center;
-   
-    background-color:darkcyan ;
-
-}
-body.correct{
-    background-color:green;
-}
-body.wrong{
-    background-color:red;
-}
-
-.container{
-    width: 800px;
-    max-width:80%;
-    background-color: oldlace ;
-    border-radius: 5px;
-    padding:20px;  
-}
-.container-text{
-    background-color:pink;
-    text-align: center;
-    margin:10px ;
-    padding:10px 0;
-    border-radius: 30px;
-}
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    margin: 30px 0;
-    padding: 10px 20px;
-}
-
-.btn{
-    background-color: palevioletred;
-    border:2px solid rgb(204, 72, 116);
-    border-radius:50px;
-    padding:10px 20px;
-    color:white;
-    outline:none;
-    cursor:pointer;
-}
-.btn.correct {
-    background-color: green;
-}
-
-.btn.wrong{
-    background-color:red;
-}
-.grade{
-    text-align:center;
-    padding:20px;
-}
-
-.start-btn,
-.next-btn {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 15px 30px;
-    margin: 10px;
-    box-shadow: 0 7px rgb(204, 72, 116);
-    transition: all 0.2s ease-in-out; /* Ajouter une transition */
-}
-.start-btn:active,
-.next-btn:active {
-    position: relative;
-    top: 7px;
-    box-shadow: none;
-}
-.controls {
+#question-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center; /* Ajouter cette propriété pour centrer verticalement */
-}
-.hide{
-    display:none;
-}
+    height: 50vh;
+  }
+  
+  #question {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
