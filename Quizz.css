@@ -12,20 +12,20 @@ body{
     justify-content: center;
     align-items: center;
    
-    background-color: gray ;
+    background-color: black ;
 
 }
 body.correct{
-    background-color:gray;
+    background-color:black;
 }
 body.wrong{
-    background-color:grey;
+    background-color:black;
 }
 
 .container{
     width: 800px;
     max-width:80%;
-    background-color: black ;
+    background-color: gray ;
     border-radius: 5px;
     padding:20px;  
 }
@@ -54,11 +54,11 @@ body.wrong{
     cursor:pointer;
 }
 .btn.correct {
-    background-color: green;
+    background-color: grey;
 }
 
 .btn.wrong{
-    background-color:red;
+    background-color:grey;
 }
 .grade{
     text-align:center;
