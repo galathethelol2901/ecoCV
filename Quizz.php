@@ -4,7 +4,7 @@
 	<title>Mon quiz</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="Quizz.css">
   
 </head>
 <body>
@@ -27,6 +27,8 @@
     <input type="radio" name="q3" value="r3">Un salaire minimum ou juste au-dessus.<br>
     <input type="radio" name="q3" value="r4">Je suis visiteur.<br>
   </form>
+  
+  <script src="quizz.js"></script>
 </div>
 </body>
 </html>
