@@ -1,60 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QUIZZ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz app game</title>
     <link rel="stylesheet" href="Quizz.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
+    <script defer src="quizz.js"></script>
 </head>
-  <body>
-
-<div class="blog-slider">
-  <div class="blog-slider__wrp swiper-wrapper">
-    <div class="blog-slider__item swiper-slide">
-      <div class="blog-slider__img">
-        
-        <img src="" alt="">
-      </div>
-      <div class="blog-slider__content">
-        <span class="blog-slider__code">26 December 2019</span>
-        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-        <a href="#" class="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    <div class="blog-slider__item swiper-slide">
-      <div class="blog-slider__img">
-        <img src="" alt="">
-      </div>
-      <div class="blog-slider__content">
-        <span class="blog-slider__code">26 December 2019</span>
-        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-        <a href="#" class="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    
-    <div class="blog-slider__item swiper-slide">
-      <div class="blog-slider__img">
-        <img src="" alt="">
-      </div>
-      <div class="blog-slider__content">
-        <span class="blog-slider__code">26 December 2019</span>
-        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-        <a href="#" class="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    
-  </div>
-  <div class="blog-slider__pagination"></div>
+<body>
+    <header>
+        </header> 
+<div class="container">
+    <div id="container-text" class="container-text">
+    <h2>bienvenue sur le quizz</h2>
+    <p>pas de mauvaise reponce alors pas de panic</p>
 </div>
+    <div id="question-container" class="hide">
+    <div id="question">question</div>
+    <div id="answer-buttons" class="btn-grid">
+    <button class="btn "> ans a</button>
+    <button class="btn "> ans b</button>
+    <button class="btn "> ans c</button>
+    <button class="btn "> ans d</button>
+    </div>
+</div>
+    <div id="score" class= "grade hide">on est compatible a </div> 
 
-<script src="quizz.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide" >Next</button>
+        <button id="gameover-btn" class="gameover-btn btn hide">Game-over</button>
+    </div> 
+</div>
 </body>
 </html>
