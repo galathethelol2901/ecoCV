@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Mon quiz</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="Quizz.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz app game</title>
+    <link rel="stylesheet" href="Quizz.css">
+    <script defer src="quizz.js"></script>
 </head>
 <body>
+    <header>
+        </header> 
 <div class="container">
-  <h2>Quiz de recrutement pour un développeur</h2>
-  <form>
-    <h3>Question 1 : Décrivez votre entreprise idéale.</h3>
-    <input type="radio" name="q1" value="r1">Une entreprise comme Apple, cotée en bourse et où seul l'argent compte.<br>
-    <input type="radio" name="q1" value="r2">Une entreprise en open source, où la collaboration et le partage sont valorisés.<br>
-    <input type="radio" name="q1" value="r3">Une entreprise axée sur le bien-être des employés, offrant des avantages tels que des horaires flexibles, des espaces de détente, etc.<br>
-    <input type="radio" name="q1" value="r4">Je suis visiteur.<br>
-    <button onclick="submitAnswer('q1')">Submit</button>
-    <p class="result1"></p>
-    <h3>Question 2 : Quel niveau d'études attendez-vous d'un développeur ?</h3>
-    <input type="radio" name="q2" value="r1">Bac+5 minimum.<br>
-    <input type="radio" name="q2" value="r2">Autodidacte et passionné.<br>
-    <input type="radio" name="q2" value="r3">Niveau d'études indifférent, l'expérience professionnelle prime.<br>
-    <input type="radio" name="q2" value="r4">Je suis visiteur.<br>
-    <button onclick="submitAnswer('q2')">Submit</button>
-    <p class="result2"></p>
-    <h3>Question 3 : Quel salaire proposeriez-vous à un développeur ?</h3>
-    <input type="radio" name="q3" value="r1">Selon son niveau d'expérience et ses compétences.<br>
-    <input type="radio" name="q3" value="r2">100 bitcoins.<br>
-    <input type="radio" name="q3" value="r3">Un salaire minimum ou juste au-dessus.<br>
-    <input type="radio" name="q3" value="r4">Je suis visiteur.<br>
-    <button onclick="submitAnswer('q3')">Submit</button>
-    <p class="result3"></p>
-  </form>
-  
-  <script src="quizz.js"></script>
+    <div id="container-text" class="container-text">
+    <h2>Welcome to my quiz game</h2>
+    <p>How well do you know these facts? Let's see</p>
+</div>
+    <div id="question-container" class="hide">
+    <div id="question">question</div>
+    <div id="answer-buttons" class="btn-grid">
+    <button class="btn "> ans a</button>
+    <button class="btn "> ans b</button>
+    <button class="btn "> ans c</button>
+    <button class="btn "> ans d</button>
+    </div>
+</div>
+    <div id="score" class= "grade hide"> SCORE: 20%</div> 
+
+    <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide" >Next</button>
+        <button id="gameover-btn" class="gameover-btn btn hide">Game-over</button>
+    </div> 
 </div>
 </body>
 </html>
