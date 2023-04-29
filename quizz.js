@@ -90,7 +90,7 @@ function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
   scoreElement.innerText = score;
-  totalElement.innerText = shuffledQuestions.length;
+  totalElement.innerText = shuffledQuestions.length * 10;
   scoreContainer.style.display = "none";
   questionContainer.style.display = "block";
   setNextQuestion();
