@@ -44,16 +44,15 @@ function startQuiz() {
   nextButton.style.display = "inline-block";
   setNextQuestion();
 }
-{ 
-  function setNextQuestion() {
-    resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
-    nextButton.style.display = "none";
-    nextButton.addEventListener("click", () => {
-      currentQuestionIndex++;
-      setNextQuestion();
-    });
-  }
+
+function setNextQuestion() {
+  resetState();
+  showQuestion(shuffledQuestions[currentQuestionIndex]);
+  nextButton.style.display = "none";
+  nextButton.addEventListener("click", () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+  });
 }
 
 function showQuestion(question) {
