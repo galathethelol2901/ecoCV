@@ -51,12 +51,35 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   questionElement.innerText = question.question;
-  question.answers.forEach((answer, index) => {
-    choiceButtons[index].innerText = answer.text;
-    choiceButtons[index].addEventListener("click", () => {
-      selectAnswer(answer.points);
-    });
+  for (let i = 0; i < choiceButtons.length; i++) {
+    const button = choiceButtons[i];
+    button.innerText = question.answers[i].text;
+    button.removeEventListener('click', handleClick);
+    button.addEventListener('click', handleClick);
+  }
+}
+
+function handleClick(event) {
+  const selectedAnswer = event.target;
+  const points = parseInt(selectedAnswer.dataset.points);
+  score += points;
+  scoreElement.innerText = score;
+  Array.from(choiceButtons).forEach(button => {
+    if (button.dataset.points == "10") {
+      button.classList.add('correct');
+    } else {
+      button.classList.add('incorrect');
+    }
   });
+  choiceButtons.forEach(button => {
+    button.removeEventListener('click', handleClick);
+  });
+  if (currentQuestionIndex === shuffledQuestions.length - 1) {
+    showScore();
+  } else {
+    currentQuestionIndex++;
+    setNextQuestion();
+  }
 }
 
 function resetState() {
