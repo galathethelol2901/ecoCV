@@ -7,9 +7,7 @@ const choiceButtons = document.querySelectorAll(".btn");
 const scoreElement = document.getElementById("score");
 const totalElement = document.getElementById("total");
 
-let shuffledQuestions, currentQuestionIndex, score;
-
-const questions = [
+let questions = [
   {
     question: "Dans quelle ville se trouve la tour Eiffel ?",
     answers: [
@@ -29,6 +27,8 @@ const questions = [
     ],
   },
 ];
+
+let shuffledQuestions, currentQuestionIndex, score;
 
 startButton.addEventListener("click", startQuiz);
 restartButton.addEventListener("click", restartQuiz);
@@ -93,6 +93,6 @@ function restartQuiz() {
   totalElement.innerText = shuffledQuestions.length * 10;
   scoreContainer.style.display = "none";
   questionContainer.style.display = "block";
-  resetState(); // ajout de cette ligne
+  shuffledQuestions = questions.slice().sort(() => Math.random() - 0.5);
   setNextQuestion();
 }
