@@ -14,11 +14,13 @@
 
 html,
 body {
+  display: grid;
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  place-items: center;
   background: linear-gradient(315deg, #ffffff, #d7e1ec);
-  overflow: hidden; /* pour empêcher la barre de défilement */
+  overflow: hidden;
 }
 
 #container {
@@ -28,7 +30,9 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  position: relative; /* nécessaire pour positionner le wrapper */
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -38,7 +42,7 @@ body {
   transform: translateX(-50%);
   display: inline-flex;
   list-style: none;
-  margin-bottom: 30px; /* pour ajouter de l'espace sous le wrapper */
+  margin-bottom: 30px;
 }
 
 .wrapper .icon {
@@ -57,6 +61,12 @@ body {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .wrapper .tooltip {
@@ -83,29 +93,6 @@ body {
   left: 50%;
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-html, body {
-  margin: 0;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: calc(100% - 80px); /* hauteur totale - hauteur wrapper */
 }
 
 .footer {
