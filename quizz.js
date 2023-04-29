@@ -15,17 +15,18 @@ const questions = [
   question: "Dans quelle ville se trouve la tour Eiffel ?",    
   answers: [      
     { text: "Londres", points: 0 },      
-    { text: "Berlin", points: 0 },      
+    { text: "Berlin", points: 5 },      
     { text: "Paris", points: 10 },      
-    { text: "Madrid", points: 0 },    ],
+    { text: "Madrid", points: 20 },    
+     ],
   },
-  {
+{
     question: "Quelle est la capitale de l'Espagne ?",
     answers: [
       { text: "Londres", points: 0 },
-      { text: "Berlin", points: 0 },
-      { text: "Paris", points: 0 },
-      { text: "Madrid", points: 10 },
+      { text: "Berlin", points: 5 },
+      { text: "Paris", points: 10 },
+      { text: "Madrid", points: 20 },
     ],
   },
 ];
