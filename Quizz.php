@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizz app game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-I8C+oDxrGy+H/KM3eJIvgnJwLGM+ZQZh5BPeX9bzvR8W5Yxl+IRrTpPFdUaGmvy8V7/l1k4jn4V7ulqbwM8lyQ=="
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Quizz.css">
     <script defer src="quizz.js"></script>
+
 </head>
 <body>
-
+<header></header>
 <div id="quiz-container">
   <div id="question-container">
     <h2 id="question"></h2>
@@ -24,7 +29,7 @@
   </div>
   <button class="btn" id="start">Démarrer le quiz</button>
 </div>
-
+<footer>
 <ul class="wrapper">
   <li class="icon facebook">
     <span class="tooltip">Facebook</span>
@@ -47,5 +52,6 @@
     <span><i class="fab fa-youtube"></i></span>
   </li>
 </ul>
+</footer>
 </body>
 </html>
