@@ -14,11 +14,9 @@
 
 html,
 body {
-  display: grid;
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
-  place-items: center;
   background: linear-gradient(315deg, #ffffff, #d7e1ec);
   overflow: hidden; /* pour empêcher la barre de défilement */
 }
@@ -86,30 +84,30 @@ body {
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .footer {
-    margin-top: auto;
-  }
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+html, body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: calc(100% - 80px); /* hauteur totale - hauteur wrapper */
+}
+
+.footer {
+  margin-top: auto;
+}
