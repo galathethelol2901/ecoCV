@@ -6,10 +6,18 @@ const questionElement = document.getElementById("question");
 const choiceButtons = document.querySelectorAll(".btn");
 const scoreElement = document.getElementById("score");
 const totalElement = document.getElementById("total");
+const nextButton = document.getElementById("next-btn");
 
 let shuffledQuestions, currentQuestionIndex, score;
 
-const questions = [  {    question: "Dans quelle ville se trouve la tour Eiffel ?",    answers: [      { text: "Londres", points: 0 },      { text: "Berlin", points: 0 },      { text: "Paris", points: 10 },      { text: "Madrid", points: 0 },    ],
+const questions = [  
+  {    
+  question: "Dans quelle ville se trouve la tour Eiffel ?",    
+  answers: [      
+    { text: "Londres", points: 0 },      
+    { text: "Berlin", points: 0 },      
+    { text: "Paris", points: 10 },      
+    { text: "Madrid", points: 0 },    ],
   },
   {
     question: "Quelle est la capitale de l'Espagne ?",
@@ -33,12 +41,19 @@ function startQuiz() {
   scoreElement.innerText = score;
   totalElement.innerText = shuffledQuestions.length * 10;
   questionContainer.style.display = "block";
+  nextButton.style.display = "inline-block";
   setNextQuestion();
 }
-
-function setNextQuestion() {
-  resetState();
-  showQuestion(shuffledQuestions[currentQuestionIndex]);
+{ 
+  function setNextQuestion() {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    nextButton.style.display = "none";
+    nextButton.addEventListener("click", () => {
+      currentQuestionIndex++;
+      setNextQuestion();
+    });
+  }
 }
 
 function showQuestion(question) {
