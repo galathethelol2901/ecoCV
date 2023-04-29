@@ -93,5 +93,6 @@ function restartQuiz() {
   totalElement.innerText = shuffledQuestions.length * 10;
   scoreContainer.style.display = "none";
   questionContainer.style.display = "block";
+  resetState(); // ajout de cette ligne
   setNextQuestion();
 }
