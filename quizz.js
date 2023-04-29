@@ -47,13 +47,9 @@ function startQuiz() {
 }
 
 function setNextQuestion() {
+  questionContainer.innerHTML = "";
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
-  nextButton.style.display = "none";
-  nextButton.addEventListener("click", () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-  });
 }
 
 function showQuestion(question) {
@@ -84,12 +80,14 @@ function selectAnswer(event) {
   choiceButtons.forEach((button) => {
     button.removeEventListener("click", selectAnswer);
   });
-  if (currentQuestionIndex === shuffledQuestions.length - 1) {
-    showScore();
-  } else {
-    currentQuestionIndex++;
-    setNextQuestion();
-  }
+  const confirmationMessage = document.createElement("p");
+  confirmationMessage.innerText = "Bravo !";
+  questionContainer.appendChild(confirmationMessage);
+  const nextButton = document.createElement("button");
+  nextButton.innerText = "Suivant";
+  nextButton.addEventListener("click", setNextQuestion);
+  questionContainer.appendChild(nextButton);
+
 }
 
 function showScore() {
