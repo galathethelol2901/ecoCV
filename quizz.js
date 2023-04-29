@@ -12,23 +12,41 @@ let shuffledQuestions, currentQuestionIndex, score;
 
 const questions = [  
   {    
-  question: "Dans quelle ville se trouve la tour Eiffel ?",    
+  question: "Quelle est votre vision de l'entreprise idéale ?",    
   answers: [      
-    { text: "Londres", points: 0 },      
-    { text: "Berlin", points: 5 },      
-    { text: "Paris", points: 10 },      
-    { text: "Madrid", points: 20 },    
+    { text: "visiteur", points: 0 },      
+    { text: "Une entreprise qui accorde la priorité aux profits avant tout", points: 5 },      
+    { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés", points: 10 },      
+    { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés", points: 20 },    
      ],
   },
 {
-    question: "Quelle est la capitale de l'Espagne ?",
+    question: " Quel niveau d'études recherchez-vous chez vos employés ?",
     answers: [
-      { text: "Londres", points: 0 },
-      { text: "Berlin", points: 5 },
-      { text: "Paris", points: 10 },
-      { text: "Madrid", points: 20 },
+      { text: "visiteur ", points: 0 },
+      { text: "Master +5 : j'exige un niveau élevé d'études supérieures", points: 5 },
+      { text: "Je valorise plus l'expérience professionnelle que le niveau d'études ", points: 10 },
+      { text: "je suis ouvert à tous les profils, y compris les autodidactes ", points: 20 },
     ],
   },
+  {    
+    question: "salaire?",    
+    answers: [      
+      { text: "visiteur", points: 0 },      
+      { text: "10 bitcoin : une rémunération basée sur une crypto-monnaie pourrait être intéressante ", points: 5 },      
+      { text: "une rémunération qui tient compte des compétences, de l'expérience et des réalisations de l'employé", points: 10 },      
+      { text: "une rémunération compétitive par rapport aux normes de l'industrie ", points: 20 },    
+       ],
+    },
+    {    
+      question: "jeux favorit  ?",    
+      answers: [      
+        { text: "visiteur", points: 0 },      
+        { text: "J'aime jouer à des jeux pour me détendre", points: 5 },      
+        { text: "J'aime les jeux de réflexion pour leur complexité", points: 10 },      
+        { text: "J'aime les jeux open-world pour leur liberté de création", points: 20 },    
+         ],
+      },
 ];
 
 startButton.addEventListener("click", startQuiz);
