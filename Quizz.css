@@ -33,6 +33,7 @@
 }
 
 .front {
+  position: relative;
   z-index: 1;
   bottom: 0;
   left: 0;
@@ -571,6 +572,7 @@
   height: 500px;
   background: rgb(226,4,255);
   background: linear-gradient(90deg, rgba(226,4,255,1) 50%, rgba(0,212,255,1) 100%);
+  position: absolute;
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -581,12 +583,14 @@
   #question{
    color: #0c0c0c;
    font-size: 20px;
+   position: absolute;
   }
   #question{
     font-family: 'Bruno Ace SC', cursive;
   }
   .btn {
     display: block;
+    position: absolute;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 20px;
