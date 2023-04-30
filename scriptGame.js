@@ -5,6 +5,18 @@ canvas.height = 500;
 let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (isMobile) {
+    canvas.removeEventListener('mousemove', function(e){
+      mouse.click = true;
+      mouse.x = e.x - canvasPosition.left;
+      mouse.y = e.y - canvasPosition.top;
+    });
+    window.removeEventListener('mouseup', function(e){
+      mouse.click = false;
+    });
+  }
 
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
