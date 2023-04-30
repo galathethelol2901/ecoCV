@@ -124,12 +124,12 @@ function showResultMessage() {
   const totalPoints = shuffledQuestions.length * 10;
   const percentage = Math.round((score / totalPoints) * 100);
   let message = "";
-  if (percentage <= 50) {
-    message = " on est fait pour ce rencomtrer on a les meme valeur alors autant ne pas perdre de temps contacter moi rapidement ! ";
+  if (percentage <= 15) {
+    message = " visiblement on est pas fait pour travailler ensemble MAIS on peut toujours ce suivre sur les reseaux les liens sont en bas de page";
   } else if (percentage <= 25) {
     message = "on a des point commain , peut etre pas sufisament mais un entretiens telephonique n engage a rien alors hesiter pas a apeller";
-  } else if (percentage <= 15) {
-    message = " visiblement on est pas fait pour travailler ensemble MAIS on peut toujours ce suivre sur les reseaux les liens sont en bas de page";
+  } else if (percentage <= 40) {
+    message = "  on est fait pour ce rencomtrer on a les meme valeur alors autant ne pas perdre de temps contacter moi rapidement !";
   } else {
     message = "";
   }
