@@ -7,6 +7,8 @@ const choiceButtons = document.querySelectorAll(".btn");
 const scoreElement = document.getElementById("score");
 const totalElement = document.getElementById("total");
 const nextButton = document.getElementById("next-btn");
+const resultMessage = document.getElementById("result-message");
+
 
 let shuffledQuestions, currentQuestionIndex, score;
 
