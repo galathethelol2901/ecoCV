@@ -35,7 +35,7 @@ body {
   align-items: center;
   width: 90%; /* utiliser % pour définir la largeur du conteneur */
   max-width: 600px; /* utiliser max-width pour définir la largeur maximale */
-  height: auto; /* utiliser auto pour définir la hauteur en fonction du contenu */
+  height: 90%;
 }
 
   #question{
