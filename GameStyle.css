@@ -1,8 +1,9 @@
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100vw;
   height: 100vh;
@@ -12,13 +13,17 @@ body {
   background: rgb(2,0,36);
   background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 63%, rgba(0,212,255,1) 100%);
 }
+
 .container {
-  width: 800px;
-  height: 500px;
+  width: 90vw; /* change width to 90% of viewport width */
+  height: 60vh; /* change height to 60% of viewport height */
+  max-width: 800px; /* set maximum width to 800px */
+  max-height: 500px; /* set maximum height to 500px */
 }
+
 #canvas1 {
-  width: 800px;
-  height: 500px;
+  width: 100%; /* set width to 100% of container */
+  height: 100%; /* set height to 100% of container */
   border: 4px solid black;
   background: linear-gradient(to bottom, lightblue, darkblue);
 }
@@ -62,70 +67,3 @@ padding-right: 20px;
 footer a{
 color: white;
 }
-
-@media (max-width: 850px) {
-  body {
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 50vh;
-  }
-  #canvas1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 50vh;
-  }
-
-  article {
-    font-size: 16px;
-    line-height: 20px;
-    height: auto;
-    padding-right: 10px;
-  }
-  footer {
-    font-size: 13px;
-    line-height: 20px;
-    height: auto;
-    padding-right: 10px;
-  }
-}
-@media (max-width: 550px) {
-  body {
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
-  }
-  .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70vw;
-  height: 60vw;
-  padding-left: 20%;
-  }
-  #canvas1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70vw;
-  height: 60vw;
-  padding-left: 20%;
-  }
-  article {
-  font-size: 14px;
-  line-height: 18px;
-  height: auto;
-  padding-right: 5px;
-  }
-  footer {
-  font-size: 12px;
-  line-height: 18px;
-  height: auto;
-  padding-right: 5px;
-  }
-  }
-
