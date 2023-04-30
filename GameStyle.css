@@ -63,91 +63,56 @@ footer a{
 color: white;
 }
 
-/* Pour les appareils d'une largeur maximale de 768 pixels, par exemple les tablettes */
 @media (max-width: 768px) {
   body {
-    /* Redimensionner le dégradé radial pour qu'il s'adapte à l'écran */
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
   }
-
   .container {
-    /* Redimensionner la largeur et la hauteur pour s'adapter à l'écran */
-    width: 90vw;
-    height: 70vh;
+    width: 70vw;
+    height: 50vh;
   }
-
   #canvas1 {
-    /* Redimensionner la largeur et la hauteur pour s'adapter à l'écran */
-    width: 90vw;
-    height: 70vh;
-  }
-}
-
-/* Pour les appareils d'une largeur maximale de 480 pixels, par exemple les smartphones */
-@media (max-width: 480px) {
-  body {
-    /* Redimensionner le dégradé radial pour qu'il s'adapte à l'écran */
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
-  }
-
-  .container {
-    /* Redimensionner la largeur et la hauteur pour s'adapter à l'écran */
-    width: 90vw;
+    width: 70vw;
     height: 50vh;
   }
 
-  #canvas1 {
-    /* Redimensionner la largeur et la hauteur pour s'adapter à l'écran */
-    width: 90vw;
-    height: 50vh;
-  }
-}
-/* Pour les appareils d'une largeur maximale de 768 pixels, par exemple les tablettes */
-@media (max-width: 768px) {
   article {
-    /* Réduire la taille de police pour s'adapter à l'écran */
     font-size: 16px;
-    /* Ajuster la hauteur de ligne pour centrer le texte */
     line-height: 20px;
-    /* Réduire la hauteur de l'article pour que le texte s'adapte à l'écran */
     height: auto;
-    /* Réduire le padding droit pour éviter un débordement de texte */
     padding-right: 10px;
   }
-
   footer {
-    /* Réduire la taille de police pour s'adapter à l'écran */
     font-size: 13px;
-    /* Ajuster la hauteur de ligne pour centrer le texte */
     line-height: 20px;
-    /* Réduire la hauteur du footer pour que le texte s'adapte à l'écran */
     height: auto;
-    /* Réduire le padding droit pour éviter un débordement de texte */
     padding-right: 10px;
   }
 }
-
-/* Pour les appareils d'une largeur maximale de 480 pixels, par exemple les smartphones */
 @media (max-width: 480px) {
-  article {
-    /* Réduire la taille de police pour s'adapter à l'écran */
-    font-size: 14px;
-    /* Ajuster la hauteur de ligne pour centrer le texte */
-    line-height: 18px;
-    /* Réduire la hauteur de l'article pour que le texte s'adapte à l'écran */
-    height: auto;
-    /* Réduire le padding droit pour éviter un débordement de texte */
-    padding-right: 5px;
+  body {
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+  }
+  .container {
+    width: 70vw;
+    height: 40vh;
+  }
+  #canvas1 {
+    width: 70vw;
+    height: 40vh;
   }
 
-  footer {
-    /* Réduire la taille de police pour s'adapter à l'écran */
-    font-size: 12px;
-    /* Ajuster la hauteur de ligne pour centrer le texte */
+  article {
+    font-size: 14px;
     line-height: 18px;
-    /* Réduire la hauteur du footer pour que le texte s'adapte à l'écran */
     height: auto;
-    /* Réduire le padding droit pour éviter un débordement de texte */
+    padding-right: 5px;
+  }
+  footer {
+    font-size: 12px;
+    line-height: 18px;
+    height: auto;
     padding-right: 5px;
   }
 }
+
