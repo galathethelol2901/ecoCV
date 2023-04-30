@@ -105,6 +105,7 @@ color: white;
   align-items: center;
   width: 70vw;
   height: 60vw;
+  padding-left: 20%;
   }
   #canvas1 {
   display: flex;
@@ -112,6 +113,7 @@ color: white;
   align-items: center;
   width: 70vw;
   height: 60vw;
+  padding-left: 20%;
   }
   article {
   font-size: 14px;
