@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Poltawski+Nowy:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +46,7 @@ body {
   }
 
   .btn {
-    font-family: 'Castoro Titling', cursive;
+     font-family: 'Poltawski Nowy', serif;
     }
   
   .btn:hover {
