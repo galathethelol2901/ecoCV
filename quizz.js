@@ -123,7 +123,7 @@ function showScore() {
   questionContainer.style.display = "none";
   scoreContainer.style.display = "block";
   const totalPoints = shuffledQuestions.length * 10;
-  totalElement.innerText = totalPoints;
+  totalElement.innerText = " sur " + totalPoints;
   const percentage = ((score / totalPoints) * 100).toFixed(2);
   if (score >= 70) {
     questionElement.innerText = `GREAT! You scored ${percentage}%!`;
