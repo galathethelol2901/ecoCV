@@ -137,3 +137,12 @@ function restartQuiz() {
   questionContainer.style.display = "block";
   setNextQuestion();
 }
+
+
+if (score >= 80) {
+  console.log("WOAAAW bravo !");
+} else if (score > 50) {
+  console.log("Félicitations !");
+} else {
+  console.log("Dommage, vous pouvez faire mieux !");
+}
