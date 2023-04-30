@@ -566,17 +566,6 @@
           animation-delay: 6s;
 }
 
-html,
-body {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  place-items: center;
-  background: linear-gradient(315deg, #959191, #262729);
-  overflow: hidden;
-}
-
 #quiz-container {
   width: 500px;
   height: 500px;
