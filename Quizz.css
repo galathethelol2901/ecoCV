@@ -33,8 +33,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%; /* utiliser % pour définir la largeur du conteneur */
+  min-width: 500px;
   min-height: 500px; /* définit une hauteur minimale fixe pour le conteneur */
+  max-width: 600px;
+  max-height: 600px;
 }
   #question{
    color: #0c0c0c;
