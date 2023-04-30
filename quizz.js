@@ -1,123 +1,96 @@
-const startButton = document.getElementById("start");
-const restartButton = document.getElementById("restart");
-const questionContainer = document.getElementById("question-container");
-const scoreContainer = document.getElementById("score-container");
+const quizContainer = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
-const choiceButtons = document.querySelectorAll(".btn");
+const choiceElements = document.querySelectorAll(".btn");
+const nextButton = document.getElementById("next-btn");
+const startButton = document.getElementById("start");
+const scoreContainer = document.getElementById("score-container");
 const scoreElement = document.getElementById("score");
 const totalElement = document.getElementById("total");
-const nextButton = document.getElementById("next-btn");
-
 let shuffledQuestions, currentQuestionIndex, score;
 
-const questions = [  {    question: "Question 1",    answers: [      { text: "Réponse 1", points: 10 },      { text: "Réponse 2", points: 0 },      { text: "Réponse 3", points: 0 },      { text: "Réponse 4", points: 0 },    ],
-  },
-  {
-    question: "Question 2",
-    answers: [
-      { text: "Réponse 1", points: 10 },
-      { text: "Réponse 2", points: 0 },
-      { text: "Réponse 3", points: 0 },
-      { text: "Réponse 4", points: 0 },
-    ],
-  },
-  {
-    question: "Question 3",
-    answers: [
-      { text: "Réponse 1", points: 10 },
-      { text: "Réponse 2", points: 0 },
-      { text: "Réponse 3", points: 0 },
-      { text: "Réponse 4", points: 0 },
-    ],
-  },
-];
-
 startButton.addEventListener("click", startQuiz);
-restartButton.addEventListener("click", restartQuiz);
+nextButton.addEventListener("click", () => {
+  currentQuestionIndex++;
+  setNextQuestion();
+});
 
 function startQuiz() {
-  startButton.style.display = "none";
-  shuffledQuestions = questions;
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
   score = 0;
-  scoreElement.innerText = score;
-  totalElement.innerText = shuffledQuestions.length * 10;
-  questionContainer.style.display = "block";
-  nextButton.style.display = "inline-block";
+  quizContainer.style.display = "block";
+  scoreContainer.style.display = "none";
+  startButton.style.display = "none";
   setNextQuestion();
 }
 
 function setNextQuestion() {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
-  nextButton.style.display = "none";
-  nextButton.addEventListener("click", () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-  });
 }
 
 function showQuestion(question) {
   questionElement.innerText = question.question;
-  question.answers.forEach((answer, index) => {
-    choiceButtons[index].innerText = answer.text;
-    choiceButtons[index].dataset.points = answer.points;
-    choiceButtons[index].addEventListener("click", selectAnswer);
+  question.choices.forEach((choice, index) => {
+    choiceElements[index].innerText = choice;
+    choiceElements[index].addEventListener("click", () => {
+      if (choice === question.answer) {
+        score += 10;
+      }
+      choiceElements.forEach(choice => {
+        choice.disabled = true;
+      });
+      showAnswer();
+    });
   });
+}
+
+function showAnswer() {
+  const currentQuestion = shuffledQuestions[currentQuestionIndex];
+  const correctIndex = currentQuestion.choices.indexOf(currentQuestion.answer);
+  choiceElements[correctIndex].classList.add("correct");
+  if (score < shuffledQuestions.length * 10) {
+    nextButton.style.display = "block";
+  } else {
+    showScore();
+  }
 }
 
 function resetState() {
-  choiceButtons.forEach((button) => {
-    button.classList.remove("correct");
-    button.classList.remove("incorrect");
-    button.removeEventListener("click", selectAnswer);
+  nextButton.style.display = "none";
+  choiceElements.forEach(choice => {
+    choice.classList.remove("correct");
+    choice.disabled = false;
   });
 }
 
-function selectAnswer(event) {
-  const selectedButton = event.target;
-  const points = Number(selectedButton.dataset.points);
-  score += points;
-  scoreElement.innerText = score;
-  Array.from(choiceButtons).forEach((button) => {
-    button.classList.add(button.dataset.points > 0 ? "correct" : "incorrect");
-  });
-  choiceButtons.forEach((button) => {
-    button.removeEventListener("click", selectAnswer);
-  });
-  if (currentQuestionIndex === shuffledQuestions.length - 1) {
-    showScore();
-  } else {
-    currentQuestionIndex++;
-    setNextQuestion();
-  }
-}
 function showScore() {
-  questionContainer.style.display = "none";
+  quizContainer.style.display = "none";
   scoreContainer.style.display = "block";
   const totalPoints = shuffledQuestions.length * 10;
-  totalElement.innerText = " sur " + totalPoints;
+  totalElement.innerText = "sur " + totalPoints;
   const percentage = ((score / totalPoints) * 100).toFixed(2);
   let message = "";
   if (score >= 90) {
-    message = "Wonderful! ";
+    message = "Bravo ! ";
   } else if (score >= 70) {
-    message = "Very good! ";
+    message = "Très bien ! ";
   } else if (score >= 50) {
-    message = "Great job! ";
+    message = "Bon travail ! ";
   } else {
-    message = "Oops! ";
+    message = "Dommage ! ";
   }
-  questionElement.innerText = message + `You scored ${percentage}%!`;
-  scoreElement.innerText = score;
+  scoreElement.innerText = message + `Vous avez obtenu ${percentage}% !`;
 }
 
 function restartQuiz() {
-  startButton.style.display = "inline-block";
-  scoreContainer.style.display = "none";
   currentQuestionIndex = 0;
   score = 0;
   scoreElement.innerText = score;
-  questionContainer.style.display = "none";
-  nextButton.style.display = "none";
+  scoreContainer.style.display = "none";
+  quizContainer.style.display = "block";
+  startButton.style.display = "block";
+  setNextQuestion();
 }
+
+document.getElementById("restart").addEventListener("click", restartQuiz);
