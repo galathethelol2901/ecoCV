@@ -51,9 +51,9 @@ const questions = [
       question: "PARMIS CEST CHOIX, Quel est votre jeu favori ?",    
       answers: [      
         { text: "le jeu de la vie ! haha comique ou VISITEUR ?", points: 0 },      
-        { text: "J'aime jouer à des jeux pour me détendre", points: 5 },      
-        { text: "J'aime les jeux de réflexion pour leur complexité", points: 10 },      
-        { text: "J'aime les jeux open-world pour leur liberté de création", points: 20 },    
+        { text: "Les jeux vidéo ne sont pas vraiment ma tasse de thé, mais je reconnais leur potentiel pour se détendre.", points: 5 },      
+        { text: "J'adore les jeux open-world pour leur liberté de création et leur capacité à me permettre d'explorer de vastes univers virtuels.", points: 10 },      
+        { text: "J'aime les jeux de stratégie et de réflexion pour leur complexité et leur défi intellectuel", points: 20 },    
          ],
       },
 ];
