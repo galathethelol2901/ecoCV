@@ -91,28 +91,33 @@ color: white;
 }
 @media (max-width: 480px) {
   body {
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
   }
   .container {
-    width: 70vw;
-    height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 40vh;
   }
   #canvas1 {
-    width: 70vw;
-    height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 40vh;
   }
-
   article {
-    font-size: 14px;
-    line-height: 18px;
-    height: auto;
-    padding-right: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  height: auto;
+  padding-right: 5px;
   }
   footer {
-    font-size: 12px;
-    line-height: 18px;
-    height: auto;
-    padding-right: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  height: auto;
+  padding-right: 5px;
   }
-}
+  }
 
