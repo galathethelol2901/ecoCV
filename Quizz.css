@@ -26,6 +26,8 @@ body {
 }
 
 #quiz-container {
+  width: 500px;
+  height: 500px;
   background: rgb(226,4,255);
   background: linear-gradient(90deg, rgba(226,4,255,1) 50%, rgba(0,212,255,1) 100%);
   border-radius: 10px;
@@ -33,10 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 500px;
-  min-height: 500px; /* définit une hauteur minimale fixe pour le conteneur */
-  max-width: 600px;
-  max-height: 600px;
+  
 }
   #question{
    color: #0c0c0c;
