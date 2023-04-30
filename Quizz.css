@@ -45,6 +45,8 @@ body {
     font-family: 'Bruno Ace SC', cursive;
   }
   .btn {
+    width: 100px;
+    height: 150px;
     display: block;
     margin: 10px;
     padding: 10px 20px;
@@ -54,9 +56,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    width: 80%; /* utiliser % pour définir la largeur des boutons */
-    max-width: 200px; /* utiliser max-width pour définir la largeur maximale */
-    height: auto; /* utiliser auto pour définir la hauteur en fonction du contenu */
+   
   }
 
   .btn {
