@@ -68,10 +68,16 @@ color: white;
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
   }
   .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 70vw;
     height: 50vh;
   }
   #canvas1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 70vw;
     height: 50vh;
   }
