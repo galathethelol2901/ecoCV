@@ -8,7 +8,7 @@ const scoreElement = document.getElementById("score");
 const totalElement = document.getElementById("total");
 const nextButton = document.getElementById("next-btn");
 
-let shuffledQuestions,currentQuestionIndex, score;
+let shuffledQuestions, currentQuestionIndex, score;
 
 const questions = [  
   {    
@@ -63,6 +63,7 @@ restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
   startButton.style.display = "none";
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
   score = 0;
   scoreElement.innerText = score;
