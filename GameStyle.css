@@ -103,15 +103,15 @@ color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70vw;
-  height: 40vh;
+  width: 40%;
+  height: 60%;
   }
   #canvas1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70vw;
-  height: 40vh;
+  width: 20%;
+  height: 30%;
   }
   article {
   font-size: 14px;
