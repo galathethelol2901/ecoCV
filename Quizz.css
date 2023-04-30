@@ -34,7 +34,6 @@ body {
   flex-direction: column;
   align-items: center;
   width: 90%; /* utiliser % pour définir la largeur du conteneur */
-  max-width: 600px; /* utiliser max-width pour définir la largeur maximale */
   height: 90%;
 }
 
