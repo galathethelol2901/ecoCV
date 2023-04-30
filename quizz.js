@@ -139,8 +139,20 @@ function showScore() {
   scoreContainer.style.display = "block";
   const totalPoints = shuffledQuestions.length * 10;
   totalElement.innerText = " sur " + totalPoints;
-  scoreElement.innerText = score;
-  showResultMessage();
+
+  let message;
+  if (score >= 90) {
+    message = "Excellent !";
+  } else if (score >= 70) {
+    message = "Très bien !";
+  } else if (score >= 50) {
+    message = "Pas mal.";
+  } else {
+    message = "Dommage...";
+  }
+
+  scoreElement.innerText = score + " points. " + message;
+  showResultMessage(); // appel de la fonction pour afficher le message personnalisé
 }
 
 function restartQuiz() {
