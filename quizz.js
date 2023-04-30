@@ -118,6 +118,21 @@ function selectAnswer(event) {
     setNextQuestion();
   }
 }
+function showResultMessage() {
+  const totalPoints = shuffledQuestions.length * 10;
+  const percentage = Math.round((score / totalPoints) * 100);
+  let message = "";
+  if (percentage <= 50) {
+    message = "Dommage, vous pouvez faire mieux !";
+  } else if (percentage <= 70) {
+    message = "Pas mal, mais vous pouvez encore vous améliorer.";
+  } else if (percentage <= 90) {
+    message = "Bravo, vous êtes presque un expert !";
+  } else {
+    message = "Félicitations, vous êtes un expert du sujet !";
+  }
+  resultMessage.innerText = message;
+}
 
 function showScore() {
   questionContainer.style.display = "none";
@@ -125,6 +140,7 @@ function showScore() {
   const totalPoints = shuffledQuestions.length * 10;
   totalElement.innerText = " sur " + totalPoints;
   scoreElement.innerText = score;
+  showResultMessage();
 }
 
 function restartQuiz() {

@@ -23,6 +23,9 @@
   </div>
   <div id="score-container">
     <h2>Votre score est de <span id="score"></span> sur <span id="total"></span></h2>
+    
+    <p id="result-message"></p>
+
     <button class="btn" id="restart">Recommencer</button>
   </div>
   <button class="btn" id="start">Démarrer le quiz</button>
