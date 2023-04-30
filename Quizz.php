@@ -21,7 +21,7 @@
     <button class="btn" id="next-btn" style="display: none;">Suivant</button>
   </div>
   <div id="score-container">
-    <h2>Votre score est de <span id="score"></span></h2>
+    <h2>Votre score est de <span id="score"></span><span id="total">moi jai fait 100 </span></h2>
     <button class="btn" id="restart">Recommencer</button>
   </div>
   <button class="btn" id="start">Démarrer le quiz</button>
