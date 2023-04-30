@@ -122,7 +122,7 @@ function selectAnswer(event) {
 }
 function showResultMessage() {
   const totalPoints = shuffledQuestions.length * 10;
-  const percentage = Math.round((score / totalPoints) * 100);
+  const percentage = Math.round((score / totalPoints) * 50);
   let message = "";
   if (percentage <= 15) {
     message = " visiblement on est pas fait pour travailler ensemble MAIS on peut toujours ce suivre sur les reseaux les liens sont en bas de page";
