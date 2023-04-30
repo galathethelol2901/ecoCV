@@ -24,15 +24,19 @@ body {
   background: linear-gradient(315deg, #959191, #262729);
   overflow: hidden;
 }
+
 #quiz-container {
-    background: rgb(226,4,255);
-    background: linear-gradient(90deg, rgba(226,4,255,1) 50%, rgba(0,212,255,1) 100%);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  background: rgb(226,4,255);
+  background: linear-gradient(90deg, rgba(226,4,255,1) 50%, rgba(0,212,255,1) 100%);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; /* utiliser % pour définir la largeur du conteneur */
+  max-width: 600px; /* utiliser max-width pour définir la largeur maximale */
+  height: auto; /* utiliser auto pour définir la hauteur en fonction du contenu */
+}
 
   #question{
    color: #0c0c0c;
@@ -53,6 +57,9 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    width: 80%; /* utiliser % pour définir la largeur des boutons */
+    max-width: 200px; /* utiliser max-width pour définir la largeur maximale */
+    height: auto; /* utiliser auto pour définir la hauteur en fonction du contenu */
   }
 
   .btn {
