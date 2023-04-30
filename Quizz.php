@@ -11,6 +11,7 @@
 </head>
 <body>
 <header></header>
+
 <div id="quiz-container">
   <div id="question-container">
     <h2 id="question"></h2>
@@ -21,11 +22,12 @@
     <button class="btn" id="next-btn" style="display: none;">Suivant</button>
   </div>
   <div id="score-container">
-    <h2>Votre score est de <span id="score"> <span id="total"></span> </span></h2>
+    <h2>Votre score est de <span id="score"></span> sur <span id="total"></span></h2>
     <button class="btn" id="restart">Recommencer</button>
   </div>
   <button class="btn" id="start">Démarrer le quiz</button>
 </div>
+
 <footer>
 <ul class="wrapper">
   <li class="icon facebook">
