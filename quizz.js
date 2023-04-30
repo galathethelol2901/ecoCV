@@ -124,12 +124,12 @@ function showResultMessage() {
   const totalPoints = shuffledQuestions.length * 10;
   const percentage = Math.round((score / totalPoints) * 100);
   let message = "";
-  if (percentage <= 20) {
-    message = "Dommage, vous pouvez faire mieux !";
-  } else if (percentage <= 30) {
-    message = "Pas mal, mais vous pouvez encore vous améliorer.";
+  if (percentage <= 15) {
+    message = "visiblement on est pas fait pour travailler ensemble MAIS on peut toujours ce suivre sur les reseaux les liens sont en bas de page";
+  } else if (percentage <= 25) {
+    message = "on a des point commain , peut etre pas sufisament mais un entretiens telephonique n engage a rien alors hesiter pas a apeller";
   } else if (percentage <= 50) {
-    message = "Bravo, vous êtes presque un expert !";
+    message = "on est fait pour ce rencomtrer on a les meme valeur alors autant ne pas perdre de temps contacter moi rapidement ! ";
   } else {
     message = "Félicitations, vous êtes un expert du sujet !";
   }
@@ -144,13 +144,13 @@ function showScore() {
 
   let message;
   if (score >= 50) {
-    message = "Excellent !";
+    message = "";
   } else if (score >= 30) {
-    message = "Très bien !";
+    message = "";
   } else if (score >= 20) {
-    message = "Pas mal.";
+    message = "";
   } else {
-    message = "Dommage...";
+    message = "";
   }
 
   scoreElement.innerText = score + " points. " + message;
