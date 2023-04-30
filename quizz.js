@@ -125,12 +125,12 @@ function showScore() {
   const totalPoints = shuffledQuestions.length * 10;
   totalElement.innerText = totalPoints;
   const percentage = ((score / totalPoints) * 100).toFixed(2);
-  if (score >= 80) {
-    questionElement.innerText = `WOW BRAVO! Vous avez obtenu ${percentage}% des points !`;
-  } else if (score > 50) {
-    questionElement.innerText = `Félicitations ! Vous avez obtenu ${percentage}% des points !`;
+  if (score >= 70) {
+    questionElement.innerText = `GREAT! You scored ${percentage}%!`;
+  } else if (score <= 50) {
+    questionElement.innerText = `WOAW gg! You scored ${percentage}%!`;
   } else {
-    questionElement.innerText = `Dommage ! Vous avez obtenu ${percentage}% des points !`;
+    questionElement.innerText = `Not bad! You scored ${percentage}%!`;
   }
   scoreElement.innerText = score;
 }
@@ -143,4 +143,3 @@ function restartQuiz() {
   questionContainer.style.display = "block";
   setNextQuestion();
 }
-
