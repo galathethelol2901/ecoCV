@@ -124,9 +124,15 @@ function showScore() {
   scoreContainer.style.display = "block";
   const totalPoints = shuffledQuestions.length * 10;
   totalElement.innerText = totalPoints;
-  scoreElement.innerText = score;
   const percentage = ((score / totalPoints) * 100).toFixed(2);
-  questionElement.innerText = `Vous avez obtenu ${percentage}% des points !`;
+  if (score >= 80) {
+    questionElement.innerText = `WOW BRAVO! Vous avez obtenu ${percentage}% des points !`;
+  } else if (score > 50) {
+    questionElement.innerText = `Félicitations ! Vous avez obtenu ${percentage}% des points !`;
+  } else {
+    questionElement.innerText = `Dommage ! Vous avez obtenu ${percentage}% des points !`;
+  }
+  scoreElement.innerText = score;
 }
 
 function restartQuiz() {
@@ -138,11 +144,3 @@ function restartQuiz() {
   setNextQuestion();
 }
 
-
-if (score >= 80) {
-  console.log("WOAAAW bravo !");
-} else if (score > 50) {
-  console.log("Félicitations !");
-} else {
-  console.log("Dommage, vous pouvez faire mieux !");
-}
