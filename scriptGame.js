@@ -18,7 +18,6 @@ if (isMobile) {
     });
   }
 
-// Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
 const mouse = {
     x: canvas.width/2,
