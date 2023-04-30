@@ -17,45 +17,45 @@ const questions = [
   question: "PARMIS CEST CHOIX, Dans quelle circomstance etes vous arrivez sur ce quizz ?",    
   answers: [      
     { text: "Je me suis perdu dans les méandres de l'Internet, comme d'habitude alors VISITEUR", points: 0 },      
-    { text: "Je suis venu voir ce que font mes concurrents pour m'inspirer, mais finalement j'ai préféré passer ce petit quizz", points: 5 },      
-    { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ecopro6 est candidat pour mon entreprise ", points: 10 },      
-    { text: "Je suis actuellement à la recherche d'un développeur talentueux pour rejoindre mon équipe ", points: 20 },    
+    { text: "Je suis venu voir ce que font mes concurrents pour m'inspirer, mais finalement j'ai préféré passer ce petit quizz", points: 3 },      
+    { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ecopro6 est candidat pour mon entreprise ", points: 5 },      
+    { text: "Je suis actuellement à la recherche d'un développeur talentueux pour rejoindre mon équipe ", points: 10 },    
      ],
   },
   {
     question: "PARMIS CEST CHOIX, Quelle est votre vision de l'entreprise idéale ?",
     answers: [
       { text: "Une entreprise où tout le monde est payé en tacos ,donc ont dit VISITEUR hein ? ", points: 0 },
-      { text: "Une entreprise qui accorde la priorité aux profits avant tout", points: 5 },
-      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés", points: 10 },
-      { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés", points: 20 },
+      { text: "Une entreprise qui accorde la priorité aux profits avant tout", points: 3 },
+      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés", points: 5 },
+      { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés", points: 10 },
     ],
   },
 {
     question: "PARMIS CEST CHOIX, Quel niveau d'études recherchez-vous chez vos employés ?",
     answers: [
       { text: "si il a youtube je prend ! donc comme toujours VISITEUR ! ", points: 0 },
-      { text: "Master +5 : j'exige un niveau élevé d'études supérieures", points: 5 },
-      { text: "Je valorise plus l'expérience professionnelle que le niveau d'études ", points: 10 },
-      { text: "je suis ouvert à tous les profils, y compris les autodidactes ", points: 20 },
+      { text: "Master +5 : j'exige un niveau élevé d'études supérieures", points: 3 },
+      { text: "Je valorise plus l'expérience professionnelle que le niveau d'études ", points: 5 },
+      { text: "je suis ouvert à tous les profils, y compris les autodidactes ", points: 10 },
     ],
   },
   {    
     question: "PARMIS CEST CHOIX, Quel type de salaire proposez-vous ?",    
     answers: [      
       { text: "100 bitcoin soit 262001.6e par mois , ok ok VISITEUR ! ", points: 0 },      
-      { text: "Un salaire fixe mensuel, peu importe le travail accompli", points: 5 },      
-      { text: "Une rémunération variable basée sur les résultats de l'entreprise", points: 10 },      
-      { text: "Une combinaison de salaire fixe et variable en fonction de la performance individuelle et de l'entreprise ", points: 20 },    
+      { text: "Un salaire fixe mensuel, peu importe le travail accompli", points: 3 },      
+      { text: "Une rémunération variable basée sur les résultats de l'entreprise", points: 5 },      
+      { text: "Une combinaison de salaire fixe et variable en fonction de la performance individuelle et de l'entreprise ", points: 10 },    
        ],
     },
     {    
       question: "PARMIS CEST CHOIX, Quel est votre jeu favori ?",    
       answers: [      
         { text: "le jeu de la vie ! haha comique ou VISITEUR ?", points: 0 },      
-        { text: "Les jeux vidéo ne sont pas vraiment ma tasse de thé, mais je reconnais leur potentiel pour se détendre.", points: 5 },      
-        { text: "J'adore les jeux open-world pour leur liberté de création et leur capacité à me permettre d'explorer de vastes univers virtuels.", points: 10 },      
-        { text: "J'aime les jeux de stratégie et de réflexion pour leur complexité et leur défi intellectuel", points: 20 },    
+        { text: "Les jeux vidéo ne sont pas vraiment ma tasse de thé, mais je reconnais leur potentiel pour se détendre.", points: 3 },      
+        { text: "J'adore les jeux open-world pour leur liberté de création et leur capacité à me permettre d'explorer de vastes univers virtuels.", points: 5 },      
+        { text: "J'aime les jeux de stratégie et de réflexion pour leur complexité et leur défi intellectuel", points: 10 },    
          ],
       },
 ];
@@ -65,7 +65,7 @@ restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
   startButton.style.display = "none";
-  shuffledQuestions = questions; // les questions ne sont pas mélangées
+  shuffledQuestions = questions;
   currentQuestionIndex = 0;
   score = 0;
   scoreElement.innerText = score;
@@ -124,11 +124,11 @@ function showResultMessage() {
   const totalPoints = shuffledQuestions.length * 10;
   const percentage = Math.round((score / totalPoints) * 100);
   let message = "";
-  if (percentage <= 50) {
+  if (percentage <= 20) {
     message = "Dommage, vous pouvez faire mieux !";
-  } else if (percentage <= 70) {
+  } else if (percentage <= 30) {
     message = "Pas mal, mais vous pouvez encore vous améliorer.";
-  } else if (percentage <= 90) {
+  } else if (percentage <= 50) {
     message = "Bravo, vous êtes presque un expert !";
   } else {
     message = "Félicitations, vous êtes un expert du sujet !";
@@ -143,11 +143,11 @@ function showScore() {
   totalElement.innerText = " sur " + totalPoints;
 
   let message;
-  if (score >= 90) {
+  if (score >= 50) {
     message = "Excellent !";
-  } else if (score >= 70) {
+  } else if (score >= 30) {
     message = "Très bien !";
-  } else if (score >= 50) {
+  } else if (score >= 20) {
     message = "Pas mal.";
   } else {
     message = "Dommage...";
