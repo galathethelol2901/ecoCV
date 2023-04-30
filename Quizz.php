@@ -12,7 +12,7 @@
 <body>
 <header></header>
 <div id="quiz-container">
-  <div id="question-container">
+  <div id="question-container">pourquoi ça buuuug
     <h2 id="question"></h2>
     <button class="btn" id="choice-0"></button>
     <button class="btn" id="choice-1"></button>
