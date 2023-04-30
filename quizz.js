@@ -143,3 +143,22 @@ function restartQuiz() {
   questionContainer.style.display = "block";
   setNextQuestion();
 }
+
+// récupérer les éléments score et total à partir du DOM
+const scoreElem = document.getElementById('score');
+const totalElem = document.getElementById('total');
+
+// récupérer les scores de l'utilisateur et du total depuis les éléments du DOM
+const scoreValue = parseInt(scoreElem.innerText);
+const totalValue = parseInt(totalElem.innerText);
+
+// afficher un message personnalisé en fonction du score de l'utilisateur
+if (scoreValue / totalValue >= 0.9) {
+  alert("Félicitations, vous avez obtenu un score excellent !");
+} else if (scoreValue / totalValue >= 0.7) {
+  alert("Bravo, vous avez obtenu un bon score !");
+} else if (scoreValue / totalValue >= 0.5) {
+  alert("Pas mal, vous avez obtenu un score moyen.");
+} else {
+  alert("Dommage, vous n'avez pas obtenu un bon score.");
+}
