@@ -1,3 +1,9 @@
+if (screen.width < 768) {
+    // L'utilisateur utilise un téléphone portable, redirigez-le vers une page différente ou affichez un message d'avertissement.
+    alert("Le jeu n'est pas compatible avec les appareils mobiles.");
+ }
+ else {
+    
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = 800;
@@ -5,6 +11,8 @@ canvas.height = 500;
 let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
+
+
 
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
@@ -290,3 +298,5 @@ window.addEventListener('resize', function(){
   mouse.x = canvas.width/2;
   mouse.y = canvas.height/2;
 });
+
+ }
