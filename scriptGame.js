@@ -8,8 +8,6 @@ ctx.font = '50px Georgia';
 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
-  canvas.width = 400;
-  canvas.height = 250;
   ctx.font = '15px Georgia';
 }
 
