@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>le petit jeu</title>
     <link rel="stylesheet" href="GameStyle.css">
+    <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <container>
@@ -23,6 +24,12 @@
         </span>
       </article>
     </container>
+<div id="home" > 
+
+<i class="fa-solid fa-house-user fa-bounce"></i>
+
+</div>
+
     <script src="scriptGame.js"></script>
     <script>
       var myAudio = document.getElementById("myAudio");

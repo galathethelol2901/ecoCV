@@ -6,6 +6,7 @@
     <title>Quizz app game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="Quizz.css">
+    <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
     <script defer src="quizz.js"></script>
 
 </head>
@@ -32,6 +33,10 @@
     <button class="btn" id="restart">Recommencer</button>
   </div>
   <button class="btn" id="start">Démarrer le quiz</button>
+
+
+</div id= "home">
+<i class="fa-solid fa-house-user fa-bounce"></i>
 </div>
 
 </body>
