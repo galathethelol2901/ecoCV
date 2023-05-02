@@ -9,13 +9,9 @@
 </head>
 <body>
     <container>
-
     <div id="orientation-message">
-
   <p>Please rotate your device to landscape mode for better experience.</p>
-  
 </div>
-
       <canvas id="canvas1"></canvas>
       <article>
         <span>a partir de 10pts la music peut aider !
@@ -26,9 +22,7 @@
     </container>
     
 <div id="home" > 
-
 <i class="fa-solid fa-house-user fa-bounce"></i>
-
 </div>
 
     <script src="scriptGame.js"></script>

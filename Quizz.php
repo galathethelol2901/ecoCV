@@ -36,9 +36,7 @@
 
 
 </div id= "home">
-
 <i class="fa-solid fa-house-user fa-bounce"></i>
-
 </div>
 
 </body>
