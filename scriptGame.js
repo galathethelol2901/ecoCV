@@ -5,6 +5,9 @@ canvas.height = 500;
 let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
+var heightwindow = window.innerHeight;
+var widthwindow = window.innerWidth;
+
 
 function detectOrientation() {
     var orientation = window.orientation || window.screen.orientation.type;
