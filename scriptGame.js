@@ -1,9 +1,3 @@
-if (screen.width < 768) {
-    // L'utilisateur utilise un téléphone portable, redirigez-le vers une page différente ou affichez un message d'avertissement.
-    alert("Le jeu n'est pas compatible avec les appareils mobiles.");
- }
- else {
-    
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = 800;
@@ -30,7 +24,6 @@ window.addEventListener('mouseup', function(e){
     mouse.click = false;
 });
 
-// Player
 const playerLeft = new Image();
 playerLeft.src = 'https://i.ibb.co/TBybGk5/fish-swim-left.png';
 const playerRight = new Image();
@@ -41,14 +34,20 @@ class Player {
         this.x = canvas.width;
         this.y = canvas.height/2;
         this.radius = 50;
-        //this.height = 20;
         this.angle = 0;
         this.frameX = 0;
         this.frameY = 0;
         this.frame = 0;
         this.spriteWidth = 160;
         this.spriteHeight = 105;
+        // Ajout de l'événement touchmove
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            this.x = e.touches[0].clientX;
+            this.y = e.touches[0].clientY;
+        });
     }
+
     update(){
         const dx = this.x - mouse.x;
         const dy = this.y - mouse.y;
@@ -67,6 +66,7 @@ class Player {
         let theta = Math.atan2(dy,dx);
         this.angle = theta;
     }
+
     draw(){
         if (mouse.click){
             ctx.lineWidth = 0.2;
@@ -94,9 +94,6 @@ class Player {
         ctx.save();
         ctx.translate(this.x, this.y);
         ctx.rotate(this.angle);
-        //ctx.beginPath();
-        //ctx.arc(0, 0, this.radius, 0, Math.PI * 360);
-        //ctx.fill();
         if (this.x >= mouse.x){
             ctx.drawImage(playerLeft, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth, this.spriteHeight, 0 - 60, 0 - 45, this.spriteWidth * 0.8, this.spriteHeight * 0.8);
         } else {
@@ -105,6 +102,7 @@ class Player {
         ctx.restore();
     }
 }
+
 const player = new Player();
 
 // Bubbles
@@ -298,5 +296,3 @@ window.addEventListener('resize', function(){
   mouse.x = canvas.width/2;
   mouse.y = canvas.height/2;
 });
-
- }
