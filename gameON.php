@@ -20,11 +20,12 @@
         </span>
       </article>
     </container>
-    
+
+    <footer>
 <div id="home" > 
 <i class="fa-solid fa-house-user fa-bounce"></i>
 </div>
-
+</footer>
     <script src="scriptGame.js"></script>
     <script>
       var myAudio = document.getElementById("myAudio");

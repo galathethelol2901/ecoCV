@@ -34,10 +34,10 @@
   </div>
   <button class="btn" id="start">Démarrer le quiz</button>
 
-
+<footer>
 </div id= "home">
 <i class="fa-solid fa-house-user fa-bounce"></i>
 </div>
-
+</footer>
 </body>
 </html>
