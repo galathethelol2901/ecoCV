@@ -13,17 +13,6 @@ if (isMobile) {
 }
 var heightwindow = window.innerHeight;
 var widthwindow = window.innerWidth;
-function detectOrientation() {
-    var orientation = window.orientation || window.screen.orientation.type;
-    if (orientation === "portrait-primary" || orientation === "portrait-secondary") {
-      document.getElementById("orientation-message").style.display = "flex";
-    } else {
-      document.getElementById("orientation-message").style.display = "none";
-    }
-  }
-  window.addEventListener("orientationchange", detectOrientation);
-  window.addEventListener("resize", detectOrientation);
-  detectOrientation();
 
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
