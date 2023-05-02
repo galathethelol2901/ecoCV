@@ -6,7 +6,22 @@ let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
 
-
+function detectOrientation() {
+    var orientation = window.orientation || window.screen.orientation.type;
+  
+    if (orientation === "portrait-primary" || orientation === "portrait-secondary") {
+      // Afficher le message d'orientation en mode portrait
+      document.getElementById("orientation-message").style.display = "flex";
+    } else {
+      // Masquer le message d'orientation en mode paysage
+      document.getElementById("orientation-message").style.display = "none";
+    }
+  }
+  
+  // Appeler la fonction detectOrientation à chaque changement d'orientation
+  window.addEventListener("orientationchange", detectOrientation);
+  window.addEventListener("resize", detectOrientation);
+  detectOrientation(); // Appeler la fonction au chargement de la page
 
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();

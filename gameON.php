@@ -8,6 +8,10 @@
 </head>
 <body>
     <container>
+    <div id="orientation-message">
+  <p>Please rotate your device to landscape mode for better experience.</p>
+</div>
+
       <canvas id="canvas1"></canvas>
       <article>
         <span>a partir de 10pts la music peut aider !
