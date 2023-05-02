@@ -5,14 +5,27 @@ canvas.height = 500;
 let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-if (isMobile) {
-  canvas.width = 400;
-  canvas.height = 250;
-  ctx.font = '30px Georgia';
-}
+
 var heightwindow = window.innerHeight;
 var widthwindow = window.innerWidth;
+
+
+function detectOrientation() {
+    var orientation = window.orientation || window.screen.orientation.type;
+  
+    if (orientation === "portrait-primary" || orientation === "portrait-secondary") {
+      // Afficher le message d'orientation en mode portrait
+      document.getElementById("orientation-message").style.display = "flex";
+    } else {
+      // Masquer le message d'orientation en mode paysage
+      document.getElementById("orientation-message").style.display = "none";
+    }
+  }
+  
+  // Appeler la fonction detectOrientation à chaque changement d'orientation
+  window.addEventListener("orientationchange", detectOrientation);
+  window.addEventListener("resize", detectOrientation);
+  detectOrientation(); // Appeler la fonction au chargement de la page
 
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
@@ -189,20 +202,11 @@ ctx.fillText('LIQUID', 20, 42);
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
 
-let fontSize = 17; // Taille de police par défaut pour les ordinateurs de bureau
-
-if (window.innerWidth < 768) { // Largeur d'écran inférieure à 768 pixels, considérée comme mobile
-  fontSize = 12; // Taille de police pour les appareils mobiles
-}
-
-ctx.font = `${fontSize}px Verdana`;
-
-
 class Particle2 {
     constructor(x, y){
         this.x = x;
         this.y = y;
-        this.size = window.innerWidth < 768 ? 3 : 7; // smaller size on mobile devices
+        this.size = 7;
         this.baseX = this.x;
         this.baseY = this.y;
         this.density = (Math.random() * 15) + 1;
@@ -306,8 +310,8 @@ function animate(){
 }
 animate();
 
-window.addEventListener('resize', function() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    canvasPosition = canvas.getBoundingClientRect();
-  });
+window.addEventListener('resize', function(){
+  canvasPosition = canvas.getBoundingClientRect();
+  mouse.x = canvas.width/2;
+  mouse.y = canvas.height/2;
+});
