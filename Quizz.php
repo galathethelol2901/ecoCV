@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,10 @@
     <link rel="stylesheet" href="Quizz.css">
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
     <script defer src="quizz.js"></script>
-
 </head>
 
 <body>
-<<header>
+<header>
   <h1 >ptit QUIZZ ultra FAST</h1>
 </header>
 

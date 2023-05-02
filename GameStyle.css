@@ -59,26 +59,6 @@ article span, article span > a {
 color: white;
 }
 
-footer {
-font-family: monospace;
-position: absolute;
-width: 100%;
-color: white;
-font-size: 15px;
-text-shadow: 1px 1px 1px #737373; 
-background: rgba(0,0,0,0.5);
-left: 0;
-bottom: 0;
-width: 100%;
-text-align: center;
-height: 30px;
-line-height: 30px;
-padding-right: 20px;
-}
-footer a{
-color: white;
-}
-
 #orientation-message {
   position: fixed;
   top: 0;
