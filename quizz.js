@@ -126,13 +126,13 @@ function showResultMessage() {
   const percentage = Math.round((score / totalPoints) * 50);
   let message = "";
   if (percentage <= 15) {
-    message = " visiblement on est pas fait pour travailler ensemble MAIS on peut toujours ce suivre sur les reseaux les liens sont en bas de page";
+    message = "Il semble que nos profils ne soient pas très compatibles pour travailler ensemble. Cependant, nous pouvons toujours nous suivre sur les réseaux sociaux. Les liens se trouvent en bas de la page.";
   } else if (percentage <= 25) {
-    message = "on a des point commain , peut etre pas sufisament mais un entretiens telephonique n engage a rien alors hesiter pas a apeller";
+    message =  "Nous avons quelques points en commun, bien que peut-être pas suffisamment. Un entretien téléphonique ne coûte rien, alors n'hésitez pas à m'appeler.";
   } else if (percentage <= 35) {
-    message = "je comprend vos attente et vous comprenez les miennes prenon contact sans plus attendre !";
+    message =  "Je comprends vos attentes, et vous comprenez les miennes. Ne perdons pas de temps, prenons contact dès maintenant !";
   } else {
-    message = "on est fait pour ce rencomtrer on a les meme valeur alors autant ne pas perdre de temps contacter moi rapidement !";
+    message = "Nous avons les mêmes valeurs et sommes faits pour nous rencontrer. Ne perdons pas de temps, contactez-moi rapidement !";
   }
   resultMessage.innerText = message;
 }
