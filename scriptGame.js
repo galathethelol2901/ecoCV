@@ -193,7 +193,7 @@ let adjustX = -3;
 let adjustY = -3;
 ctx.fillStyle = 'white';
 ctx.font = '17px Verdana';
-ctx.fillText('LIQUID', 20, 42);
+ctx.fillText('ECOPROG6', 18, 40);
 //ctx.font = '19px Verdana';
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
