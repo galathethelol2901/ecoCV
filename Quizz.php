@@ -10,15 +10,11 @@
 
 </head>
 <body>
-<header>
 <<header>
-  <h1 class="gradient-text">ptit QUIZZ ultra FAST</h1>
+  <h1 >ptit QUIZZ ultra FAST</h1>
 </header>
 
-<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-
-</header>
-
+<div class="sky"></div>
 <div id="quiz-container">
   <div id="question-container">
     <h2 id="question"></h2>
