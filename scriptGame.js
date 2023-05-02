@@ -5,6 +5,8 @@ canvas.height = 500;
 let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
+
+// Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
 const mouse = {
     x: canvas.width/2,
@@ -18,19 +20,6 @@ canvas.addEventListener('mousemove', function(e){
 });
 window.addEventListener('mouseup', function(e){
     mouse.click = false;
-});
-
-
-var element = document.getElementById("player");
-
-
-element.addEventListener("touchmove", function(event) {
-  event.preventDefault();
-  var touch = event.touches[0];
-  var x = touch.pageX;
-  var y = touch.pageY;
-  element.style.left = x + "px";
-  element.style.top = y + "px";
 });
 
 // Player
@@ -182,8 +171,8 @@ let bubbleTextArray = [];
 let adjustX = -3;
 let adjustY = -3;
 ctx.fillStyle = 'white';
-ctx.font = '15px Verdana';
-ctx.fillText('ecoprog6', 20, 42);
+ctx.font = '17px Verdana';
+ctx.fillText('LIQUID', 20, 42);
 //ctx.font = '19px Verdana';
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
