@@ -16,10 +16,10 @@ const questions = [
   {    
   question: "PARMIS CEST CHOIX, Dans quelle circomstance etes vous arrivez sur ce quizz ?",    
   answers: [      
-    { text: "Je me suis perdu dans les méandres de l'Internet, comme d'habitude alors VISITEUR", points: 0 },           
-    { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ecopro6 est candidat pour mon entreprise ", points: 5 },      
+    { text: "Je me suis perdu dans les méandres de l'Internet, comme d'habitude alors on va dire VISITEUR", points: 0 },           
+    { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ecopro6 etais candidat pour mon entreprise ", points: 5 },      
     { text: "Je suis actuellement à la recherche d'un développeur talentueux pour rejoindre mon équipe ", points: 10 }, 
-    { text: "Je suis venu voir ce que font mes concurrents pour m'inspirer, mais finalement j'ai préféré passer ce petit quizz", points: 3 },    
+    { text: "Je suis venu voir ce que font mes concurrents pour m'inspirer, et finalement j'ai préféré passer ce petit quizz", points: 3 },    
      ],
   },
   {

@@ -10,7 +10,16 @@
 
 </head>
 <body>
-<header></header>
+<header>
+<h3>
+            voila un petit quizz bien sympatique , <br>
+            rapide , et selon votre score nous verrons <br>
+            si on est fait pour travailler ensemble ;<br>
+            tous les liens mennent a mes resaux ,meme <br>
+            si on est pas compatible restont en contacte <br>
+
+</h3>
+</header>
 
 <div id="quiz-container">
   <div id="question-container">
