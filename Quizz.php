@@ -14,7 +14,21 @@
   <h1 >ptit QUIZZ ultra FAST</h1>
 </header>
 
-<div class="sky"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+<div class="point"></div>
+
+
 <div id="quiz-container">
   <div id="question-container">
     <h2 id="question"></h2>
