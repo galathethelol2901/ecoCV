@@ -5,19 +5,6 @@ canvas.height = 500;
 let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
-let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-if (isMobile) {
-    canvas.removeEventListener('mousemove', function(e){
-      mouse.click = true;
-      mouse.x = e.x - canvasPosition.left;
-      mouse.y = e.y - canvasPosition.top;
-    });
-    window.removeEventListener('mouseup', function(e){
-      mouse.click = false;
-    });
-  }
-
 let canvasPosition = canvas.getBoundingClientRect();
 const mouse = {
     x: canvas.width/2,
@@ -31,6 +18,19 @@ canvas.addEventListener('mousemove', function(e){
 });
 window.addEventListener('mouseup', function(e){
     mouse.click = false;
+});
+
+
+var element = document.getElementById("player");
+
+
+element.addEventListener("touchmove", function(event) {
+  event.preventDefault();
+  var touch = event.touches[0];
+  var x = touch.pageX;
+  var y = touch.pageY;
+  element.style.left = x + "px";
+  element.style.top = y + "px";
 });
 
 // Player
