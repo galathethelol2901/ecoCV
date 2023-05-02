@@ -24,7 +24,68 @@ body {
   background: linear-gradient(315deg, #959191, #262729);
   overflow: hidden;
 }
-
+.gradient-text {
+  background-color: #CA4246;
+   background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+   animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+.gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+header {
+  margin-top: 1em;
+  margin-top: calc(50vh - 3em);
+}
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 6em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  width: 605px;
+}
 #quiz-container {
   width: 500px;
   height: 500px;

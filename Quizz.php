@@ -11,14 +11,12 @@
 </head>
 <body>
 <header>
-<h3>
-            voila un petit quizz bien sympatique , <br>
-            rapide , et selon votre score nous verrons <br>
-            si on est fait pour travailler ensemble ;<br>
-            tous les liens mennent a mes resaux ,meme <br>
-            si on est pas compatible restont en contacte <br>
+<<header>
+  <h1 class="gradient-text">ptit QUIZZ ultra FAST</h1>
+</header>
 
-</h3>
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
 </header>
 
 <div id="quiz-container">
