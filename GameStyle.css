@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  backround: linear-gradient(to bottom, lightblue, darkblue);
 }
 .container {
   width: 800px;
@@ -61,3 +60,17 @@ padding-right: 20px;
 footer a{
 color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 400px;
+    height: 250px;
+  }
+  #canvas1 {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+
+
