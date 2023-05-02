@@ -14,15 +14,6 @@ if (isMobile) {
 var heightwindow = window.innerHeight;
 var widthwindow = window.innerWidth;
 
-function resizeCanvas() {
-    const container = document.getElementById('container');
-    canvas.width = container.offsetWidth;
-    canvas.height = container.offsetHeight;
-  }
-  
-  resizeCanvas();
-  window.addEventListener('resize', resizeCanvas);
-
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
 const mouse = {
