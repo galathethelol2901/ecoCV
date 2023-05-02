@@ -14,19 +14,6 @@ if (isMobile) {
 var heightwindow = window.innerHeight;
 var widthwindow = window.innerWidth;
 
-function resizeCanvas() {
-    const container = document.getElementById('container');
-    const newWidth = container.offsetWidth;
-    const newHeight = container.offsetHeight;
-  
-    if (newWidth !== canvas.width || newHeight !== canvas.height) {
-      canvas.width = newWidth;
-      canvas.height = newHeight;
-    }
-  }
-  
-  window.addEventListener('resize', resizeCanvas);
-
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
 const mouse = {
@@ -202,11 +189,20 @@ ctx.fillText('LIQUID', 20, 42);
 //ctx.fillText('TEXT', 36, 49);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
 
+let fontSize = 17; // Taille de police par défaut pour les ordinateurs de bureau
+
+if (window.innerWidth < 768) { // Largeur d'écran inférieure à 768 pixels, considérée comme mobile
+  fontSize = 12; // Taille de police pour les appareils mobiles
+}
+
+ctx.font = `${fontSize}px Verdana`;
+
+
 class Particle2 {
     constructor(x, y){
         this.x = x;
         this.y = y;
-        this.size = 7;
+        this.size = window.innerWidth < 768 ? 3 : 7; // smaller size on mobile devices
         this.baseX = this.x;
         this.baseY = this.y;
         this.density = (Math.random() * 15) + 1;
