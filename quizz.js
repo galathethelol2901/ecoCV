@@ -16,10 +16,10 @@ const questions = [
   {    
   question: "PARMIS CEST CHOIX, Dans quelle circomstance etes vous arrivez sur ce quizz ?",    
   answers: [      
-    { text: "Je me suis perdu dans les méandres de l'Internet, comme d'habitude alors VISITEUR", points: 0 },      
-    { text: "Je suis venu voir ce que font mes concurrents pour m'inspirer, mais finalement j'ai préféré passer ce petit quizz", points: 3 },      
+    { text: "Je me suis perdu dans les méandres de l'Internet, comme d'habitude alors VISITEUR", points: 0 },           
     { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ecopro6 est candidat pour mon entreprise ", points: 5 },      
-    { text: "Je suis actuellement à la recherche d'un développeur talentueux pour rejoindre mon équipe ", points: 10 },    
+    { text: "Je suis actuellement à la recherche d'un développeur talentueux pour rejoindre mon équipe ", points: 10 }, 
+    { text: "Je suis venu voir ce que font mes concurrents pour m'inspirer, mais finalement j'ai préféré passer ce petit quizz", points: 3 },    
      ],
   },
   {
@@ -27,17 +27,17 @@ const questions = [
     answers: [
       { text: "Une entreprise où tout le monde est payé en tacos ,donc ont dit VISITEUR hein ? ", points: 0 },
       { text: "Une entreprise qui accorde la priorité aux profits avant tout", points: 3 },
-      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés", points: 5 },
       { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés", points: 10 },
+      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés", points: 5 }
     ],
   },
 {
     question: "PARMIS CEST CHOIX, Quel niveau d'études recherchez-vous chez vos employés ?",
     answers: [
       { text: "si il a youtube je prend ! donc comme toujours VISITEUR ! ", points: 0 },
+      { text: "je suis ouvert à tous les profils, y compris les autodidactes ", points: 10 },
       { text: "Master +5 : j'exige un niveau élevé d'études supérieures", points: 3 },
       { text: "Je valorise plus l'expérience professionnelle que le niveau d'études ", points: 5 },
-      { text: "je suis ouvert à tous les profils, y compris les autodidactes ", points: 10 },
     ],
   },
   {    
@@ -52,10 +52,11 @@ const questions = [
     {    
       question: "PARMIS CEST CHOIX, Quel est votre jeu favori ?",    
       answers: [      
-        { text: "le jeu de la vie ! haha comique ou VISITEUR ?", points: 0 },      
+        { text: "le jeu de la vie ! haha comique ou VISITEUR ?", points: 0 },  
+        { text: "J'aime les jeux de stratégie et de réflexion pour leur complexité et leur défi intellectuel", points: 10 },     
         { text: "Les jeux vidéo ne sont pas vraiment ma tasse de thé, mais je reconnais leur potentiel pour se détendre.", points: 3 },      
         { text: "J'adore les jeux open-world pour leur liberté de création et leur capacité à me permettre d'explorer de vastes univers virtuels.", points: 5 },      
-        { text: "J'aime les jeux de stratégie et de réflexion pour leur complexité et leur défi intellectuel", points: 10 },    
+         
          ],
       },
 ];
