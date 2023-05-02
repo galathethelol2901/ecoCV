@@ -6,6 +6,13 @@ let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
 
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  canvas.width = 400;
+  canvas.height = 250;
+  ctx.font = '15px Georgia';
+}
+
 var heightwindow = window.innerHeight;
 var widthwindow = window.innerWidth;
 
@@ -21,7 +28,6 @@ function detectOrientation() {
       document.getElementById("orientation-message").style.display = "none";
     }
   }
-  
   // Appeler la fonction detectOrientation à chaque changement d'orientation
   window.addEventListener("orientationchange", detectOrientation);
   window.addEventListener("resize", detectOrientation);
