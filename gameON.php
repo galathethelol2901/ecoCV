@@ -24,6 +24,7 @@
         </span>
       </article>
     </container>
+    
 <div id="home" > 
 
 <i class="fa-solid fa-house-user fa-bounce"></i>
