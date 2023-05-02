@@ -55,7 +55,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     width: 80%; /* utiliser % pour définir la largeur des boutons */
-    max-width: 200px; /* utiliser max-width pour définir la largeur maximale */
+    max-width: 400px; /* utiliser max-width pour définir la largeur maximale */
     height: auto; /* utiliser auto pour définir la hauteur en fonction du contenu */
   }
 
