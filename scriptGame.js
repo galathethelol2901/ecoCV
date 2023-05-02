@@ -297,8 +297,8 @@ function animate(){
 }
 animate();
 
-window.addEventListener('resize', function(){
-  canvasPosition = canvas.getBoundingClientRect();
-  mouse.x = canvas.width/2;
-  mouse.y = canvas.height/2;
-});
+window.addEventListener('resize', function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvasPosition = canvas.getBoundingClientRect();
+  });
