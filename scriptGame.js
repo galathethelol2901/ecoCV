@@ -5,14 +5,18 @@ canvas.height = 500;
 let score = 0;
 let gameFrame = 0;
 ctx.font = '50px Georgia';
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-if (isMobile) {
-  canvas.width = 400;
-  canvas.height = 250;
-  ctx.font = '30px Georgia';
+
+const canvas = document.getElementById('canvas1');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  const container = document.getElementById('container');
+  canvas.width = container.offsetWidth;
+  canvas.height = container.offsetHeight;
 }
-var heightwindow = window.innerHeight;
-var widthwindow = window.innerWidth;
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
 
 // Mouse interactivity
 let canvasPosition = canvas.getBoundingClientRect();
