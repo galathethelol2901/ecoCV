@@ -55,12 +55,6 @@ class Player {
         this.frame = 0;
         this.spriteWidth = 160;
         this.spriteHeight = 105;
-        // Ajout de l'événement touchmove
-        canvas.addEventListener('touchmove', (e) => {
-            e.preventDefault();
-            this.x = e.touches[0].clientX;
-            this.y = e.touches[0].clientY;
-        });
     }
 
     update(){
@@ -192,7 +186,7 @@ let bubbleTextArray = [];
 let adjustX = -3;
 let adjustY = -3;
 ctx.fillStyle = 'white';
-ctx.font = '17px Verdana';
+ctx.font = '14px Verdana';
 ctx.fillText('ECOPROG6', 18, 40);
 //ctx.font = '19px Verdana';
 //ctx.fillText('TEXT', 36, 49);
