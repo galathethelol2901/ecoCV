@@ -22,10 +22,12 @@
     </container>
 
     <footer>
-    <div id="home" > 
-    <i class="fa-solid fa-house-user fa-bounce"></i>
+    <div id="home">
+    <a href="index.php">
+    <i class="fa-solid fa-house fa-bounce"></i>
+    </a>
     </div>
-    </footer>
+  </footer>
 
     <script src="scriptGame.js"></script>
     <script>
