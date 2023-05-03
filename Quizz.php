@@ -33,7 +33,9 @@
 
   <footer>
     <div id="home">
+    <a href="index.php">
     <i class="fa-solid fa-house fa-bounce"></i>
+    </a>
     </div>
   </footer>
 </body>
