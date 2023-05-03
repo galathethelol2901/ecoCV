@@ -34,7 +34,7 @@ const questions = [
 {
     question: "PARMIS CEST CHOIX, Quel niveau d'études recherchez-vous chez vos employés ?",
     answers: [
-      { text: "si il  est capable de nommer les 151 premiers Pokémon dans l'ordre, je le considère comme ayant un niveau d'éducation supérieur. ok ok VISITEUR !", points: 0 },
+      { text: "si il  peut me battre à Mario Kart, il est clairement qualifié pour travailler avec moi.. ok ok VISITEUR !", points: 0 },
       { text: "je suis ouvert à tous les profils, y compris les autodidactes ,apres verification de competences dans le domaine.", points: 10 },
       { text: "Master +5 : j'exige un niveau élevé d'études supérieures indicateur important de la capacité à assimiler des connaissances", points: 3 },
       { text: "Je valorise plus l'expérience professionnelle que le niveau d'études, les competence pratique aquise sont fondamentale.", points: 5 },
@@ -126,7 +126,7 @@ function showResultMessage() {
   const percentage = Math.round((score / totalPoints) * 50);
   let message = "";
   if (percentage <= 15) {
-    message = "Il semble que nos profils ne soient pas très compatibles pour travailler ensemble. Cependant, nous pouvons toujours nous suivre sur les réseaux sociaux. Les liens se trouvent en bas de la page.";
+    message = "Il semble que nos profils ne soient pas très compatibles pour travailler ensemble. Cependant, nous pouvons toujours nous suivre sur les réseaux sociaux.Dans le cv il y a tous les lien ;)";
   } else if (percentage <= 25) {
     message =  "Nous avons quelques points en commun, bien que peut-être pas suffisamment. Un entretien téléphonique ne coûte rien, alors n'hésitez pas à m'appeler.";
   } else if (percentage <= 35) {
