@@ -11,8 +11,6 @@
 </head>
 <body>
   <header>
-    <h1>bienvenue sur le ULTRA fast quizz ! </h1>
-    <h4>pour ce site , pas de pression , pas de mauvaise reponse et pas de temps limiter, la seule limite est la curiositer<h4>
   </header>
 
   <div id="quiz-container">
