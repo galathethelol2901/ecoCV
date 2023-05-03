@@ -33,7 +33,7 @@
 
   <footer>
     <div id="home">
-    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-house fa-bounce"></i>
     </div>
   </footer>
 </body>
