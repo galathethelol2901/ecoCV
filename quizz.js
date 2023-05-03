@@ -25,36 +25,36 @@ const questions = [
   {
     question: "PARMIS CEST CHOIX, Quelle est votre vision de l'entreprise idéale ?",
     answers: [
-      { text: "Une entreprise où tout le monde est payé en tacos ,donc ont dit VISITEUR hein ? ", points: 0 },
-      { text: "Une entreprise qui accorde la priorité aux profits avant tout", points: 3 },
-      { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés", points: 10 },
-      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés", points: 5 }
+      { text: "Une entreprise où tout le monde est payé en calin et café ,donc ont dit VISITEUR j'imagine ? ", points: 0 },
+      { text: "Une entreprise qui accorde la priorité absolue aux profits ,ecologie et bien etre social au second plan ", points: 3 },
+      { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés ,ethique ", points: 10 },
+      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés, tant que ça fonctionne ! ", points: 5 }
     ],
   },
 {
     question: "PARMIS CEST CHOIX, Quel niveau d'études recherchez-vous chez vos employés ?",
     answers: [
-      { text: "si il a youtube je prend ! donc comme toujours VISITEUR ! ", points: 0 },
-      { text: "je suis ouvert à tous les profils, y compris les autodidactes ", points: 10 },
-      { text: "Master +5 : j'exige un niveau élevé d'études supérieures", points: 3 },
-      { text: "Je valorise plus l'expérience professionnelle que le niveau d'études ", points: 5 },
+      { text: "si il a youtube et la fibre je l embauche ! donc comme toujours ont dit VISITEUR !", points: 0 },
+      { text: "je suis ouvert à tous les profils, y compris les autodidactes ,apres verification de competences dans le domaine.", points: 10 },
+      { text: "Master +5 : j'exige un niveau élevé d'études supérieures ,garantie d efficaciter.", points: 3 },
+      { text: "Je valorise plus l'expérience professionnelle que le niveau d'études,tous metier confondu.", points: 5 },
     ],
   },
   {    
     question: "PARMIS CEST CHOIX, Quel type de salaire proposez-vous ?",    
     answers: [      
-      { text: "100 bitcoin soit 262001.6e par mois , ok ok VISITEUR ! ", points: 0 },      
-      { text: "Un salaire fixe mensuel, peu importe le travail accompli", points: 3 },      
-      { text: "Une rémunération variable basée sur les résultats de l'entreprise", points: 5 },      
-      { text: "Une combinaison de salaire fixe et variable en fonction de la performance individuelle et de l'entreprise ", points: 10 },    
+      { text: "100 bitcoin soit 262001.6e par mois ,et 1 nft en recompence... ok ok VISITEUR !", points: 0 },      
+      { text: "Un salaire fixe mensuel, peu importe le travail accompli ,et c'est pareil pour tous le monde. ", points: 3 },      
+      { text: "Une rémunération variable basée sur les résultats de l'entreprise ,on gagne ensemble ou on perd ensemble.", points: 5 },      
+      { text: "Une combinaison de salaire fixe et variable en fonction de la performance individuelle et de l'entreprise", points: 10 },    
        ],
     },
     {    
       question: "PARMIS CEST CHOIX, Quel est votre jeu favori ?",    
       answers: [      
-        { text: "le jeu de la vie ! haha comique ou VISITEUR ?", points: 0 },  
-        { text: "J'aime les jeux de stratégie et de réflexion pour leur complexité et leur défi intellectuel", points: 10 },     
-        { text: "Les jeux vidéo ne sont pas vraiment ma tasse de thé, mais je reconnais leur potentiel pour se détendre.", points: 3 },      
+        { text: "VISITEUR pour la cinquieme fois depuis le debut de ce quizz ,je me suis bien amuser ,on fait quoi maintenant ?", points: 0 },  
+        { text: "J'aime les jeux de stratégie et de réflexion pour leur complexité et leur défi intellectuel ,jeux de societer ou de carte aussi.", points: 10 },     
+        { text: "Les jeux vidéo ne sont pas ma tasse de thé, mais je reconnais leur potentiel pour se détendre ,mais jai pas vraiment le temps de jouer", points: 3 },      
         { text: "J'adore les jeux open-world pour leur liberté de création et leur capacité à me permettre d'explorer de vastes univers virtuels.", points: 5 },      
          
          ],

@@ -22,7 +22,6 @@
       <button class="btn" id="choice-1"></button>
       <button class="btn" id="choice-2"></button>
       <button class="btn" id="choice-3"></button>
-      <button class="btn" id="next-btn" style="display: none;">Suivant</button>
     </div>
     <div id="score-container">
       <h2>Votre score est de <span id="score"></span><span id="total"></span></h2>
