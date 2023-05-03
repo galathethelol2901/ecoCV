@@ -79,18 +79,11 @@ display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  #quiz-container {
-    width: 90%;
-    max-width: 100%;
-    height: auto;
-    margin: 20px;
-    padding: 10px;
+  /* Ajouter des règles CSS pour les tailles d'écran de 768px et moins */
+  body {
+    overflow: auto;
   }
-  .btn {
-    width: 100%;
-    max-width: 100%;
-  }
-}
+  
   footer {
     flex-direction: column;
     justify-content: center;
@@ -109,4 +102,17 @@ display: none;
     right: 50%;
     transform: translateX(50%) scale(1.2);
   }
+}
+#quiz-container {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+}
+
+.btn {
+  width: 100%;
+  max-width: 100%;
+}
 
