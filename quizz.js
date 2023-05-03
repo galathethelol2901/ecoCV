@@ -17,7 +17,7 @@ const questions = [
   question: "PARMIS CEST CHOIX, Dans quelle circomstance etes vous arrivez sur ce quizz ?",    
   answers: [      
     { text: "Je me suis perdu dans les méandres de l'Internet, comme d'habitude alors on va dire VISITEUR", points: 0 },           
-    { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ecopro6 etais candidat pour mon entreprise ", points: 5 },      
+    { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ECOPROG6 etais candidat pour mon entreprise ", points: 5 },      
     { text: "Je suis actuellement à la recherche d'un développeur talentueux pour rejoindre mon équipe ", points: 10 }, 
     { text: "Je suis venu voir ce que font mes concurrents pour m'inspirer, et finalement j'ai préféré passer ce petit quizz", points: 3 },    
      ],
@@ -25,27 +25,27 @@ const questions = [
   {
     question: "PARMIS CEST CHOIX, Quelle est votre vision de l'entreprise idéale ?",
     answers: [
-      { text: "Une entreprise où tout le monde est payé en calin et café ,donc ont dit VISITEUR j'imagine ? ", points: 0 },
+      { text: "Une entreprise de production de cigarettes, avec une stratégie de marketing agressive pour cibler les jeunes. Ont dit VISITEUR j'imagine ?", points: 0 },
       { text: "Une entreprise qui accorde la priorité absolue aux profits ,ecologie et bien etre social au second plan ", points: 3 },
-      { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés ,ethique ", points: 10 },
-      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés, tant que ça fonctionne ! ", points: 5 }
+      { text: "Une entreprise qui vise un juste milieu entre profits et bien-être des employés ,ethique et responsable. ", points: 10 },
+      { text: "Une entreprise qui valorise la liberté et l'autonomie de ses employés, tant que ça fonctionne !? ", points: 5 }
     ],
   },
 {
     question: "PARMIS CEST CHOIX, Quel niveau d'études recherchez-vous chez vos employés ?",
     answers: [
-      { text: "si il a youtube et la fibre je l embauche ! donc comme toujours ont dit VISITEUR !", points: 0 },
+      { text: "si il  est capable de nommer les 151 premiers Pokémon dans l'ordre, je le considère comme ayant un niveau d'éducation supérieur. ok ok VISITEUR !", points: 0 },
       { text: "je suis ouvert à tous les profils, y compris les autodidactes ,apres verification de competences dans le domaine.", points: 10 },
-      { text: "Master +5 : j'exige un niveau élevé d'études supérieures ,garantie d efficaciter.", points: 3 },
-      { text: "Je valorise plus l'expérience professionnelle que le niveau d'études,tous metier confondu.", points: 5 },
+      { text: "Master +5 : j'exige un niveau élevé d'études supérieures indicateur important de la capacité à assimiler des connaissances", points: 3 },
+      { text: "Je valorise plus l'expérience professionnelle que le niveau d'études, les competence pratique aquise sont fondamentale.", points: 5 },
     ],
   },
   {    
     question: "PARMIS CEST CHOIX, Quel type de salaire proposez-vous ?",    
     answers: [      
-      { text: "100 bitcoin soit 262001.6e par mois ,et 1 nft en recompence... ok ok VISITEUR !", points: 0 },      
-      { text: "Un salaire fixe mensuel, peu importe le travail accompli ,et c'est pareil pour tous le monde. ", points: 3 },      
-      { text: "Une rémunération variable basée sur les résultats de l'entreprise ,on gagne ensemble ou on perd ensemble.", points: 5 },      
+      { text: "100 bitcoin soit 262001.6e par mois ,et un cafe .Bon je crois que ont commence a comprendre que les reponse VISITEUR raporte 0point !", points: 0 },      
+      { text: "Un salaire fixe mensuel, peu importe le travail accompli ,definis en amont, selon le poste et les competences . ", points: 5 },      
+      { text: "Une rémunération variable basée sur les résultats de l'entreprise ,on gagne ensemble ou on perd ensemble.", points: 3 },      
       { text: "Une combinaison de salaire fixe et variable en fonction de la performance individuelle et de l'entreprise", points: 10 },    
        ],
     },
