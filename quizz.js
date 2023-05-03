@@ -14,7 +14,7 @@ let shuffledQuestions, currentQuestionIndex, score;
 
 const questions = [  
   {    
-  question: "PARMIS CEST CHOIX, Dans quelle circomstance etes vous arrivez sur ce quizz ?",    
+  question: "PARMIS CEST CHOIX, Comment etes vous arrivez sur ce quizz ?",    
   answers: [      
     { text: "Je me suis perdu dans les méandres de l'Internet, comme d'habitude alors on va dire VISITEUR", points: 0 },           
     { text: "Je suis tombé sur vos sites j'ai décidé de voir si le dev de ECOPROG6 etais candidat pour mon entreprise ", points: 5 },      
@@ -32,7 +32,7 @@ const questions = [
     ],
   },
 {
-    question: "PARMIS CEST CHOIX, Quel niveau d'études recherchez-vous chez vos employés ?",
+    question: "PARMIS CEST CHOIX, Quel profils recherchez-vous chez vos employés ?",
     answers: [
       { text: "si il  peut me battre à Mario Kart, il est clairement qualifié pour travailler avec moi.. ok ok VISITEUR !", points: 0 },
       { text: "je suis ouvert à tous les profils, y compris les autodidactes ,apres verification de competences dans le domaine.", points: 10 },
