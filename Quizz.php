@@ -34,7 +34,7 @@
 
   <footer>
     <div id="home">
-    <i class="fa-solid fa-house-person-leave fa-bounce" style="color: #FFFFFF;"></i>
+    <i class="fa-solid fa-house-person-leave fa-bounce" style="color: #b0ccbc;"></i>
     </div>
   </footer>
 </body>
