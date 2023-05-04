@@ -14,7 +14,7 @@
     </div>
       <canvas id="canvas1"></canvas>
       <article>
-        <span>a partir de 10pts la music peut aider !
+        <span>a partir de 10pts la musique peut aider !
           <audio id="myAudio" src="musicGme.mp3"></audio>
           <button onclick="togglePlay()">Play</button>
         </span>

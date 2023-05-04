@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz app game</title>
+    <title>Quizz ECOPROG6</title>
     <link rel="stylesheet" href="Quizz.css">
     <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
     <script defer src="quizz.js"></script>
