@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   background: rgb(1,22,80);
-  background: radial-gradient(circle, rgba(2,210,252,1) 74%,rgba(1,22,80,1) 64% );
+  background: linear-gradient(45deg, rgba(1,22,80,1) 50%, rgba(2,210,252,1) 52%, rgba(0,0,0,1) 55%);
 }
 
 .container {
