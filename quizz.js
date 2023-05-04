@@ -43,7 +43,7 @@ const questions = [
   {    
     question: "Parmi ces choix, Quel type de salaire proposez-vous ?",    
     answers: [      
-      { text: "100 bitcoins, soit 262001.6 € par mois, et un café. Bon, je crois qu'on commence à comprendre que les réponses 'VISITEUR' rapportent 0 point !", points: 0 },      
+      { text: "100 bitcoins, soit 262001.6 € par mois, et un café. Bon, on commence à comprendre que les réponses 'VISITEUR' rapportent 0 point !", points: 0 },      
       { text: "Un salaire fixe mensuel, peu importe le travail accompli, défini en amont selon le poste et les compétences.", points: 5 },      
       { text: "Une rémunération variable basée sur les résultats de l'entreprise, on gagne ensemble ou on perd ensemble.", points: 3 },      
       { text: "Une combinaison de salaire fixe et variable en fonction de la performance individuelle et de l'entreprise", points: 10 },    
