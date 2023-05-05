@@ -80,17 +80,21 @@ function setNextQuestion() {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
   nextButton.style.display = "none";
-  nextButton.addEventListener("click", () => {
+
+  function handleClick() {
     currentQuestionIndex++;
     if (currentQuestionIndex < shuffledQuestions.length) {
       showQuestion(shuffledQuestions[currentQuestionIndex]);
       resetState();
       nextButton.style.display = "none";
+      nextButton.addEventListener("click", handleClick); // ajoute un nouvel événement "click" sur le bouton "Suivant"
     } else {
       showScore();
     }
-  });
-  nextButton.style.display = "inline-block"; // Ajout de cette ligne pour afficher le bouton "Suivant"
+  }
+
+  nextButton.addEventListener("click", handleClick); // ajoute un écouteur d'événement "click" sur le bouton "Suivant"
+  nextButton.style.display = "inline-block";
 }
 
 function showQuestion(question) {
