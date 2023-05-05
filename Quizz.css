@@ -45,6 +45,10 @@ footer {
   align-items: center;
 }
 
+.question-container {
+  display: none;
+}
+
 #question {
   color: #0c0c0c;
   font-size: 20px;
