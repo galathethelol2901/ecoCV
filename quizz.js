@@ -6,7 +6,7 @@ const questionElement = document.getElementById("question");
 const choiceButtons = document.querySelectorAll(".btn");
 const scoreElement = document.getElementById("score");
 const totalElement = document.getElementById("total");
-const nextButton = document.getElementById("next-btn");
+const nextButton = document.getElementById("nextButton");
 const resultMessage = document.getElementById("result-message");
 
 
@@ -66,7 +66,6 @@ restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
   startButton.style.display = "none";
-  questionContainer.display = "none";
   shuffledQuestions = questions;
   currentQuestionIndex = 0;
   score = 0;
@@ -83,7 +82,13 @@ function setNextQuestion() {
   nextButton.style.display = "none";
   nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
-    setNextQuestion();
+    if (currentQuestionIndex < shuffledQuestions.length) {
+      showQuestion(shuffledQuestions[currentQuestionIndex]);
+      resetState();
+      nextButton.style.display = "none";
+    } else {
+      showScore();
+    }
   });
 }
 
