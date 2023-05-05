@@ -9,10 +9,10 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
   display: grid;
   place-items: center;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: white;
 }
 
 footer {
@@ -44,6 +44,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  color: #fff;
 }
 
 #question {
@@ -54,13 +57,13 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 #result-message {
-color: coral;
-font-size: 20px;
-font-family: 'Dancing Script', cursive;
-
-
+  color: coral;
+  font-size: 24px;
+  font-family: 'Dancing Script', cursive;
 }
+
 .btn {
   display: block;
   width: 80%;
@@ -75,8 +78,8 @@ font-family: 'Dancing Script', cursive;
   font-family: 'Poltawski Nowy', serif;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-}
-
+ }
+ 
 .btn:hover {
   background-color: #08fa69;
 }
