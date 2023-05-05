@@ -51,7 +51,9 @@ footer {
 }
 
 #question {
-  color: #0c0c0c;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 20px;
   font-family: 'Bruno Ace SC', cursive;
   display: flex;
