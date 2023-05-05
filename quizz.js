@@ -90,6 +90,7 @@ function setNextQuestion() {
       showScore();
     }
   });
+  nextButton.style.display = "inline-block"; // Ajout de cette ligne pour afficher le bouton "Suivant"
 }
 
 function showQuestion(question) {
