@@ -81,8 +81,10 @@ font-family: 'Dancing Script', cursive;
   background-color: #08fa69;
 }
 
-#next-btn {
-  margin-top: 20px;
+#start{
+  align-items: center;
+  width: 100px;
+  height: 100px;
 }
 
 #score-container {
