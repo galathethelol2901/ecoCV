@@ -43,10 +43,20 @@ footer {
   background: rgb(48, 84, 154);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: auto;
   color: #fff;
+}
+#question-container {
+  margin-top: 50px; /* ou la valeur de votre choix */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
 }
 
 #question {
@@ -79,7 +89,7 @@ footer {
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
  }
- 
+
 .btn:hover {
   background-color: #08fa69;
 }
