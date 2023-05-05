@@ -40,7 +40,7 @@ footer {
   padding: 20px;
   border-radius: 10px;
   background: rgb(48, 84, 154);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
