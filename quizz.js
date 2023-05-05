@@ -66,6 +66,7 @@ restartButton.addEventListener("click", restartQuiz);
 
 function startQuiz() {
   startButton.style.display = "none";
+  questionContainer.display = "none";
   shuffledQuestions = questions;
   currentQuestionIndex = 0;
   score = 0;
