@@ -24,7 +24,6 @@
     </div>
     <div id="score-container">
       <h2>Votre score est de <span id="score"></span><span id="total"></span></h2>
-      <button id="nextButton">Suivant</button>
       <p id="result-message"></p>
       <button class="btn" id="restart">Recommencer</button>
     </div>
