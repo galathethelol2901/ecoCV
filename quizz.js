@@ -6,7 +6,6 @@ const questionElement = document.getElementById("question");
 const choiceButtons = document.querySelectorAll(".btn");
 const scoreElement = document.getElementById("score");
 const totalElement = document.getElementById("total");
-const nextButton = document.getElementById("nextButton");
 const resultMessage = document.getElementById("result-message");
 
 
@@ -80,21 +79,10 @@ function setNextQuestion() {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
   nextButton.style.display = "none";
-
-  function handleClick() {
+  nextButton.addEventListener("click", () => {
     currentQuestionIndex++;
-    if (currentQuestionIndex < shuffledQuestions.length) {
-      showQuestion(shuffledQuestions[currentQuestionIndex]);
-      resetState();
-      nextButton.style.display = "none";
-      nextButton.addEventListener("click", handleClick); // ajoute un nouvel événement "click" sur le bouton "Suivant"
-    } else {
-      showScore();
-    }
-  }
-
-  nextButton.addEventListener("click", handleClick); // ajoute un écouteur d'événement "click" sur le bouton "Suivant"
-  nextButton.style.display = "inline-block";
+    setNextQuestion();
+  });
 }
 
 function showQuestion(question) {
