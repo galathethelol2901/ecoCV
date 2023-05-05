@@ -45,7 +45,7 @@ footer {
   align-items: center;
 }
 
-.question-container {
+#question-container {
   display: none;
 }
 
