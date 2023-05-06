@@ -23,7 +23,7 @@
         </h1>
         <div class="container">
           <div class="btn">
-            <a href="main60sENG.php">ENTER for 45s</a>
+            <a href="main60sEng.php">ENTER for 45s</a>
           </div>
         </div>
         <div class="dropdown">
