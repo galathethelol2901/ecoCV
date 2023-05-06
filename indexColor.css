@@ -342,6 +342,10 @@ p {
       margin: 10px;
     }
   
-    /* Additional styles for smaller screens */
-    /* Add your custom styles here */
+    h1{
+        
+     font-size: 12px;
+     position: relative;
+
+    }
   }
