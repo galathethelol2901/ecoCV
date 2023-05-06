@@ -331,15 +331,17 @@ p {
     }
 }
 
-@media (max-width: 768px) {
-    .waves {
-        height:40px;
-        min-height:40px;
+@media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
     }
-    .content {
-        height:30vh;
+  
+    .container .btn {
+      width: 100px;
+      height: 40px;
+      margin: 10px;
     }
-    h1 {
-        font-size:24px;
-    }
-}
+  
+    /* Additional styles for smaller screens */
+    /* Add your custom styles here */
+  }
