@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>le petit jeu</title>
+      <title>le petit jeu ECOPROG6</title>
       <link rel="stylesheet" href="GameStyle.css">
       <script src="https://kit.fontawesome.com/3e7bbf4130.js" crossorigin="anonymous"></script>
    </head>
