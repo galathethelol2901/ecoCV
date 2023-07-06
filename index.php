@@ -41,7 +41,7 @@
          <a class="card" href="#">
             <div class="card__background" style="background-image: url(movie.gif?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
             <div class="card__content">
-               <p class="card__category">en travaux </p>
+               <p class="card__category">encore travaux </p>
                <h3 class="card__heading">Le FILM </h3>
             </div>
          </a>
